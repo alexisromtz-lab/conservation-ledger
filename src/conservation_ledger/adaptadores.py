@@ -67,6 +67,8 @@ def desde_acta(doc: dict[str, Any]) -> Recibo:
         unidad="filas",
         digest_entrada=entrada.get("sha256"),
         digest_salida=salida.get("sha256"),
+        artefacto=salida.get("archivo"),
+        digest_artefacto=salida.get("sha256_archivo"),
         declarado_conserva=declarado.get("conserva", doc.get("conserva")),
         declarado_rc=declarado.get("rc", doc.get("rc")),
     )

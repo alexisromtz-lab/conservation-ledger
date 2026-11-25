@@ -48,6 +48,7 @@ pip install -e .
 conservation-ledger verify receipts/*.json      # recompute every equation
 conservation-ledger panel  receipts/*.json -o panel.html
 conservation-ledger collect manifest.json -o receipts/
+conservation-ledger chain  receipts/paso1.json receipts/paso2.json   # the seam
 ```
 
 Exit code is the **recomputed** severity of the act, never the declared one.
@@ -198,10 +199,57 @@ unmeasured area reports **1**, because `max(1, 2)` would let "not measured"
 hide a real finding. Hence `PRECEDENCIA` in `verificador.py`, and hence the
 per-class counts are always printed next to the code.
 
+## Chains: a composition is only as conserved as its seams
+
+Two receipts certify two acts. A pipeline needs the **seam** — the artifact the first act wrote
+must be the artifact the second act read — and that is not one fact but two:
+
+| seam | measurement | what it proves | blind to |
+|---|---|---|---|
+| count | `imagen(i) == dominio(i+1)` | the next act received as many units as this one kept | identity: rewrite a witness and the count still agrees |
+| bytes | `digests.artefacto(i) == digests.entrada(i+1)` | the next act read the artifact this one wrote | nothing about the rows |
+
+Measured on two `ingest-conservation-guard` acts over the six-row fixture — three rows kept, three
+declared as collisions, nothing silently lost:
+
+```console
+$ ledger chain paso1.json paso2.json
+SELLADO   acta:migracion.csv -> acta:paso1.csv  filas 3 -> 3  bytes =
+COMPUESTO 6 = 3 + 3  residuo=0  telescopia=si  RC=1
+```
+
+Sellado, residual 0 — and `RC=1`, because the first act declared a collision. Composition cannot be
+better than its worst link, so the pipeline does not launder an act that was already dirty.
+
+Now rewrite one witness inside `paso1.csv`, keeping all three rows, and re-run the second act:
+
+```console
+$ ledger chain paso1.json paso2-alterado.json
+RUPTURA   acta:migracion.csv -> acta:paso1-alterado.csv  filas 3 -> 3  bytes !
+COMPUESTO 6 = 3 + 3  residuo=0  telescopia=si  RC=4
+     - acta:migracion.csv -> acta:paso1-alterado.csv: el artefacto no es el que el acto anterior escribio
+```
+
+The counts still agree. A checker that only counted would call that pipeline conserved; the digests
+say the artifact is not the one the previous act wrote. Both blocks above are recomputable —
+`tests/test_readme_cadena.py` runs the verb over the receipts in `tests/fixtures/cadena/`, written
+by the producer itself, and compares line by line.
+
+`NO_MEDIDO` does not decay into zero here either: a receipt that published no artifact digest yields
+`NO_MEDIDO` with `RC=2`, never a silent pass.
+
+**Telescoping.** With `d(i) = img(i) + resto(i)` and `d(i+1) = img(i)`, induction gives
+`d(1) = img(n) + Σ resto(i)`: the composite residual is the sum of the link residuals and no degree
+of freedom survives once every seam is sealed. The identity is checked by two independent routes —
+the composite and the sum — in `tests/test_cadena.py`, together with the count-blindness falsifier.
+
+**Finding.** A chain of conserving acts is not a conserved pipeline. Verifying each act's own
+equation cannot see the seam, because the seam lives in neither act.
+
 ## Adapters: the only instrument-aware code
 
 `verificador.py` (162 lines) knows nothing about any instrument. Everything
-specific to a dialect lives in `adaptadores.py` — 171 lines:
+specific to a dialect lives in `adaptadores.py` — 173 lines:
 
 | adapter | reads | note |
 |---|---|---|
@@ -242,7 +290,7 @@ place the numbers live.
 ```yaml
 repos:
   - repo: https://github.com/alexisromtz-lab/conservation-ledger
-    rev: v0.1.2
+    rev: v0.2.0
     hooks: [{id: conservation-ledger-verify}]
 ```
 

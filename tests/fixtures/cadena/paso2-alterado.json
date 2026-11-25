@@ -1,0 +1,39 @@
+{
+  "acta": "migracion",
+  "caso": "paso1-alterado.csv",
+  "colisiones": [],
+  "conserva": true,
+  "cubetas": {
+    "colisiones": 0,
+    "imagen": 3,
+    "rechazos": 0,
+    "sin_clave": 0
+  },
+  "ecuacion": {
+    "colisiones_por_proyeccion": 0,
+    "colisiones_por_repetido": 0,
+    "dominio": 3,
+    "imagen": 3,
+    "rechazos": 0,
+    "sin_clave": 0
+  },
+  "entrada": {
+    "archivo": "paso1-alterado.csv",
+    "filas": 3,
+    "sha256": "cf17fd3a59c6c4f3f11689c4d4ac48f70cdd9de0ea845f34d27aca2bd03a8b38"
+  },
+  "estado": "CONSERVADO",
+  "instrument": "ingest-conservation-guard",
+  "instrument_version": "0.4.2",
+  "perdidas_silenciosas": 0,
+  "proyeccion": {
+    "clave": "clave",
+    "crudo": "clave",
+    "validar": null
+  },
+  "rc": 0,
+  "salida": {
+    "claves": 3,
+    "sha256": "1b3862d77d26c9fdf9c23024fe7966e5f6cfdd04d1c5e2db1be659061df01243"
+  }
+}

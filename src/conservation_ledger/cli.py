@@ -1,6 +1,8 @@
-"""Three verbs: ``verify``, ``panel``, ``collect``.
+"""Four verbs: ``verify``, ``chain``, ``panel``, ``collect``.
 
 ``verify``  re-derives each receipt's verdict and prints where it disagrees.
+``chain``   composes an ordered pipeline and judges it on its seams: two acts
+            that each close their equation can still lose rows between them.
 ``panel``   renders every area into one static page.
 ``collect`` runs a manifest of instruments and files their receipts, so the
             whole estate is refreshed by one command instead of by memory.
@@ -19,6 +21,7 @@ from typing import Any, Iterable
 
 from . import __version__
 from .adaptadores import adaptar
+from .cadena import cadena
 from .esquema import ESQUEMA, Recibo, a_documento, desde_documento
 from .panel import html
 from .verificador import Veredicto, rc_del_acto, verificar
@@ -82,6 +85,30 @@ def _cmd_verify(args: argparse.Namespace) -> int:
     return _rc(pares)
 
 
+def _cmd_chain(args: argparse.Namespace) -> int:
+    recibos = _leer(args.recibos, args.adapter)
+    if len(recibos) < 2:
+        print("CHAIN: una cadena exige al menos dos actos", file=sys.stderr)
+        return 2
+    comp = cadena(recibos)
+    if args.json:
+        print(json.dumps(comp.as_dict(), indent=2, ensure_ascii=False))
+        return comp.rc
+
+    for c in comp.costuras:
+        if not c.digest_declarado or not c.digest_recibido:
+            bytes_estado = "?"
+        else:
+            bytes_estado = "=" if c.digest_declarado == c.digest_recibido else "!"
+        print(f"{c.estado:<9} {c.izquierda} -> {c.derecha}"
+              f"  filas {c.filas_declaradas} -> {c.filas_recibidas}  bytes {bytes_estado}")
+    print(f"COMPUESTO {comp.ecuacion()}  residuo={comp.residuo}"
+          f"  telescopia={'si' if comp.telescopia else 'NO'}  RC={comp.rc}")
+    for m in comp.motivos:
+        print(f"     - {m}")
+    return comp.rc
+
+
 def _cmd_panel(args: argparse.Namespace) -> int:
     pares = _pares(_leer(args.recibos, args.adapter))
     texto = html([v for _, v in pares], titulo=args.titulo)
@@ -139,6 +166,11 @@ def main(argv: list[str] | None = None) -> int:
     comun(v)
     v.add_argument("--json", action="store_true")
     v.set_defaults(fn=_cmd_verify)
+
+    h = sub.add_parser("chain", help="componer actos encadenados y juzgar sus costuras")
+    comun(h)
+    h.add_argument("--json", action="store_true")
+    h.set_defaults(fn=_cmd_chain)
 
     p = sub.add_parser("panel", help="una pagina estatica con todas las areas")
     comun(p)

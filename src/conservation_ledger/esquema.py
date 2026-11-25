@@ -43,6 +43,11 @@ class Recibo:
     unidad: str = UNIDAD_POR_DEFECTO
     digest_entrada: str | None = None
     digest_salida: str | None = None
+    #: The artifact this act wrote, and the digest of its bytes. Without the
+    #: pair the act digests an abstraction and the next act cannot cite it, so
+    #: the seam between two acts is NO_MEDIDO rather than sealed.
+    artefacto: str | None = None
+    digest_artefacto: str | None = None
     declarado_conserva: bool | None = None
     declarado_rc: int | None = None
 
@@ -113,6 +118,8 @@ def desde_documento(doc: dict[str, Any]) -> Recibo:
         unidad=unidad.strip(),
         digest_entrada=_digest(digests.get("entrada"), "digests.entrada"),
         digest_salida=_digest(digests.get("salida"), "digests.salida"),
+        artefacto=str(doc["artefacto"]) if doc.get("artefacto") else None,
+        digest_artefacto=_digest(digests.get("artefacto"), "digests.artefacto"),
         declarado_conserva=conserva,
         declarado_rc=rc,
     )
@@ -134,9 +141,12 @@ def a_documento(r: Recibo) -> dict[str, Any]:
     if r.version:
         doc["version"] = r.version
     digests = {k: v for k, v in
-               (("entrada", r.digest_entrada), ("salida", r.digest_salida)) if v}
+               (("entrada", r.digest_entrada), ("salida", r.digest_salida),
+                ("artefacto", r.digest_artefacto)) if v}
     if digests:
         doc["digests"] = digests
+    if r.artefacto:
+        doc["artefacto"] = r.artefacto
     declarado = {k: v for k, v in
                  (("conserva", r.declarado_conserva), ("rc", r.declarado_rc))
                  if v is not None}
