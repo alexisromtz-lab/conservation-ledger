@@ -1,0 +1,31 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "conservation-ledger"
+version = "0.1.0"
+description = "Re-verify the conservation identity of any audit receipt, instrument-blind."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [{ name = "Jose Alexis Roman Martinez" }]
+keywords = ["audit", "conservation", "receipts", "data-migration", "static-analysis"]
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "License :: OSI Approved :: MIT License",
+  "Operating System :: OS Independent",
+]
+dependencies = []
+
+[project.scripts]
+conservation-ledger = "conservation_ledger.cli:main"
+
+[project.optional-dependencies]
+dev = ["pytest>=8"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+conservation_ledger = ["py.typed"]

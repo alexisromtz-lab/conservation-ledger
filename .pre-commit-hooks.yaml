@@ -1,0 +1,7 @@
+- id: conservation-ledger-verify
+  name: recompute the conservation identity of every receipt
+  description: Fails when a receipt's declared total does not equal the sum of its buckets.
+  entry: conservation-ledger verify
+  language: python
+  files: '(^|/)receipts/.*\.json$'
+  pass_filenames: true

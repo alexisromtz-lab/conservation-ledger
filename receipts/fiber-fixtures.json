@@ -1,0 +1,17 @@
+{
+  "schema": "conservation/1",
+  "area": "fiber:fixtures",
+  "instrumento": "fiber-ast-lint",
+  "dominio": 9,
+  "cubetas": {
+    "pierde": 0,
+    "guardadas": 2,
+    "acumulacion": 1,
+    "posicional": 1,
+    "sin_len": 5
+  },
+  "declarado": {
+    "conserva": true,
+    "rc": 1
+  }
+}

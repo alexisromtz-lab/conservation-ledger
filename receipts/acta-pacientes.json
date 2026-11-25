@@ -1,0 +1,16 @@
+{
+  "schema": "conservation/1",
+  "area": "acta:pacientes",
+  "instrumento": "ingest-conservation-guard",
+  "dominio": 8,
+  "cubetas": {
+    "colisiones": 2,
+    "imagen": 4,
+    "rechazos": 2,
+    "sin_clave": 0
+  },
+  "declarado": {
+    "conserva": true,
+    "rc": 1
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "schema": "conservation/1",
+  "area": "acta:migracion.csv",
+  "instrumento": "ingest-conservation-guard",
+  "dominio": 6,
+  "cubetas": {
+    "colisiones_por_proyeccion": 2,
+    "colisiones_por_repetido": 0,
+    "imagen": 4,
+    "rechazos": 0,
+    "sin_clave": 0
+  },
+  "digests": {
+    "entrada": "d706d9297093104b22c20301e2e74f92ff83f2c5352c6ea6e4326c7108935581",
+    "salida": "6e59cdf411023f31e71ec0af2e915c20a46d51b75f465487e8c502b5cd47d234"
+  },
+  "declarado": {
+    "conserva": true,
+    "rc": 1
+  }
+}

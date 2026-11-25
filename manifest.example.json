@@ -1,0 +1,28 @@
+{
+  "areas": [
+    {
+      "area": "acta:pacientes",
+      "adapter": "acta",
+      "cwd": "path/to/ingest-conservation-guard",
+      "cmd": [
+        "python",
+        "-m",
+        "ingest_conservation_guard",
+        "pacientes",
+        "--json"
+      ]
+    },
+    {
+      "area": "fiber:fixtures",
+      "adapter": "fiber",
+      "cwd": "path/to/fiber-ast-lint",
+      "cmd": [
+        "python",
+        "-m",
+        "fiber_ast_lint",
+        "--json",
+        "tests/fixtures"
+      ]
+    }
+  ]
+}
