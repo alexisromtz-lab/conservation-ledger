@@ -31,6 +31,16 @@ def _dominio_acta(doc: dict[str, Any]) -> int:
     return 0
 
 
+def _version(doc: dict[str, Any]) -> str | None:
+    """The version the producer stamps on itself, if it stamps one.
+
+    A receipt that cannot name its author cannot be dated; the panel says
+    ``SIN_VERSION`` rather than inventing one.
+    """
+    v = doc.get("instrument_version")
+    return str(v) if v else None
+
+
 def desde_acta(doc: dict[str, Any]) -> Recibo:
     """``ingest-conservation-guard --receipt``.
 
@@ -50,10 +60,11 @@ def desde_acta(doc: dict[str, Any]) -> Recibo:
     declarado = doc.get("declarado") or {}
     return Recibo(
         area=f"acta:{_nombre(doc.get('caso'), '?')}",
-        instrumento="ingest-conservation-guard",
-        version=None,
+        instrumento=str(doc.get("instrument") or "ingest-conservation-guard"),
+        version=_version(doc),
         dominio=int(dominio),
         cubetas={str(k): int(v) for k, v in cubetas.items()},
+        unidad="filas",
         digest_entrada=entrada.get("sha256"),
         digest_salida=salida.get("sha256"),
         declarado_conserva=declarado.get("conserva", doc.get("conserva")),
@@ -72,10 +83,11 @@ def desde_fiber(doc: dict[str, Any]) -> Recibo:
                ("pierde", "guardadas", "acumulacion", "posicional", "sin_len")}
     return Recibo(
         area=f"fiber:{_nombre(doc.get('raiz'), '?')}",
-        instrumento="fiber-ast-lint",
-        version=None,
+        instrumento=str(doc.get("instrument") or "fiber-ast-lint"),
+        version=_version(doc),
         dominio=int(doc.get("almacenes", 0) or 0),
         cubetas=cubetas,
+        unidad="almacenes",
         declarado_conserva=doc.get("reconcilia"),
         declarado_rc=doc.get("rc"),
     )
@@ -108,10 +120,13 @@ def desde_censo(doc: dict[str, Any]) -> list[Recibo]:
         recibos.append(Recibo(
             area=f"censo:{etiqueta}",
             instrumento="fiber-ast-lint",
-            version=str(version) if version else None,
+            # ``version`` es la firma del instrumento; la version del paquete
+            # auditado ya viaja en el area (``censo:mypy@2.4.1#mypy/``).
+            version=_version(doc),
             dominio=int(fila.get("stores", 0) or 0),
             cubetas=({k: int(fila[k]) for k in CUBETAS_CENSO}
                      if all(k in fila for k in CUBETAS_CENSO) else {}),
+            unidad="almacenes",
             digest_entrada=fila.get("sha256"),
             declarado_conserva=fila.get("reconciles"),
             declarado_rc=fila.get("rc"),

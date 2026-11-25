@@ -19,6 +19,11 @@ from typing import Any
 
 ESQUEMA = "conservation/1"
 
+#: The unit a ``dominio`` is counted in. Two receipts with different units are
+#: two different populations and are never added: `30 rows + 12 stores` is not
+#: 42 of anything.
+UNIDAD_POR_DEFECTO = "unidades"
+
 _HEX64 = re.compile(r"^[0-9a-f]{64}$")
 
 
@@ -35,6 +40,7 @@ class Recibo:
     version: str | None
     dominio: int
     cubetas: dict[str, int]
+    unidad: str = UNIDAD_POR_DEFECTO
     digest_entrada: str | None = None
     digest_salida: str | None = None
     declarado_conserva: bool | None = None
@@ -94,12 +100,17 @@ def desde_documento(doc: dict[str, Any]) -> Recibo:
     if conserva is not None and not isinstance(conserva, bool):
         raise ReciboInvalido("declarado.conserva debe ser booleano")
 
+    unidad = doc.get("unidad", UNIDAD_POR_DEFECTO)
+    if not isinstance(unidad, str) or not unidad.strip():
+        raise ReciboInvalido("unidad debe ser una cadena no vacia")
+
     return Recibo(
         area=str(doc.get("area") or "?"),
         instrumento=str(doc.get("instrumento") or "?"),
         version=doc.get("version"),
         dominio=_entero(doc.get("dominio"), "dominio"),
         cubetas=cubetas,
+        unidad=unidad.strip(),
         digest_entrada=_digest(digests.get("entrada"), "digests.entrada"),
         digest_salida=_digest(digests.get("salida"), "digests.salida"),
         declarado_conserva=conserva,
@@ -117,6 +128,7 @@ def a_documento(r: Recibo) -> dict[str, Any]:
         "area": r.area,
         "instrumento": r.instrumento,
         "dominio": r.dominio,
+        "unidad": r.unidad,
         "cubetas": dict(r.cubetas),
     }
     if r.version:

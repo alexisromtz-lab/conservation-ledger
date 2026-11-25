@@ -3,6 +3,7 @@
   "area": "fiber:fixtures",
   "instrumento": "fiber-ast-lint",
   "dominio": 9,
+  "unidad": "almacenes",
   "cubetas": {
     "pierde": 0,
     "guardadas": 2,
@@ -10,6 +11,7 @@
     "posicional": 1,
     "sin_len": 5
   },
+  "version": "0.4.4",
   "declarado": {
     "conserva": true,
     "rc": 1

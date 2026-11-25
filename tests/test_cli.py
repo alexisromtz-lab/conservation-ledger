@@ -37,7 +37,7 @@ def test_panel_escribe_el_fichero(tmp_path):
     rc = main(["panel", "-o", str(destino), *map(str, sorted(RECIBOS.glob("*.json")))])
     assert rc == 1
     texto = destino.read_text(encoding="utf-8")
-    assert texto.count("<tr>") == 17  # cabecera + 16 areas
+    assert texto.count("<tr>") == 20  # cabecera + 16 areas + cabecera y 2 unidades
     assert "VACIO" in texto
 
 

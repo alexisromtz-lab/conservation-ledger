@@ -27,7 +27,7 @@ from __future__ import annotations
 
 from dataclasses import dataclass, field
 
-from .esquema import Recibo
+from .esquema import UNIDAD_POR_DEFECTO, Recibo
 
 CONSERVADO, COLISION, VACIO, RUPTURA = 0, 1, 2, 4
 
@@ -55,6 +55,8 @@ class Veredicto:
     residuo: int
     rc: int
     clase: str
+    unidad: str = UNIDAD_POR_DEFECTO
+    version: str | None = None
     motivos: tuple[str, ...] = field(default=())
     declarado_rc: int | None = None
     declarado_conserva: bool | None = None
@@ -72,7 +74,9 @@ class Veredicto:
         return {
             "area": self.area,
             "instrumento": self.instrumento,
+            "version": self.version,
             "dominio": self.dominio,
+            "unidad": self.unidad,
             "cubetas": dict(self.cubetas),
             "residuo": self.residuo,
             "rc": self.rc,
@@ -88,7 +92,7 @@ def _veredicto(r: Recibo, *, residuo: int, rc: int, clase: str,
                motivos: tuple[str, ...] = ()) -> Veredicto:
     return Veredicto(area=r.area, instrumento=r.instrumento, dominio=r.dominio,
                      cubetas=dict(r.cubetas), residuo=residuo, rc=rc, clase=clase,
-                     motivos=motivos, declarado_rc=r.declarado_rc,
+                     unidad=r.unidad, version=r.version, motivos=motivos, declarado_rc=r.declarado_rc,
                      declarado_conserva=r.declarado_conserva)
 
 

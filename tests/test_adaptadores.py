@@ -84,3 +84,27 @@ def test_acta_lee_el_dominio_del_documento_crudo():
     r = adaptar("acta", crudo)[0]
     assert (r.dominio, sum(r.cubetas.values()), r.declarado_conserva) == (8, 8, True)
     assert verificar(r).clase == "COLISION"
+
+
+def test_la_firma_del_acta_es_la_version_que_el_instrumento_se_sella():
+    doc = {"caso": "x.csv", "dominio": 3, "rc": 0, "conserva": True,
+           "cubetas": {"imagen": 3, "rechazos": 0, "sin_clave": 0, "colisiones": 0},
+           "instrument": "ingest-conservation-guard", "instrument_version": "0.4.2"}
+    r = adaptar("acta", doc)[0]
+    assert (r.instrumento, r.version) == ("ingest-conservation-guard", "0.4.2")
+
+
+def test_un_recibo_sin_firma_se_queda_sin_version_y_no_se_inventa():
+    """Un recibo que no nombra su binario no se puede fechar: NO_MEDIDO, no 0.0.0."""
+    doc = {"caso": "x.csv", "dominio": 3, "rc": 0, "conserva": True,
+           "cubetas": {"imagen": 3, "rechazos": 0, "sin_clave": 0, "colisiones": 0}}
+    assert adaptar("acta", doc)[0].version is None
+
+
+def test_la_firma_del_censo_es_la_del_instrumento_no_la_del_paquete_auditado():
+    doc = {"instrument_version": "0.4.4", "rows": [
+        {"package": "mypy", "version": "2.4.1", "scope": "mypy/", "stores": 4,
+         "pierde": 0, "guardadas": 1, "acumulacion": 1, "posicional": 1, "sin_len": 1}]}
+    (r,) = adaptar("censo", doc)
+    assert r.version == "0.4.4"
+    assert r.area == "censo:mypy@2.4.1#mypy/"

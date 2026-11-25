@@ -3,12 +3,14 @@
   "area": "acta:pacientes",
   "instrumento": "ingest-conservation-guard",
   "dominio": 8,
+  "unidad": "filas",
   "cubetas": {
     "colisiones": 2,
     "imagen": 4,
     "rechazos": 2,
     "sin_clave": 0
   },
+  "version": "0.4.2",
   "declarado": {
     "conserva": true,
     "rc": 1

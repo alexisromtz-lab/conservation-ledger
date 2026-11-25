@@ -4,6 +4,7 @@
     "area": "censo:mypy@2.4.1",
     "instrumento": "fiber-ast-lint",
     "dominio": 173,
+    "unidad": "almacenes",
     "cubetas": {
       "pierde": 4,
       "guardadas": 25,
@@ -11,7 +12,7 @@
       "posicional": 12,
       "sin_len": 125
     },
-    "version": "2.4.1",
+    "version": "0.4.4",
     "digests": {
       "entrada": "1784648d6ec8c2b5465e3f26241b845a0b3cb4e56c993c64abe16989e7698999"
     },
@@ -25,6 +26,7 @@
     "area": "censo:pylint@4.1.4#.",
     "instrumento": "fiber-ast-lint",
     "dominio": 55,
+    "unidad": "almacenes",
     "cubetas": {
       "pierde": 1,
       "guardadas": 14,
@@ -32,7 +34,7 @@
       "posicional": 4,
       "sin_len": 32
     },
-    "version": "4.1.4",
+    "version": "0.4.4",
     "digests": {
       "entrada": "b39fcc762ec4a7fe385d01b8e170fd996847297cdc0e3850bdda1435c74cfd95"
     },
@@ -46,6 +48,7 @@
     "area": "censo:astroid@4.3.4#.",
     "instrumento": "fiber-ast-lint",
     "dominio": 37,
+    "unidad": "almacenes",
     "cubetas": {
       "pierde": 0,
       "guardadas": 10,
@@ -53,7 +56,7 @@
       "posicional": 1,
       "sin_len": 26
     },
-    "version": "4.3.4",
+    "version": "0.4.4",
     "digests": {
       "entrada": "2bcd0d02648a443a4b818c952c3550091989daefac3c12d3b83b2289482e0818"
     },
@@ -67,6 +70,7 @@
     "area": "censo:dill@0.4.1#.",
     "instrumento": "fiber-ast-lint",
     "dominio": 16,
+    "unidad": "almacenes",
     "cubetas": {
       "pierde": 4,
       "guardadas": 1,
@@ -74,7 +78,7 @@
       "posicional": 1,
       "sin_len": 9
     },
-    "version": "0.4.1",
+    "version": "0.4.4",
     "digests": {
       "entrada": "1e1ce33e978ae97fcfcff5638477032b801c46c7c65cf717f95fbc2248f79a9d"
     },
@@ -88,6 +92,7 @@
     "area": "censo:isort@9.0.2#.",
     "instrumento": "fiber-ast-lint",
     "dominio": 21,
+    "unidad": "almacenes",
     "cubetas": {
       "pierde": 0,
       "guardadas": 2,
@@ -95,7 +100,7 @@
       "posicional": 3,
       "sin_len": 14
     },
-    "version": "9.0.2",
+    "version": "0.4.4",
     "digests": {
       "entrada": "6c29deeb39698a8717823b7f75b2ac58c5e8ab8dcf6cf31205a72a6617fb454e"
     },
@@ -109,6 +114,7 @@
     "area": "censo:platformdirs@4.14.8#.",
     "instrumento": "fiber-ast-lint",
     "dominio": 0,
+    "unidad": "almacenes",
     "cubetas": {
       "pierde": 0,
       "guardadas": 0,
@@ -116,7 +122,7 @@
       "posicional": 0,
       "sin_len": 0
     },
-    "version": "4.14.8",
+    "version": "0.4.4",
     "digests": {
       "entrada": "1e34af590de4d978631b751eb2202f2fee4497537a17c1720b12fcf57b331392"
     },
@@ -130,6 +136,7 @@
     "area": "censo:tomlkit@0.15.3#.",
     "instrumento": "fiber-ast-lint",
     "dominio": 6,
+    "unidad": "almacenes",
     "cubetas": {
       "pierde": 0,
       "guardadas": 2,
@@ -137,7 +144,7 @@
       "posicional": 0,
       "sin_len": 3
     },
-    "version": "0.15.3",
+    "version": "0.4.4",
     "digests": {
       "entrada": "a83ce6de3b648e68dd9b50aabadad749ba823eb58b1d026f3c0a283c4767a9c1"
     },
@@ -151,6 +158,7 @@
     "area": "censo:mypy@2.4.1#.",
     "instrumento": "fiber-ast-lint",
     "dominio": 226,
+    "unidad": "almacenes",
     "cubetas": {
       "pierde": 4,
       "guardadas": 34,
@@ -158,7 +166,7 @@
       "posicional": 16,
       "sin_len": 163
     },
-    "version": "2.4.1",
+    "version": "0.4.4",
     "digests": {
       "entrada": "1784648d6ec8c2b5465e3f26241b845a0b3cb4e56c993c64abe16989e7698999"
     },
@@ -172,6 +180,7 @@
     "area": "censo:pydantic@2.14.4#.",
     "instrumento": "fiber-ast-lint",
     "dominio": 143,
+    "unidad": "almacenes",
     "cubetas": {
       "pierde": 0,
       "guardadas": 17,
@@ -179,7 +188,7 @@
       "posicional": 2,
       "sin_len": 118
     },
-    "version": "2.14.4",
+    "version": "0.4.4",
     "digests": {
       "entrada": "653a2ad9f6d8858529c77c72717d0ea991d6c6837fe683246b2f4b2bbfc3fadc"
     },
@@ -193,6 +202,7 @@
     "area": "censo:jsonschema@4.26.0#.",
     "instrumento": "fiber-ast-lint",
     "dominio": 2,
+    "unidad": "almacenes",
     "cubetas": {
       "pierde": 0,
       "guardadas": 2,
@@ -200,7 +210,7 @@
       "posicional": 0,
       "sin_len": 0
     },
-    "version": "4.26.0",
+    "version": "0.4.4",
     "digests": {
       "entrada": "d489f15263b8d200f8387e64b4c3a75f06629559fb73deb8fdfb525f2dab50ce"
     },
@@ -214,6 +224,7 @@
     "area": "censo:pyflakes@4.1.0#.",
     "instrumento": "fiber-ast-lint",
     "dominio": 0,
+    "unidad": "almacenes",
     "cubetas": {
       "pierde": 0,
       "guardadas": 0,
@@ -221,7 +232,7 @@
       "posicional": 0,
       "sin_len": 0
     },
-    "version": "4.1.0",
+    "version": "0.4.4",
     "digests": {
       "entrada": "b2e05e6bac8e49b67be2a6ffa63422c60f7193fc72e8180255907b41ec997dc1"
     },
@@ -235,6 +246,7 @@
     "area": "censo:flake8@7.5.0#.",
     "instrumento": "fiber-ast-lint",
     "dominio": 3,
+    "unidad": "almacenes",
     "cubetas": {
       "pierde": 0,
       "guardadas": 0,
@@ -242,7 +254,7 @@
       "posicional": 0,
       "sin_len": 3
     },
-    "version": "7.5.0",
+    "version": "0.4.4",
     "digests": {
       "entrada": "637ea1a443a78ed6ee461725cdf71ca93bc5cde0abf25436dbebdc3880b4e078"
     },
@@ -256,6 +268,7 @@
     "area": "censo:black@26.10.1#.",
     "instrumento": "fiber-ast-lint",
     "dominio": 23,
+    "unidad": "almacenes",
     "cubetas": {
       "pierde": 2,
       "guardadas": 1,
@@ -263,7 +276,7 @@
       "posicional": 1,
       "sin_len": 19
     },
-    "version": "26.10.1",
+    "version": "0.4.4",
     "digests": {
       "entrada": "28842f9a8207cc1df6eb983a35a14c5a0dfcd603d214fe82d84bef552afd2e3a"
     },
