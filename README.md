@@ -243,6 +243,24 @@ by the producer itself, and compares line by line.
 of freedom survives once every seam is sealed. The identity is checked by two independent routes —
 the composite and the sum — in `tests/test_cadena.py`, together with the count-blindness falsifier.
 
+Three acts over the pinned 34 195-row public export, each link losing a different amount:
+
+```console
+$ ledger chain paso1-censo.json paso2-censo.json paso3-censo.json
+SELLADO   acta:export.csv -> acta:s1.csv  filas 32171 -> 32171  bytes =
+SELLADO   acta:s1.csv -> acta:s2.csv  filas 30 -> 30  bytes =
+COMPUESTO 34195 = 30 + 34165  residuo=0  telescopia=si  RC=1
+```
+
+The two residuals are 2 024 (1 871 repeated rows plus 153 projection collisions) and 32 141
+(32 084 rows left without a key plus 57 collisions) — different sizes, different causes, one sum.
+`34 195 = 30 + 2 024 + 32 141` closes to the unit, and the composite residual is 0.
+
+Note what link 2 does: `clave:digitos` over city names keeps **30** keys out of 32 171 and the
+equation still closes, because the other 32 084 rows are declared as `sin_clave`. An act that
+declares where the mass went is conserving; an act that loses it silently is not. Conservation is
+not preservation, and the ledger grades only the first.
+
 **Finding.** A chain of conserving acts is not a conserved pipeline. Verifying each act's own
 equation cannot see the seam, because the seam lives in neither act.
 
@@ -290,7 +308,7 @@ place the numbers live.
 ```yaml
 repos:
   - repo: https://github.com/alexisromtz-lab/conservation-ledger
-    rev: v0.2.0
+    rev: v0.2.1
     hooks: [{id: conservation-ledger-verify}]
 ```
 

@@ -8,6 +8,8 @@ import re
 
 from conftest import RAIZ
 from conservation_ledger import cli
+from conservation_ledger.cadena import cadena
+from conservation_ledger.cli import _leer
 
 FIX = RAIZ / "tests" / "fixtures" / "cadena"
 
@@ -17,7 +19,7 @@ def _bloques() -> list[str]:
     seccion = re.search(r"^## Chains.*?(?=^## )", texto, re.S | re.M)
     assert seccion, "README.md no tiene la sección Chains"
     bloques = re.findall(r"```console\n(.*?)```", seccion.group(0), re.S)
-    assert len(bloques) == 2, f"se esperaban 2 corridas publicadas, hay {len(bloques)}"
+    assert len(bloques) == 3, f"se esperaban 3 corridas publicadas, hay {len(bloques)}"
     return [
         "\n".join(l for l in b.rstrip("\n").split("\n") if not l.startswith("$ "))
         for b in bloques
@@ -47,3 +49,23 @@ def test_la_ruptura_publicada_dice_que_la_costura_es_por_bytes(capsys):
     assert "filas 3 -> 3" in salida, "el conteo debe seguir coincidiendo: es el punto ciego"
     assert "bytes !" in salida
     assert "no es el que el acto anterior escribio" in salida
+
+
+def test_la_cadena_de_tres_enlaces_publicada_es_la_que_corre(capsys):
+    rc, salida = _correr(
+        capsys, FIX / "paso1-censo.json", FIX / "paso2-censo.json", FIX / "paso3-censo.json"
+    )
+    assert salida == _bloques()[2]
+    assert rc == 1
+    assert salida.count("SELLADO") == 2, "tres actos dejan dos costuras, ni una más"
+    assert "telescopia=si" in salida and "residuo=0" in salida
+
+
+def test_el_residuo_compuesto_es_la_suma_de_los_residuos_de_los_enlaces():
+    """La ruta del telescopio: d(1) = img(n) + Σ resto(i), con tres enlaces reales."""
+    rutas = [FIX / "paso1-censo.json", FIX / "paso2-censo.json", FIX / "paso3-censo.json"]
+    comp = cadena(_leer(rutas, None))
+    assert comp.restos == 2024 + 32141 + 0 == 34165
+    assert comp.residuo_de_los_enlaces == 0, "los tres residuos se suman sin faltar ni sobrar"
+    assert comp.dominio == comp.imagen + comp.restos == 34195
+    assert comp.residuo == 0 and comp.telescopia

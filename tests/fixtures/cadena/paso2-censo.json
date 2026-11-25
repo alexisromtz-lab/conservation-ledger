@@ -1,0 +1,231 @@
+{
+  "acta": "migracion",
+  "caso": "s1.csv",
+  "colisiones": [
+    {
+      "clave": "01",
+      "conservado": "lyon 01",
+      "pisados": [
+        "marseille 01",
+        "paris 01 louvre"
+      ]
+    },
+    {
+      "clave": "02",
+      "conservado": "lyon 02",
+      "pisados": [
+        "marseille 02",
+        "paris 02 bourse"
+      ]
+    },
+    {
+      "clave": "03",
+      "conservado": "lyon 03",
+      "pisados": [
+        "marseille 03",
+        "paris 03 temple"
+      ]
+    },
+    {
+      "clave": "04",
+      "conservado": "lyon 04",
+      "pisados": [
+        "marseille 04",
+        "paris 04 hotel-de-ville"
+      ]
+    },
+    {
+      "clave": "05",
+      "conservado": "lyon 05",
+      "pisados": [
+        "marseille 05",
+        "paris 05 pantheon"
+      ]
+    },
+    {
+      "clave": "06",
+      "conservado": "lyon 06",
+      "pisados": [
+        "marseille 06",
+        "paris 06 luxembourg"
+      ]
+    },
+    {
+      "clave": "07",
+      "conservado": "lyon 07",
+      "pisados": [
+        "marseille 07",
+        "paris 07 palais-bourbon"
+      ]
+    },
+    {
+      "clave": "08",
+      "conservado": "lyon 08",
+      "pisados": [
+        "marseille 08",
+        "paris 08 elysee"
+      ]
+    },
+    {
+      "clave": "09",
+      "conservado": "lyon 09",
+      "pisados": [
+        "marseille 09",
+        "paris 09 opera"
+      ]
+    },
+    {
+      "clave": "1",
+      "conservado": "al qusais 1",
+      "pisados": [
+        "sector 1",
+        "socorro mission number 1 colonia",
+        "stadt winterthur (kreis 1)",
+        "sungho 1-tong"
+      ]
+    },
+    {
+      "clave": "10",
+      "conservado": "marseille 10",
+      "pisados": [
+        "paris 10 entrepot",
+        "paris 10e arrondissement",
+        "zurich (kreis 10)",
+        "zurich (kreis 10) / hongg",
+        "zurich (kreis 10) / wipkingen"
+      ]
+    },
+    {
+      "clave": "11",
+      "conservado": "marseille 11",
+      "pisados": [
+        "paris 11 popincourt",
+        "paris 11e arrondissement",
+        "zurich (kreis 11)",
+        "zurich (kreis 11) / affoltern",
+        "zurich (kreis 11) / oerlikon",
+        "zurich (kreis 11) / seebach"
+      ]
+    },
+    {
+      "clave": "12",
+      "conservado": "marseille 12",
+      "pisados": [
+        "paris 12 reuilly",
+        "paris 12e arrondissement",
+        "zurich (kreis 12)"
+      ]
+    },
+    {
+      "clave": "13",
+      "conservado": "marseille 13",
+      "pisados": [
+        "paris 13 gobelins",
+        "paris 13e arrondissement"
+      ]
+    },
+    {
+      "clave": "14",
+      "conservado": "central 14th street / spring road",
+      "pisados": [
+        "marseille 14",
+        "paris 14 observatoire"
+      ]
+    },
+    {
+      "clave": "15",
+      "conservado": "marseille 15",
+      "pisados": [
+        "paris 15 vaugirard"
+      ]
+    },
+    {
+      "clave": "16",
+      "conservado": "marseille 16",
+      "pisados": [
+        "paris 16 passy"
+      ]
+    },
+    {
+      "clave": "2",
+      "conservado": "oberwinterthur (kreis 2)",
+      "pisados": [
+        "sector 2",
+        "seremban 2",
+        "ss2",
+        "villa del prado 2da seccion",
+        "zurich (kreis 2)",
+        "zurich (kreis 2) / wollishofen"
+      ]
+    },
+    {
+      "clave": "3",
+      "conservado": "sector 3",
+      "pisados": [
+        "seen (kreis 3)",
+        "zurich (kreis 3)",
+        "zurich (kreis 3) / sihlfeld"
+      ]
+    },
+    {
+      "clave": "4",
+      "conservado": "sector 4",
+      "pisados": [
+        "zurich (kreis 4) / aussersihl"
+      ]
+    },
+    {
+      "clave": "6",
+      "conservado": "6th of october city",
+      "pisados": [
+        "sector 6",
+        "zurich (kreis 6)",
+        "zurich (kreis 6) / unterstrass"
+      ]
+    },
+    {
+      "clave": "9",
+      "conservado": "zurich (kreis 9)",
+      "pisados": [
+        "zurich (kreis 9) / albisrieden",
+        "zurich (kreis 9) / altstetten"
+      ]
+    }
+  ],
+  "conserva": true,
+  "cubetas": {
+    "colisiones": 57,
+    "imagen": 30,
+    "rechazos": 0,
+    "sin_clave": 32084
+  },
+  "ecuacion": {
+    "colisiones_por_proyeccion": 57,
+    "colisiones_por_repetido": 0,
+    "dominio": 32171,
+    "imagen": 30,
+    "rechazos": 0,
+    "sin_clave": 32084
+  },
+  "entrada": {
+    "archivo": "s1.csv",
+    "filas": 32171,
+    "sha256": "812b6ef708220b993544f2eb2232a27d4cbfec3b97c6baf49430e796483898ac"
+  },
+  "estado": "COLISION_SILENCIOSA",
+  "instrument": "ingest-conservation-guard",
+  "instrument_version": "0.4.3",
+  "perdidas_silenciosas": 0,
+  "proyeccion": {
+    "clave": "clave:digitos",
+    "crudo": "clave",
+    "validar": null
+  },
+  "rc": 1,
+  "salida": {
+    "archivo": "s2.csv",
+    "claves": 30,
+    "sha256": "74352c6bdaadb7821a6fe2c8c6857eea1809d9b17d9faedb7c173965f759a058",
+    "sha256_archivo": "b46f9f8d708db0fdf05da8bf89e2dcf0702b8f68c030caebdf4515394d16eb7a"
+  }
+}

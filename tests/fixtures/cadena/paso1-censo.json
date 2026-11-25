@@ -1,0 +1,10580 @@
+{
+  "acta": "migracion",
+  "caso": "export.csv",
+  "colisiones": [
+    {
+      "clave": "abadan",
+      "conservado": "Abadan",
+      "pisados": [
+        "Abadan"
+      ]
+    },
+    {
+      "clave": "abadeh",
+      "conservado": "Ābādeh",
+      "pisados": [
+        "Abadeh"
+      ]
+    },
+    {
+      "clave": "abay",
+      "conservado": "Abay",
+      "pisados": [
+        "Abay"
+      ]
+    },
+    {
+      "clave": "aberdeen",
+      "conservado": "Aberdeen",
+      "pisados": [
+        "Aberdeen",
+        "Aberdeen",
+        "Aberdeen",
+        "Aberdeen"
+      ]
+    },
+    {
+      "clave": "abington",
+      "conservado": "Abington",
+      "pisados": [
+        "Abington"
+      ]
+    },
+    {
+      "clave": "abyek",
+      "conservado": "Ābyek",
+      "pisados": [
+        "Ābyek"
+      ]
+    },
+    {
+      "clave": "acacias",
+      "conservado": "Acacías",
+      "pisados": [
+        "Acacias"
+      ]
+    },
+    {
+      "clave": "acton",
+      "conservado": "Acton",
+      "pisados": [
+        "Acton"
+      ]
+    },
+    {
+      "clave": "adampur",
+      "conservado": "Adampur",
+      "pisados": [
+        "Adampur"
+      ]
+    },
+    {
+      "clave": "addison",
+      "conservado": "Addison",
+      "pisados": [
+        "Addison"
+      ]
+    },
+    {
+      "clave": "adra",
+      "conservado": "Adra",
+      "pisados": [
+        "Adra"
+      ]
+    },
+    {
+      "clave": "agua branca",
+      "conservado": "Água Branca",
+      "pisados": [
+        "Água Branca"
+      ]
+    },
+    {
+      "clave": "agua rasa",
+      "conservado": "Água Rasa",
+      "pisados": [
+        "Agua Rasa"
+      ]
+    },
+    {
+      "clave": "aguilares",
+      "conservado": "Aguilares",
+      "pisados": [
+        "Aguilares"
+      ]
+    },
+    {
+      "clave": "ahwiaa",
+      "conservado": "Ahwiaa",
+      "pisados": [
+        "Ahwiaa"
+      ]
+    },
+    {
+      "clave": "airdrie",
+      "conservado": "Airdrie",
+      "pisados": [
+        "Airdrie"
+      ]
+    },
+    {
+      "clave": "akbarpur",
+      "conservado": "Akbarpur",
+      "pisados": [
+        "Akbarpur"
+      ]
+    },
+    {
+      "clave": "akhisar",
+      "conservado": "Akhisar",
+      "pisados": [
+        "Akhisar"
+      ]
+    },
+    {
+      "clave": "aksu",
+      "conservado": "Aksu",
+      "pisados": [
+        "Aksu"
+      ]
+    },
+    {
+      "clave": "al aqiq",
+      "conservado": "Al ‘Aqīq",
+      "pisados": [
+        "Al ‘Aqīq"
+      ]
+    },
+    {
+      "clave": "al aziziyah",
+      "conservado": "Al ‘Azīzīyah",
+      "pisados": [
+        "Al ‘Azīzīyah"
+      ]
+    },
+    {
+      "clave": "al bayda",
+      "conservado": "Al Bayḑā’",
+      "pisados": [
+        "Al Bayda"
+      ]
+    },
+    {
+      "clave": "al mahmudiyah",
+      "conservado": "Al Maḩmūdīyah",
+      "pisados": [
+        "Al Maḩmūdīyah"
+      ]
+    },
+    {
+      "clave": "al mansurah",
+      "conservado": "Al Mansurah",
+      "pisados": [
+        "Al Manşūrah"
+      ]
+    },
+    {
+      "clave": "al qusayr",
+      "conservado": "Al Quşayr",
+      "pisados": [
+        "Al Quşayr"
+      ]
+    },
+    {
+      "clave": "alamo",
+      "conservado": "Álamo",
+      "pisados": [
+        "Alamo"
+      ]
+    },
+    {
+      "clave": "albany",
+      "conservado": "Albany",
+      "pisados": [
+        "Albany",
+        "Albany",
+        "Albany",
+        "Albany"
+      ]
+    },
+    {
+      "clave": "albertville",
+      "conservado": "Albertville",
+      "pisados": [
+        "Albertville"
+      ]
+    },
+    {
+      "clave": "alcantara",
+      "conservado": "Alcântara",
+      "pisados": [
+        "Alcântara"
+      ]
+    },
+    {
+      "clave": "alcobaca",
+      "conservado": "Alcobaça",
+      "pisados": [
+        "Alcobaça"
+      ]
+    },
+    {
+      "clave": "alexandria",
+      "conservado": "Alexandria",
+      "pisados": [
+        "Alexandria",
+        "Alexandria",
+        "Alexandria"
+      ]
+    },
+    {
+      "clave": "alhambra",
+      "conservado": "Alhambra",
+      "pisados": [
+        "Alhambra"
+      ]
+    },
+    {
+      "clave": "aliaga",
+      "conservado": "Aliaga",
+      "pisados": [
+        "Aliağa"
+      ]
+    },
+    {
+      "clave": "alice",
+      "conservado": "Alice",
+      "pisados": [
+        "Alice"
+      ]
+    },
+    {
+      "clave": "alipur",
+      "conservado": "Alīpur",
+      "pisados": [
+        "Alipur",
+        "Alipur"
+      ]
+    },
+    {
+      "clave": "allen",
+      "conservado": "Allen",
+      "pisados": [
+        "Allen"
+      ]
+    },
+    {
+      "clave": "allende",
+      "conservado": "Allende",
+      "pisados": [
+        "Allende"
+      ]
+    },
+    {
+      "clave": "almenara",
+      "conservado": "Almenara",
+      "pisados": [
+        "Almenara"
+      ]
+    },
+    {
+      "clave": "altamira",
+      "conservado": "Altamira",
+      "pisados": [
+        "Altamira"
+      ]
+    },
+    {
+      "clave": "alton",
+      "conservado": "Alton",
+      "pisados": [
+        "Alton",
+        "Alton"
+      ]
+    },
+    {
+      "clave": "altoona",
+      "conservado": "Altoona",
+      "pisados": [
+        "Altoona"
+      ]
+    },
+    {
+      "clave": "amherst",
+      "conservado": "Amherst",
+      "pisados": [
+        "Amherst"
+      ]
+    },
+    {
+      "clave": "amsterdam",
+      "conservado": "Amsterdam",
+      "pisados": [
+        "Amsterdam"
+      ]
+    },
+    {
+      "clave": "an nasiriyah",
+      "conservado": "An Nāşirīyah",
+      "pisados": [
+        "An Nāşirīyah"
+      ]
+    },
+    {
+      "clave": "anak bukit",
+      "conservado": "Anak Bukit",
+      "pisados": [
+        "Anak Bukit"
+      ]
+    },
+    {
+      "clave": "anandpur",
+      "conservado": "Anandpur",
+      "pisados": [
+        "Anandpur"
+      ]
+    },
+    {
+      "clave": "anderson",
+      "conservado": "Anderson",
+      "pisados": [
+        "Anderson"
+      ]
+    },
+    {
+      "clave": "andover",
+      "conservado": "Andover",
+      "pisados": [
+        "Andover"
+      ]
+    },
+    {
+      "clave": "anfu",
+      "conservado": "Anfu",
+      "pisados": [
+        "Anfu"
+      ]
+    },
+    {
+      "clave": "anju",
+      "conservado": "Anju",
+      "pisados": [
+        "Anju"
+      ]
+    },
+    {
+      "clave": "annino",
+      "conservado": "Annino",
+      "pisados": [
+        "Annino"
+      ]
+    },
+    {
+      "clave": "anwen",
+      "conservado": "Ānwén",
+      "pisados": [
+        "Anwen"
+      ]
+    },
+    {
+      "clave": "apple valley",
+      "conservado": "Apple Valley",
+      "pisados": [
+        "Apple Valley"
+      ]
+    },
+    {
+      "clave": "aracoiaba",
+      "conservado": "Araçoiaba",
+      "pisados": [
+        "Aracoiaba"
+      ]
+    },
+    {
+      "clave": "arad",
+      "conservado": "Arad",
+      "pisados": [
+        "Arad"
+      ]
+    },
+    {
+      "clave": "arai",
+      "conservado": "Arai",
+      "pisados": [
+        "Arai"
+      ]
+    },
+    {
+      "clave": "arcos",
+      "conservado": "Arcos",
+      "pisados": [
+        "Arcos"
+      ]
+    },
+    {
+      "clave": "areia branca",
+      "conservado": "Areia Branca",
+      "pisados": [
+        "Areia Branca"
+      ]
+    },
+    {
+      "clave": "arele",
+      "conservado": "Arele",
+      "pisados": [
+        "Arele"
+      ]
+    },
+    {
+      "clave": "arlington",
+      "conservado": "Arlington",
+      "pisados": [
+        "Arlington",
+        "Arlington",
+        "Arlington"
+      ]
+    },
+    {
+      "clave": "armavir",
+      "conservado": "Armavir",
+      "pisados": [
+        "Armavir"
+      ]
+    },
+    {
+      "clave": "arnold",
+      "conservado": "Arnold",
+      "pisados": [
+        "Arnold",
+        "Arnold"
+      ]
+    },
+    {
+      "clave": "arrah",
+      "conservado": "Arrah",
+      "pisados": [
+        "Arrah"
+      ]
+    },
+    {
+      "clave": "arta",
+      "conservado": "Arta",
+      "pisados": [
+        "Árta"
+      ]
+    },
+    {
+      "clave": "asadabad",
+      "conservado": "Asadābād",
+      "pisados": [
+        "Asadābād"
+      ]
+    },
+    {
+      "clave": "asaka",
+      "conservado": "Asaka",
+      "pisados": [
+        "Asaka"
+      ]
+    },
+    {
+      "clave": "ashburn",
+      "conservado": "Ashburn",
+      "pisados": [
+        "Ashburn"
+      ]
+    },
+    {
+      "clave": "ashford",
+      "conservado": "Ashford",
+      "pisados": [
+        "Ashford"
+      ]
+    },
+    {
+      "clave": "ashland",
+      "conservado": "Ashland",
+      "pisados": [
+        "Ashland",
+        "Ashland",
+        "Ashland",
+        "Ashland"
+      ]
+    },
+    {
+      "clave": "ashta",
+      "conservado": "Ashta",
+      "pisados": [
+        "Ashta"
+      ]
+    },
+    {
+      "clave": "astara",
+      "conservado": "Astara",
+      "pisados": [
+        "Āstārā"
+      ]
+    },
+    {
+      "clave": "atasehir",
+      "conservado": "Ataşehir",
+      "pisados": [
+        "Ataşehir"
+      ]
+    },
+    {
+      "clave": "athens",
+      "conservado": "Athens",
+      "pisados": [
+        "Athens",
+        "Athens",
+        "Athens"
+      ]
+    },
+    {
+      "clave": "athlone",
+      "conservado": "Athlone",
+      "pisados": [
+        "Athlone"
+      ]
+    },
+    {
+      "clave": "auburn",
+      "conservado": "Auburn",
+      "pisados": [
+        "Auburn",
+        "Auburn",
+        "Auburn",
+        "Auburn",
+        "Auburn"
+      ]
+    },
+    {
+      "clave": "augusta",
+      "conservado": "Augusta",
+      "pisados": [
+        "Augusta",
+        "Augusta"
+      ]
+    },
+    {
+      "clave": "aurangabad",
+      "conservado": "Aurangābād",
+      "pisados": [
+        "Aurangabad"
+      ]
+    },
+    {
+      "clave": "aurora",
+      "conservado": "Aurora",
+      "pisados": [
+        "Aurora",
+        "Aurora",
+        "Aurora",
+        "Aurora",
+        "Aurora",
+        "Aurora"
+      ]
+    },
+    {
+      "clave": "austin",
+      "conservado": "Austin",
+      "pisados": [
+        "Austin"
+      ]
+    },
+    {
+      "clave": "aveiro",
+      "conservado": "Aveiro",
+      "pisados": [
+        "Aveiro"
+      ]
+    },
+    {
+      "clave": "avellaneda",
+      "conservado": "Avellaneda",
+      "pisados": [
+        "Avellaneda"
+      ]
+    },
+    {
+      "clave": "avon",
+      "conservado": "Avon",
+      "pisados": [
+        "Avon",
+        "Avon",
+        "Avon"
+      ]
+    },
+    {
+      "clave": "avondale",
+      "conservado": "Avondale",
+      "pisados": [
+        "Avondale",
+        "Avondale"
+      ]
+    },
+    {
+      "clave": "awendo",
+      "conservado": "Awendo",
+      "pisados": [
+        "Awendo"
+      ]
+    },
+    {
+      "clave": "ayacucho",
+      "conservado": "Ayacucho",
+      "pisados": [
+        "Ayacucho"
+      ]
+    },
+    {
+      "clave": "azna",
+      "conservado": "Aznā",
+      "pisados": [
+        "Aznā"
+      ]
+    },
+    {
+      "clave": "baden",
+      "conservado": "Baden",
+      "pisados": [
+        "Baden"
+      ]
+    },
+    {
+      "clave": "badr",
+      "conservado": "Badr",
+      "pisados": [
+        "Badr"
+      ]
+    },
+    {
+      "clave": "bagaha",
+      "conservado": "Bagaha",
+      "pisados": [
+        "Bagaha"
+      ]
+    },
+    {
+      "clave": "bagh",
+      "conservado": "Bāgh",
+      "pisados": [
+        "Bagh"
+      ]
+    },
+    {
+      "clave": "bahawalnagar",
+      "conservado": "Bahawalnagar",
+      "pisados": [
+        "Bahawalnagar"
+      ]
+    },
+    {
+      "clave": "baiao",
+      "conservado": "Baião",
+      "pisados": [
+        "Baião"
+      ]
+    },
+    {
+      "clave": "baicheng",
+      "conservado": "Baicheng",
+      "pisados": [
+        "Baicheng"
+      ]
+    },
+    {
+      "clave": "baihe",
+      "conservado": "Baihe",
+      "pisados": [
+        "Baihe"
+      ]
+    },
+    {
+      "clave": "baisha",
+      "conservado": "Baisha",
+      "pisados": [
+        "Baisha"
+      ]
+    },
+    {
+      "clave": "baki",
+      "conservado": "Baki",
+      "pisados": [
+        "Baki"
+      ]
+    },
+    {
+      "clave": "baldwin",
+      "conservado": "Baldwin",
+      "pisados": [
+        "Baldwin"
+      ]
+    },
+    {
+      "clave": "bali",
+      "conservado": "Bali",
+      "pisados": [
+        "Bāli",
+        "Bāli"
+      ]
+    },
+    {
+      "clave": "bama",
+      "conservado": "Bama",
+      "pisados": [
+        "Bama"
+      ]
+    },
+    {
+      "clave": "banda",
+      "conservado": "Bānda",
+      "pisados": [
+        "Banda"
+      ]
+    },
+    {
+      "clave": "banga",
+      "conservado": "Banga",
+      "pisados": [
+        "Bañga",
+        "Banga"
+      ]
+    },
+    {
+      "clave": "bangaon",
+      "conservado": "Bangaon",
+      "pisados": [
+        "Bangaon"
+      ]
+    },
+    {
+      "clave": "bangor",
+      "conservado": "Bangor",
+      "pisados": [
+        "Bangor",
+        "Bangor"
+      ]
+    },
+    {
+      "clave": "banjar",
+      "conservado": "Banjar",
+      "pisados": [
+        "Banjar"
+      ]
+    },
+    {
+      "clave": "banqiao",
+      "conservado": "Banqiao",
+      "pisados": [
+        "Banqiao"
+      ]
+    },
+    {
+      "clave": "baoding",
+      "conservado": "Baoding",
+      "pisados": [
+        "Baoding"
+      ]
+    },
+    {
+      "clave": "baoshan",
+      "conservado": "Baoshan",
+      "pisados": [
+        "Baoshan",
+        "Baoshan"
+      ]
+    },
+    {
+      "clave": "bar",
+      "conservado": "Bar",
+      "pisados": [
+        "Bar"
+      ]
+    },
+    {
+      "clave": "barberton",
+      "conservado": "Barberton",
+      "pisados": [
+        "Barberton"
+      ]
+    },
+    {
+      "clave": "barbosa",
+      "conservado": "Barbosa",
+      "pisados": [
+        "Barbosa"
+      ]
+    },
+    {
+      "clave": "barcelona",
+      "conservado": "Barcelona",
+      "pisados": [
+        "Barcelona"
+      ]
+    },
+    {
+      "clave": "barcelos",
+      "conservado": "Barcelos",
+      "pisados": [
+        "Barcelos"
+      ]
+    },
+    {
+      "clave": "bari",
+      "conservado": "Bāri",
+      "pisados": [
+        "Bari"
+      ]
+    },
+    {
+      "clave": "barra",
+      "conservado": "Barra",
+      "pisados": [
+        "Barra"
+      ]
+    },
+    {
+      "clave": "barrancas",
+      "conservado": "Barrancas",
+      "pisados": [
+        "Barrancas",
+        "Barrancas"
+      ]
+    },
+    {
+      "clave": "bartlett",
+      "conservado": "Bartlett",
+      "pisados": [
+        "Bartlett"
+      ]
+    },
+    {
+      "clave": "barwala",
+      "conservado": "Barwāla",
+      "pisados": [
+        "Barwala"
+      ]
+    },
+    {
+      "clave": "basi",
+      "conservado": "Basi",
+      "pisados": [
+        "Basi",
+        "Basi"
+      ]
+    },
+    {
+      "clave": "batalha",
+      "conservado": "Batalha",
+      "pisados": [
+        "Batalha"
+      ]
+    },
+    {
+      "clave": "batang",
+      "conservado": "Batang",
+      "pisados": [
+        "Batang"
+      ]
+    },
+    {
+      "clave": "batavia",
+      "conservado": "Batavia",
+      "pisados": [
+        "Batavia"
+      ]
+    },
+    {
+      "clave": "bay city",
+      "conservado": "Bay City",
+      "pisados": [
+        "Bay City"
+      ]
+    },
+    {
+      "clave": "bayan",
+      "conservado": "Bayan",
+      "pisados": [
+        "Bayān"
+      ]
+    },
+    {
+      "clave": "bayeux",
+      "conservado": "Bayeux",
+      "pisados": [
+        "Bayeux"
+      ]
+    },
+    {
+      "clave": "bayonne",
+      "conservado": "Bayonne",
+      "pisados": [
+        "Bayonne"
+      ]
+    },
+    {
+      "clave": "bayside",
+      "conservado": "Bayside",
+      "pisados": [
+        "Bayside"
+      ]
+    },
+    {
+      "clave": "beaumont",
+      "conservado": "Beaumont",
+      "pisados": [
+        "Beaumont"
+      ]
+    },
+    {
+      "clave": "bedesa",
+      "conservado": "Bedēsa",
+      "pisados": [
+        "Bedēsa"
+      ]
+    },
+    {
+      "clave": "bedford",
+      "conservado": "Bedford",
+      "pisados": [
+        "Bedford",
+        "Bedford",
+        "Bedford"
+      ]
+    },
+    {
+      "clave": "beihai",
+      "conservado": "Beihai",
+      "pisados": [
+        "Beihai"
+      ]
+    },
+    {
+      "clave": "beja",
+      "conservado": "Beja",
+      "pisados": [
+        "Béja"
+      ]
+    },
+    {
+      "clave": "bela",
+      "conservado": "Bela",
+      "pisados": [
+        "Bela",
+        "Bela"
+      ]
+    },
+    {
+      "clave": "bela vista",
+      "conservado": "Bela Vista",
+      "pisados": [
+        "Bela Vista"
+      ]
+    },
+    {
+      "clave": "belem",
+      "conservado": "Belém",
+      "pisados": [
+        "Belém",
+        "Belem",
+        "Belem",
+        "Belém"
+      ]
+    },
+    {
+      "clave": "belen",
+      "conservado": "Belén",
+      "pisados": [
+        "Belen",
+        "Belen"
+      ]
+    },
+    {
+      "clave": "belfast",
+      "conservado": "Belfast",
+      "pisados": [
+        "Belfast"
+      ]
+    },
+    {
+      "clave": "bella vista",
+      "conservado": "Bella Vista",
+      "pisados": [
+        "Bella Vista",
+        "Bella Vista",
+        "Bella Vista"
+      ]
+    },
+    {
+      "clave": "belleville",
+      "conservado": "Belleville",
+      "pisados": [
+        "Belleville",
+        "Belleville",
+        "Belleville",
+        "Belleville"
+      ]
+    },
+    {
+      "clave": "bellevue",
+      "conservado": "Bellevue",
+      "pisados": [
+        "Bellevue",
+        "Bellevue"
+      ]
+    },
+    {
+      "clave": "belmont",
+      "conservado": "Belmont",
+      "pisados": [
+        "Belmont"
+      ]
+    },
+    {
+      "clave": "belton",
+      "conservado": "Belton",
+      "pisados": [
+        "Belton"
+      ]
+    },
+    {
+      "clave": "benfica",
+      "conservado": "Benfica",
+      "pisados": [
+        "Benfica"
+      ]
+    },
+    {
+      "clave": "benito juarez",
+      "conservado": "Benito Juárez",
+      "pisados": [
+        "Benito Juarez",
+        "Benito Juárez"
+      ]
+    },
+    {
+      "clave": "bergen",
+      "conservado": "Bergen",
+      "pisados": [
+        "Bergen"
+      ]
+    },
+    {
+      "clave": "bethany",
+      "conservado": "Bethany",
+      "pisados": [
+        "Bethany"
+      ]
+    },
+    {
+      "clave": "bethlehem",
+      "conservado": "Bethlehem",
+      "pisados": [
+        "Bethlehem",
+        "Bethlehem"
+      ]
+    },
+    {
+      "clave": "betong",
+      "conservado": "Betong",
+      "pisados": [
+        "Betong"
+      ]
+    },
+    {
+      "clave": "bexley",
+      "conservado": "Bexley",
+      "pisados": [
+        "Bexley"
+      ]
+    },
+    {
+      "clave": "bhadravati",
+      "conservado": "Bhadrāvati",
+      "pisados": [
+        "Bhadravati"
+      ]
+    },
+    {
+      "clave": "bharatpur",
+      "conservado": "Bharatpur",
+      "pisados": [
+        "Bharatpur"
+      ]
+    },
+    {
+      "clave": "bilaspur",
+      "conservado": "Bīlāspur",
+      "pisados": [
+        "Bilāspur"
+      ]
+    },
+    {
+      "clave": "bina",
+      "conservado": "Bīna",
+      "pisados": [
+        "Bina"
+      ]
+    },
+    {
+      "clave": "birmingham",
+      "conservado": "Birmingham",
+      "pisados": [
+        "Birmingham",
+        "Birmingham"
+      ]
+    },
+    {
+      "clave": "bishan",
+      "conservado": "Bishan",
+      "pisados": [
+        "Bishan"
+      ]
+    },
+    {
+      "clave": "bissau",
+      "conservado": "Bissau",
+      "pisados": [
+        "Bissāu"
+      ]
+    },
+    {
+      "clave": "blagoveshchensk",
+      "conservado": "Blagoveshchensk",
+      "pisados": [
+        "Blagoveshchensk"
+      ]
+    },
+    {
+      "clave": "blantyre",
+      "conservado": "Blantyre",
+      "pisados": [
+        "Blantyre"
+      ]
+    },
+    {
+      "clave": "bloomfield",
+      "conservado": "Bloomfield",
+      "pisados": [
+        "Bloomfield"
+      ]
+    },
+    {
+      "clave": "bloomingdale",
+      "conservado": "Bloomingdale",
+      "pisados": [
+        "Bloomingdale"
+      ]
+    },
+    {
+      "clave": "bloomington",
+      "conservado": "Bloomington",
+      "pisados": [
+        "Bloomington",
+        "Bloomington",
+        "Bloomington"
+      ]
+    },
+    {
+      "clave": "bo",
+      "conservado": "Bo",
+      "pisados": [
+        "Bo"
+      ]
+    },
+    {
+      "clave": "bogo",
+      "conservado": "Bogo",
+      "pisados": [
+        "Bogo"
+      ]
+    },
+    {
+      "clave": "bolton",
+      "conservado": "Bolton",
+      "pisados": [
+        "Bolton"
+      ]
+    },
+    {
+      "clave": "bom jardim",
+      "conservado": "Bom Jardim",
+      "pisados": [
+        "Bom Jardim",
+        "Bom Jardim"
+      ]
+    },
+    {
+      "clave": "bondo",
+      "conservado": "Bondo",
+      "pisados": [
+        "Bondo"
+      ]
+    },
+    {
+      "clave": "bonito",
+      "conservado": "Bonito",
+      "pisados": [
+        "Bonito",
+        "Bonito",
+        "Bonito"
+      ]
+    },
+    {
+      "clave": "bor",
+      "conservado": "Bor",
+      "pisados": [
+        "Bor",
+        "Bor",
+        "Bor"
+      ]
+    },
+    {
+      "clave": "bosconia",
+      "conservado": "Bosconia",
+      "pisados": [
+        "Bosconia"
+      ]
+    },
+    {
+      "clave": "boston",
+      "conservado": "Boston",
+      "pisados": [
+        "Boston"
+      ]
+    },
+    {
+      "clave": "bowling green",
+      "conservado": "Bowling Green",
+      "pisados": [
+        "Bowling Green"
+      ]
+    },
+    {
+      "clave": "bradford",
+      "conservado": "Bradford",
+      "pisados": [
+        "Bradford"
+      ]
+    },
+    {
+      "clave": "braganca",
+      "conservado": "Bragança",
+      "pisados": [
+        "Bragança"
+      ]
+    },
+    {
+      "clave": "braintree",
+      "conservado": "Braintree",
+      "pisados": [
+        "Braintree"
+      ]
+    },
+    {
+      "clave": "brandon",
+      "conservado": "Brandon",
+      "pisados": [
+        "Brandon",
+        "Brandon"
+      ]
+    },
+    {
+      "clave": "brent",
+      "conservado": "Brent",
+      "pisados": [
+        "Brent"
+      ]
+    },
+    {
+      "clave": "brentwood",
+      "conservado": "Brentwood",
+      "pisados": [
+        "Brentwood",
+        "Brentwood",
+        "Brentwood",
+        "Brentwood"
+      ]
+    },
+    {
+      "clave": "brest",
+      "conservado": "Brest",
+      "pisados": [
+        "Brest"
+      ]
+    },
+    {
+      "clave": "bridgeport",
+      "conservado": "Bridgeport",
+      "pisados": [
+        "Bridgeport"
+      ]
+    },
+    {
+      "clave": "brighton",
+      "conservado": "Brighton",
+      "pisados": [
+        "Brighton",
+        "Brighton",
+        "Brighton",
+        "Brighton"
+      ]
+    },
+    {
+      "clave": "bristol",
+      "conservado": "Bristol",
+      "pisados": [
+        "Bristol",
+        "Bristol",
+        "Bristol",
+        "Bristol"
+      ]
+    },
+    {
+      "clave": "brookfield",
+      "conservado": "Brookfield",
+      "pisados": [
+        "Brookfield"
+      ]
+    },
+    {
+      "clave": "brownsville",
+      "conservado": "Brownsville",
+      "pisados": [
+        "Brownsville",
+        "Brownsville"
+      ]
+    },
+    {
+      "clave": "brunswick",
+      "conservado": "Brunswick",
+      "pisados": [
+        "Brunswick",
+        "Brunswick",
+        "Brunswick"
+      ]
+    },
+    {
+      "clave": "buenaventura",
+      "conservado": "Buenaventura",
+      "pisados": [
+        "Buenaventura"
+      ]
+    },
+    {
+      "clave": "buenavista",
+      "conservado": "Buenavista",
+      "pisados": [
+        "Buenavista",
+        "Buenavista"
+      ]
+    },
+    {
+      "clave": "buffalo",
+      "conservado": "Buffalo",
+      "pisados": [
+        "Buffalo"
+      ]
+    },
+    {
+      "clave": "bugarama",
+      "conservado": "Bugarama",
+      "pisados": [
+        "Bugarama"
+      ]
+    },
+    {
+      "clave": "burbank",
+      "conservado": "Burbank",
+      "pisados": [
+        "Burbank"
+      ]
+    },
+    {
+      "clave": "burgdorf",
+      "conservado": "Burgdorf",
+      "pisados": [
+        "Burgdorf"
+      ]
+    },
+    {
+      "clave": "burgos",
+      "conservado": "Burgos",
+      "pisados": [
+        "Burgos"
+      ]
+    },
+    {
+      "clave": "buritis",
+      "conservado": "Buritis",
+      "pisados": [
+        "Buritis"
+      ]
+    },
+    {
+      "clave": "burlington",
+      "conservado": "Burlington",
+      "pisados": [
+        "Burlington",
+        "Burlington",
+        "Burlington",
+        "Burlington",
+        "Burlington"
+      ]
+    },
+    {
+      "clave": "burwood",
+      "conservado": "Burwood",
+      "pisados": [
+        "Burwood"
+      ]
+    },
+    {
+      "clave": "busia",
+      "conservado": "Busia",
+      "pisados": [
+        "Busia"
+      ]
+    },
+    {
+      "clave": "butterworth",
+      "conservado": "Butterworth",
+      "pisados": [
+        "Butterworth"
+      ]
+    },
+    {
+      "clave": "buzi",
+      "conservado": "Búzi",
+      "pisados": [
+        "Buzi"
+      ]
+    },
+    {
+      "clave": "caceres",
+      "conservado": "Cáceres",
+      "pisados": [
+        "Cáceres"
+      ]
+    },
+    {
+      "clave": "cachoeirinha",
+      "conservado": "Cachoeirinha",
+      "pisados": [
+        "Cachoeirinha",
+        "Cachoeirinha"
+      ]
+    },
+    {
+      "clave": "cadiz",
+      "conservado": "Cadiz",
+      "pisados": [
+        "Cadiz"
+      ]
+    },
+    {
+      "clave": "cafelandia",
+      "conservado": "Cafelândia",
+      "pisados": [
+        "Cafelândia"
+      ]
+    },
+    {
+      "clave": "cajueiro",
+      "conservado": "Cajueiro",
+      "pisados": [
+        "Cajueiro"
+      ]
+    },
+    {
+      "clave": "caledon",
+      "conservado": "Caledon",
+      "pisados": [
+        "Caledon"
+      ]
+    },
+    {
+      "clave": "camas",
+      "conservado": "Camas",
+      "pisados": [
+        "Camas"
+      ]
+    },
+    {
+      "clave": "cambridge",
+      "conservado": "Cambridge",
+      "pisados": [
+        "Cambridge",
+        "Cambridge",
+        "Cambridge"
+      ]
+    },
+    {
+      "clave": "cambuci",
+      "conservado": "Cambuci",
+      "pisados": [
+        "Cambuci"
+      ]
+    },
+    {
+      "clave": "cambundi",
+      "conservado": "Cambundi",
+      "pisados": [
+        "Cambundi"
+      ]
+    },
+    {
+      "clave": "campanha",
+      "conservado": "Campanha",
+      "pisados": [
+        "Campanhã"
+      ]
+    },
+    {
+      "clave": "campina",
+      "conservado": "Campiña",
+      "pisados": [
+        "Câmpina"
+      ]
+    },
+    {
+      "clave": "campinas",
+      "conservado": "Campinas",
+      "pisados": [
+        "Campinas"
+      ]
+    },
+    {
+      "clave": "campo belo",
+      "conservado": "Campo Belo",
+      "pisados": [
+        "Campo Belo"
+      ]
+    },
+    {
+      "clave": "campo grande",
+      "conservado": "Campo Grande",
+      "pisados": [
+        "Campo Grande",
+        "Campo Grande"
+      ]
+    },
+    {
+      "clave": "campo verde",
+      "conservado": "Campo Verde",
+      "pisados": [
+        "Campo Verde"
+      ]
+    },
+    {
+      "clave": "canarana",
+      "conservado": "Canarana",
+      "pisados": [
+        "Canarana"
+      ]
+    },
+    {
+      "clave": "candelaria",
+      "conservado": "Candelária",
+      "pisados": [
+        "Candelaria",
+        "Candelaria",
+        "Candelaria",
+        "Candelaria",
+        "Candelaria"
+      ]
+    },
+    {
+      "clave": "canete",
+      "conservado": "Cañete",
+      "pisados": [
+        "Cañete"
+      ]
+    },
+    {
+      "clave": "canton",
+      "conservado": "Canton",
+      "pisados": [
+        "Canton",
+        "Canton",
+        "Canton"
+      ]
+    },
+    {
+      "clave": "capanema",
+      "conservado": "Capanema",
+      "pisados": [
+        "Capanema"
+      ]
+    },
+    {
+      "clave": "capela",
+      "conservado": "Capela",
+      "pisados": [
+        "Capela"
+      ]
+    },
+    {
+      "clave": "cardenas",
+      "conservado": "Cárdenas",
+      "pisados": [
+        "Cárdenas",
+        "Cárdenas"
+      ]
+    },
+    {
+      "clave": "carlisle",
+      "conservado": "Carlisle",
+      "pisados": [
+        "Carlisle"
+      ]
+    },
+    {
+      "clave": "carlsbad",
+      "conservado": "Carlsbad",
+      "pisados": [
+        "Carlsbad"
+      ]
+    },
+    {
+      "clave": "carmona",
+      "conservado": "Carmona",
+      "pisados": [
+        "Carmona"
+      ]
+    },
+    {
+      "clave": "carolina",
+      "conservado": "Carolina",
+      "pisados": [
+        "Carolina",
+        "Carolina"
+      ]
+    },
+    {
+      "clave": "carrizal",
+      "conservado": "Carrizal",
+      "pisados": [
+        "Carrizal"
+      ]
+    },
+    {
+      "clave": "carrollton",
+      "conservado": "Carrollton",
+      "pisados": [
+        "Carrollton"
+      ]
+    },
+    {
+      "clave": "cartagena",
+      "conservado": "Cartagena",
+      "pisados": [
+        "Cartagena",
+        "Cartagena"
+      ]
+    },
+    {
+      "clave": "cartago",
+      "conservado": "Cartago",
+      "pisados": [
+        "Cartago"
+      ]
+    },
+    {
+      "clave": "cary",
+      "conservado": "Cary",
+      "pisados": [
+        "Cary"
+      ]
+    },
+    {
+      "clave": "casablanca",
+      "conservado": "Casablanca",
+      "pisados": [
+        "Casablanca"
+      ]
+    },
+    {
+      "clave": "cascavel",
+      "conservado": "Cascavel",
+      "pisados": [
+        "Cascavel"
+      ]
+    },
+    {
+      "clave": "castillejos",
+      "conservado": "Castillejos",
+      "pisados": [
+        "Castillejos"
+      ]
+    },
+    {
+      "clave": "castro",
+      "conservado": "Castro",
+      "pisados": [
+        "Castro"
+      ]
+    },
+    {
+      "clave": "cazombo",
+      "conservado": "Cazombo",
+      "pisados": [
+        "Cazombo"
+      ]
+    },
+    {
+      "clave": "centenario",
+      "conservado": "Centenario",
+      "pisados": [
+        "Centenario"
+      ]
+    },
+    {
+      "clave": "centerville",
+      "conservado": "Centerville",
+      "pisados": [
+        "Centerville"
+      ]
+    },
+    {
+      "clave": "central",
+      "conservado": "Central",
+      "pisados": [
+        "Central"
+      ]
+    },
+    {
+      "clave": "centro",
+      "conservado": "Centro",
+      "pisados": [
+        "Centro"
+      ]
+    },
+    {
+      "clave": "ceres",
+      "conservado": "Ceres",
+      "pisados": [
+        "Ceres",
+        "Ceres"
+      ]
+    },
+    {
+      "clave": "cerro azul",
+      "conservado": "Cerro Azul",
+      "pisados": [
+        "Cerro Azul"
+      ]
+    },
+    {
+      "clave": "cham",
+      "conservado": "Cham",
+      "pisados": [
+        "Cham"
+      ]
+    },
+    {
+      "clave": "chandpur",
+      "conservado": "Chāndpur",
+      "pisados": [
+        "Chāndpur"
+      ]
+    },
+    {
+      "clave": "chandur",
+      "conservado": "Chāndūr",
+      "pisados": [
+        "Chāndur"
+      ]
+    },
+    {
+      "clave": "changle",
+      "conservado": "Changle",
+      "pisados": [
+        "Changle"
+      ]
+    },
+    {
+      "clave": "changling",
+      "conservado": "Changling",
+      "pisados": [
+        "Changling"
+      ]
+    },
+    {
+      "clave": "changning",
+      "conservado": "Changning",
+      "pisados": [
+        "Changning"
+      ]
+    },
+    {
+      "clave": "changsha",
+      "conservado": "Changsha",
+      "pisados": [
+        "Changsha",
+        "Changsha"
+      ]
+    },
+    {
+      "clave": "changzhi",
+      "conservado": "Changzhi",
+      "pisados": [
+        "Changzhi"
+      ]
+    },
+    {
+      "clave": "chaoyang",
+      "conservado": "Chaoyang",
+      "pisados": [
+        "Chaoyang"
+      ]
+    },
+    {
+      "clave": "chaozhou",
+      "conservado": "Chaozhou",
+      "pisados": [
+        "Chaozhou"
+      ]
+    },
+    {
+      "clave": "charleston",
+      "conservado": "Charleston",
+      "pisados": [
+        "Charleston",
+        "Charleston"
+      ]
+    },
+    {
+      "clave": "chatham",
+      "conservado": "Chatham",
+      "pisados": [
+        "Chatham",
+        "Chatham"
+      ]
+    },
+    {
+      "clave": "chaves",
+      "conservado": "Chaves",
+      "pisados": [
+        "Chaves"
+      ]
+    },
+    {
+      "clave": "chelmsford",
+      "conservado": "Chelmsford",
+      "pisados": [
+        "Chelmsford"
+      ]
+    },
+    {
+      "clave": "chelsea",
+      "conservado": "Chelsea",
+      "pisados": [
+        "Chelsea"
+      ]
+    },
+    {
+      "clave": "cheltenham",
+      "conservado": "Cheltenham",
+      "pisados": [
+        "Cheltenham"
+      ]
+    },
+    {
+      "clave": "chem",
+      "conservado": "Chełm",
+      "pisados": [
+        "Chełm"
+      ]
+    },
+    {
+      "clave": "cherry hill",
+      "conservado": "Cherry Hill",
+      "pisados": [
+        "Cherry Hill"
+      ]
+    },
+    {
+      "clave": "chester",
+      "conservado": "Chester",
+      "pisados": [
+        "Chester",
+        "Chester"
+      ]
+    },
+    {
+      "clave": "chesterfield",
+      "conservado": "Chesterfield",
+      "pisados": [
+        "Chesterfield"
+      ]
+    },
+    {
+      "clave": "chetput",
+      "conservado": "Chetput",
+      "pisados": [
+        "Chetput"
+      ]
+    },
+    {
+      "clave": "chettipalaiyam",
+      "conservado": "Chettipālaiyam",
+      "pisados": [
+        "Chettipālaiyam"
+      ]
+    },
+    {
+      "clave": "chhatarpur",
+      "conservado": "Chhatarpur",
+      "pisados": [
+        "Chhatarpur"
+      ]
+    },
+    {
+      "clave": "chicholi",
+      "conservado": "Chicholi",
+      "pisados": [
+        "Chicholi"
+      ]
+    },
+    {
+      "clave": "chinatown",
+      "conservado": "Chinatown",
+      "pisados": [
+        "Chinatown",
+        "Chinatown",
+        "Chinatown"
+      ]
+    },
+    {
+      "clave": "chino",
+      "conservado": "Chino",
+      "pisados": [
+        "Chino"
+      ]
+    },
+    {
+      "clave": "chiquinquira",
+      "conservado": "Chiquinquirá",
+      "pisados": [
+        "Chiquinquirá"
+      ]
+    },
+    {
+      "clave": "chita",
+      "conservado": "Chita",
+      "pisados": [
+        "Chita"
+      ]
+    },
+    {
+      "clave": "christchurch",
+      "conservado": "Christchurch",
+      "pisados": [
+        "Christchurch"
+      ]
+    },
+    {
+      "clave": "chuo",
+      "conservado": "Chūō",
+      "pisados": [
+        "Chūō"
+      ]
+    },
+    {
+      "clave": "cicero",
+      "conservado": "Cicero",
+      "pisados": [
+        "Cicero"
+      ]
+    },
+    {
+      "clave": "ciudad bolivar",
+      "conservado": "Ciudad Bolívar",
+      "pisados": [
+        "Ciudad Bolívar"
+      ]
+    },
+    {
+      "clave": "clarksville",
+      "conservado": "Clarksville",
+      "pisados": [
+        "Clarksville"
+      ]
+    },
+    {
+      "clave": "clayton",
+      "conservado": "Clayton",
+      "pisados": [
+        "Clayton",
+        "Clayton"
+      ]
+    },
+    {
+      "clave": "cleveland",
+      "conservado": "Cleveland",
+      "pisados": [
+        "Cleveland"
+      ]
+    },
+    {
+      "clave": "clifton",
+      "conservado": "Clifton",
+      "pisados": [
+        "Clifton"
+      ]
+    },
+    {
+      "clave": "clinton",
+      "conservado": "Clinton",
+      "pisados": [
+        "Clinton",
+        "Clinton",
+        "Clinton"
+      ]
+    },
+    {
+      "clave": "clovis",
+      "conservado": "Clovis",
+      "pisados": [
+        "Clovis"
+      ]
+    },
+    {
+      "clave": "co o",
+      "conservado": "Cờ Đỏ",
+      "pisados": [
+        "Cổ Đô"
+      ]
+    },
+    {
+      "clave": "coburg",
+      "conservado": "Coburg",
+      "pisados": [
+        "Coburg"
+      ]
+    },
+    {
+      "clave": "colchester",
+      "conservado": "Colchester",
+      "pisados": [
+        "Colchester"
+      ]
+    },
+    {
+      "clave": "colima",
+      "conservado": "Colima",
+      "pisados": [
+        "Colima"
+      ]
+    },
+    {
+      "clave": "colina",
+      "conservado": "Colina",
+      "pisados": [
+        "Colina"
+      ]
+    },
+    {
+      "clave": "colombo",
+      "conservado": "Colombo",
+      "pisados": [
+        "Colombo"
+      ]
+    },
+    {
+      "clave": "colon",
+      "conservado": "Colón",
+      "pisados": [
+        "Colón",
+        "Colón",
+        "Colón",
+        "Colón"
+      ]
+    },
+    {
+      "clave": "columbia",
+      "conservado": "Columbia",
+      "pisados": [
+        "Columbia",
+        "Columbia",
+        "Columbia"
+      ]
+    },
+    {
+      "clave": "columbia heights",
+      "conservado": "Columbia Heights",
+      "pisados": [
+        "Columbia Heights"
+      ]
+    },
+    {
+      "clave": "columbus",
+      "conservado": "Columbus",
+      "pisados": [
+        "Columbus",
+        "Columbus",
+        "Columbus",
+        "Columbus"
+      ]
+    },
+    {
+      "clave": "compostela",
+      "conservado": "Compostela",
+      "pisados": [
+        "Compostela",
+        "Compostela"
+      ]
+    },
+    {
+      "clave": "concepcion",
+      "conservado": "Concepción",
+      "pisados": [
+        "Concepción",
+        "Concepcion",
+        "Concepción",
+        "Concepción"
+      ]
+    },
+    {
+      "clave": "concord",
+      "conservado": "Concord",
+      "pisados": [
+        "Concord",
+        "Concord",
+        "Concord",
+        "Concord"
+      ]
+    },
+    {
+      "clave": "concordia",
+      "conservado": "Concordia",
+      "pisados": [
+        "Concórdia",
+        "Concordia"
+      ]
+    },
+    {
+      "clave": "conda",
+      "conservado": "Conda",
+      "pisados": [
+        "Conda"
+      ]
+    },
+    {
+      "clave": "condado",
+      "conservado": "Condado",
+      "pisados": [
+        "Condado"
+      ]
+    },
+    {
+      "clave": "conde",
+      "conservado": "Conde",
+      "pisados": [
+        "Conde"
+      ]
+    },
+    {
+      "clave": "conway",
+      "conservado": "Conway",
+      "pisados": [
+        "Conway"
+      ]
+    },
+    {
+      "clave": "copacabana",
+      "conservado": "Copacabana",
+      "pisados": [
+        "Copacabana"
+      ]
+    },
+    {
+      "clave": "cordoba",
+      "conservado": "Córdoba",
+      "pisados": [
+        "Córdoba",
+        "Córdoba"
+      ]
+    },
+    {
+      "clave": "cordova",
+      "conservado": "Cordova",
+      "pisados": [
+        "Cordova"
+      ]
+    },
+    {
+      "clave": "corinto",
+      "conservado": "Corinto",
+      "pisados": [
+        "Corinto",
+        "Corinto"
+      ]
+    },
+    {
+      "clave": "corona",
+      "conservado": "Corona",
+      "pisados": [
+        "Corona"
+      ]
+    },
+    {
+      "clave": "costa rica",
+      "conservado": "Costa Rica",
+      "pisados": [
+        "Costa Rica"
+      ]
+    },
+    {
+      "clave": "coventry",
+      "conservado": "Coventry",
+      "pisados": [
+        "Coventry"
+      ]
+    },
+    {
+      "clave": "covington",
+      "conservado": "Covington",
+      "pisados": [
+        "Covington"
+      ]
+    },
+    {
+      "clave": "cranston",
+      "conservado": "Cranston",
+      "pisados": [
+        "Cranston"
+      ]
+    },
+    {
+      "clave": "croydon",
+      "conservado": "Croydon",
+      "pisados": [
+        "Croydon"
+      ]
+    },
+    {
+      "clave": "cruzeiro",
+      "conservado": "Cruzeiro",
+      "pisados": [
+        "Cruzeiro"
+      ]
+    },
+    {
+      "clave": "cuauhtemoc",
+      "conservado": "Cuauhtémoc",
+      "pisados": [
+        "Cuauhtémoc"
+      ]
+    },
+    {
+      "clave": "cudahy",
+      "conservado": "Cudahy",
+      "pisados": [
+        "Cudahy"
+      ]
+    },
+    {
+      "clave": "cuenca",
+      "conservado": "Cuenca",
+      "pisados": [
+        "Cuenca",
+        "Cuenca"
+      ]
+    },
+    {
+      "clave": "cumberland",
+      "conservado": "Cumberland",
+      "pisados": [
+        "Cumberland"
+      ]
+    },
+    {
+      "clave": "cumbum",
+      "conservado": "Cumbum",
+      "pisados": [
+        "Cumbum"
+      ]
+    },
+    {
+      "clave": "cypress",
+      "conservado": "Cypress",
+      "pisados": [
+        "Cypress"
+      ]
+    },
+    {
+      "clave": "dachang",
+      "conservado": "Dachang",
+      "pisados": [
+        "Dachang"
+      ]
+    },
+    {
+      "clave": "dakhla",
+      "conservado": "Dakhla",
+      "pisados": [
+        "Dakhla"
+      ]
+    },
+    {
+      "clave": "dallas",
+      "conservado": "Dallas",
+      "pisados": [
+        "Dallas"
+      ]
+    },
+    {
+      "clave": "damascus",
+      "conservado": "Damascus",
+      "pisados": [
+        "Damascus"
+      ]
+    },
+    {
+      "clave": "damiao",
+      "conservado": "Damiao",
+      "pisados": [
+        "Damiao"
+      ]
+    },
+    {
+      "clave": "danao",
+      "conservado": "Danao",
+      "pisados": [
+        "Danao"
+      ]
+    },
+    {
+      "clave": "danshui",
+      "conservado": "Danshui",
+      "pisados": [
+        "Danshui"
+      ]
+    },
+    {
+      "clave": "danville",
+      "conservado": "Danville",
+      "pisados": [
+        "Danville",
+        "Danville",
+        "Danville"
+      ]
+    },
+    {
+      "clave": "dara",
+      "conservado": "Dara",
+      "pisados": [
+        "Dar‘ā"
+      ]
+    },
+    {
+      "clave": "darien",
+      "conservado": "Darien",
+      "pisados": [
+        "Darien",
+        "Darien"
+      ]
+    },
+    {
+      "clave": "dasheng",
+      "conservado": "Dasheng",
+      "pisados": [
+        "Dasheng"
+      ]
+    },
+    {
+      "clave": "dashi",
+      "conservado": "Dashi",
+      "pisados": [
+        "Dashi"
+      ]
+    },
+    {
+      "clave": "date",
+      "conservado": "Date",
+      "pisados": [
+        "Date"
+      ]
+    },
+    {
+      "clave": "datong",
+      "conservado": "Datong",
+      "pisados": [
+        "Datong",
+        "Datong"
+      ]
+    },
+    {
+      "clave": "daura",
+      "conservado": "Daura",
+      "pisados": [
+        "Daura"
+      ]
+    },
+    {
+      "clave": "daxing",
+      "conservado": "Daxing",
+      "pisados": [
+        "Daxing",
+        "Daxing"
+      ]
+    },
+    {
+      "clave": "daye",
+      "conservado": "Daye",
+      "pisados": [
+        "Dayē"
+      ]
+    },
+    {
+      "clave": "decatur",
+      "conservado": "Decatur",
+      "pisados": [
+        "Decatur",
+        "Decatur"
+      ]
+    },
+    {
+      "clave": "deer park",
+      "conservado": "Deer Park",
+      "pisados": [
+        "Deer Park",
+        "Deer Park"
+      ]
+    },
+    {
+      "clave": "delicias",
+      "conservado": "Delicias",
+      "pisados": [
+        "Delicias"
+      ]
+    },
+    {
+      "clave": "delmas",
+      "conservado": "Delmas",
+      "pisados": [
+        "Delmas"
+      ]
+    },
+    {
+      "clave": "dengzhou",
+      "conservado": "Dengzhou",
+      "pisados": [
+        "Dengzhou"
+      ]
+    },
+    {
+      "clave": "denton",
+      "conservado": "Denton",
+      "pisados": [
+        "Denton"
+      ]
+    },
+    {
+      "clave": "deolali",
+      "conservado": "Deolāli",
+      "pisados": [
+        "Deolali"
+      ]
+    },
+    {
+      "clave": "deoli",
+      "conservado": "Deoli",
+      "pisados": [
+        "Deoli",
+        "Deoli"
+      ]
+    },
+    {
+      "clave": "depok",
+      "conservado": "Depok",
+      "pisados": [
+        "Depok"
+      ]
+    },
+    {
+      "clave": "derby",
+      "conservado": "Derby",
+      "pisados": [
+        "Derby"
+      ]
+    },
+    {
+      "clave": "derry",
+      "conservado": "Derry",
+      "pisados": [
+        "Derry"
+      ]
+    },
+    {
+      "clave": "des moines",
+      "conservado": "Des Moines",
+      "pisados": [
+        "Des Moines"
+      ]
+    },
+    {
+      "clave": "dhaka",
+      "conservado": "Dhaka",
+      "pisados": [
+        "Dhāka"
+      ]
+    },
+    {
+      "clave": "dickinson",
+      "conservado": "Dickinson",
+      "pisados": [
+        "Dickinson"
+      ]
+    },
+    {
+      "clave": "dieppe",
+      "conservado": "Dieppe",
+      "pisados": [
+        "Dieppe"
+      ]
+    },
+    {
+      "clave": "dimitrovgrad",
+      "conservado": "Dimitrovgrad",
+      "pisados": [
+        "Dimitrovgrad"
+      ]
+    },
+    {
+      "clave": "dixon",
+      "conservado": "Dixon",
+      "pisados": [
+        "Dixon"
+      ]
+    },
+    {
+      "clave": "dolores",
+      "conservado": "Dolores",
+      "pisados": [
+        "Dolores"
+      ]
+    },
+    {
+      "clave": "doncaster",
+      "conservado": "Doncaster",
+      "pisados": [
+        "Doncaster"
+      ]
+    },
+    {
+      "clave": "dondo",
+      "conservado": "Dondo",
+      "pisados": [
+        "Dondo",
+        "Dondo"
+      ]
+    },
+    {
+      "clave": "donetsk",
+      "conservado": "Donetsk",
+      "pisados": [
+        "Donetsk"
+      ]
+    },
+    {
+      "clave": "donghe",
+      "conservado": "Donghe",
+      "pisados": [
+        "Donghe"
+      ]
+    },
+    {
+      "clave": "dongyang",
+      "conservado": "Dongyang",
+      "pisados": [
+        "Dongyang"
+      ]
+    },
+    {
+      "clave": "dorchester",
+      "conservado": "Dorchester",
+      "pisados": [
+        "Dorchester"
+      ]
+    },
+    {
+      "clave": "douglas",
+      "conservado": "Douglas",
+      "pisados": [
+        "Douglas",
+        "Douglas",
+        "Douglas"
+      ]
+    },
+    {
+      "clave": "dover",
+      "conservado": "Dover",
+      "pisados": [
+        "Dover",
+        "Dover",
+        "Dover"
+      ]
+    },
+    {
+      "clave": "dublin",
+      "conservado": "Dublin",
+      "pisados": [
+        "Dublin",
+        "Dublin",
+        "Dublin"
+      ]
+    },
+    {
+      "clave": "duluth",
+      "conservado": "Duluth",
+      "pisados": [
+        "Duluth"
+      ]
+    },
+    {
+      "clave": "duncan",
+      "conservado": "Duncan",
+      "pisados": [
+        "Duncan"
+      ]
+    },
+    {
+      "clave": "dundalk",
+      "conservado": "Dundalk",
+      "pisados": [
+        "Dundalk"
+      ]
+    },
+    {
+      "clave": "dundee",
+      "conservado": "Dundee",
+      "pisados": [
+        "Dundee"
+      ]
+    },
+    {
+      "clave": "dunedin",
+      "conservado": "Dunedin",
+      "pisados": [
+        "Dunedin"
+      ]
+    },
+    {
+      "clave": "durango",
+      "conservado": "Durango",
+      "pisados": [
+        "Durango"
+      ]
+    },
+    {
+      "clave": "durgapur",
+      "conservado": "Durgapur",
+      "pisados": [
+        "Durgāpur"
+      ]
+    },
+    {
+      "clave": "durham",
+      "conservado": "Durham",
+      "pisados": [
+        "Durham"
+      ]
+    },
+    {
+      "clave": "easton",
+      "conservado": "Easton",
+      "pisados": [
+        "Easton",
+        "Easton"
+      ]
+    },
+    {
+      "clave": "eastwood",
+      "conservado": "Eastwood",
+      "pisados": [
+        "Eastwood"
+      ]
+    },
+    {
+      "clave": "ede",
+      "conservado": "Ede",
+      "pisados": [
+        "Ede"
+      ]
+    },
+    {
+      "clave": "edgewater",
+      "conservado": "Edgewater",
+      "pisados": [
+        "Edgewater"
+      ]
+    },
+    {
+      "clave": "edmonds",
+      "conservado": "Edmonds",
+      "pisados": [
+        "Edmonds"
+      ]
+    },
+    {
+      "clave": "edmonton",
+      "conservado": "Edmonton",
+      "pisados": [
+        "Edmonton"
+      ]
+    },
+    {
+      "clave": "el cerrito",
+      "conservado": "El Cerrito",
+      "pisados": [
+        "El Cerrito"
+      ]
+    },
+    {
+      "clave": "el dorado",
+      "conservado": "El Dorado",
+      "pisados": [
+        "El Dorado"
+      ]
+    },
+    {
+      "clave": "el monte",
+      "conservado": "El Monte",
+      "pisados": [
+        "El Monte"
+      ]
+    },
+    {
+      "clave": "el palmar",
+      "conservado": "El Palmar",
+      "pisados": [
+        "El Palmar"
+      ]
+    },
+    {
+      "clave": "el rosario",
+      "conservado": "El Rosario",
+      "pisados": [
+        "El Rosario"
+      ]
+    },
+    {
+      "clave": "el salto",
+      "conservado": "El Salto",
+      "pisados": [
+        "El Salto",
+        "El Salto"
+      ]
+    },
+    {
+      "clave": "elgin",
+      "conservado": "Elgin",
+      "pisados": [
+        "Elgin"
+      ]
+    },
+    {
+      "clave": "elmhurst",
+      "conservado": "Elmhurst",
+      "pisados": [
+        "Elmhurst"
+      ]
+    },
+    {
+      "clave": "elmina",
+      "conservado": "Elmina",
+      "pisados": [
+        "Elmina"
+      ]
+    },
+    {
+      "clave": "elmwood park",
+      "conservado": "Elmwood Park",
+      "pisados": [
+        "Elmwood Park"
+      ]
+    },
+    {
+      "clave": "eltham",
+      "conservado": "Eltham",
+      "pisados": [
+        "Eltham"
+      ]
+    },
+    {
+      "clave": "emiliano zapata",
+      "conservado": "Emiliano Zapata",
+      "pisados": [
+        "Emiliano Zapata",
+        "Emiliano Zapata"
+      ]
+    },
+    {
+      "clave": "emmen",
+      "conservado": "Emmen",
+      "pisados": [
+        "Emmen"
+      ]
+    },
+    {
+      "clave": "englewood",
+      "conservado": "Englewood",
+      "pisados": [
+        "Englewood",
+        "Englewood"
+      ]
+    },
+    {
+      "clave": "ennis",
+      "conservado": "Ennis",
+      "pisados": [
+        "Ennis"
+      ]
+    },
+    {
+      "clave": "ensenada",
+      "conservado": "Ensenada",
+      "pisados": [
+        "Ensenada"
+      ]
+    },
+    {
+      "clave": "enterprise",
+      "conservado": "Enterprise",
+      "pisados": [
+        "Enterprise"
+      ]
+    },
+    {
+      "clave": "epe",
+      "conservado": "Epe",
+      "pisados": [
+        "Epe"
+      ]
+    },
+    {
+      "clave": "epping",
+      "conservado": "Epping",
+      "pisados": [
+        "Epping"
+      ]
+    },
+    {
+      "clave": "epsom",
+      "conservado": "Epsom",
+      "pisados": [
+        "Epsom"
+      ]
+    },
+    {
+      "clave": "eqbaliyeh",
+      "conservado": "Eqbālīyeh",
+      "pisados": [
+        "Eqbālīyeh"
+      ]
+    },
+    {
+      "clave": "eregli",
+      "conservado": "Ereğli",
+      "pisados": [
+        "Ereğli"
+      ]
+    },
+    {
+      "clave": "erie",
+      "conservado": "Erie",
+      "pisados": [
+        "Erie"
+      ]
+    },
+    {
+      "clave": "esmeraldas",
+      "conservado": "Esmeraldas",
+      "pisados": [
+        "Esmeraldas"
+      ]
+    },
+    {
+      "clave": "esperanza",
+      "conservado": "Esperanza",
+      "pisados": [
+        "Esperanza",
+        "Esperanza",
+        "Esperanza"
+      ]
+    },
+    {
+      "clave": "estancia",
+      "conservado": "Estância",
+      "pisados": [
+        "Estancia"
+      ]
+    },
+    {
+      "clave": "estreito",
+      "conservado": "Estreito",
+      "pisados": [
+        "Estreito"
+      ]
+    },
+    {
+      "clave": "estrela",
+      "conservado": "Estrela",
+      "pisados": [
+        "Estrela"
+      ]
+    },
+    {
+      "clave": "evans",
+      "conservado": "Evans",
+      "pisados": [
+        "Evans"
+      ]
+    },
+    {
+      "clave": "evanston",
+      "conservado": "Evanston",
+      "pisados": [
+        "Evanston"
+      ]
+    },
+    {
+      "clave": "everett",
+      "conservado": "Everett",
+      "pisados": [
+        "Everett"
+      ]
+    },
+    {
+      "clave": "ezhou",
+      "conservado": "Ezhou",
+      "pisados": [
+        "E’zhou"
+      ]
+    },
+    {
+      "clave": "fairfield",
+      "conservado": "Fairfield",
+      "pisados": [
+        "Fairfield",
+        "Fairfield",
+        "Fairfield"
+      ]
+    },
+    {
+      "clave": "fairview park",
+      "conservado": "Fairview Park",
+      "pisados": [
+        "Fairview Park"
+      ]
+    },
+    {
+      "clave": "faridpur",
+      "conservado": "Farīdpur",
+      "pisados": [
+        "Farīdpur"
+      ]
+    },
+    {
+      "clave": "farmington",
+      "conservado": "Farmington",
+      "pisados": [
+        "Farmington",
+        "Farmington",
+        "Farmington",
+        "Farmington"
+      ]
+    },
+    {
+      "clave": "fatehabad",
+      "conservado": "Fatehābād",
+      "pisados": [
+        "Fatehābād"
+      ]
+    },
+    {
+      "clave": "fatehpur",
+      "conservado": "Fatehpur",
+      "pisados": [
+        "Fatehpur",
+        "Fatehpur",
+        "Fatehpur"
+      ]
+    },
+    {
+      "clave": "fayetteville",
+      "conservado": "Fayetteville",
+      "pisados": [
+        "Fayetteville",
+        "Fayetteville"
+      ]
+    },
+    {
+      "clave": "feicheng",
+      "conservado": "Feicheng",
+      "pisados": [
+        "Feicheng"
+      ]
+    },
+    {
+      "clave": "fengcheng",
+      "conservado": "Fengcheng",
+      "pisados": [
+        "Fengcheng",
+        "Fengcheng"
+      ]
+    },
+    {
+      "clave": "fengping",
+      "conservado": "Fengping",
+      "pisados": [
+        "Fengping"
+      ]
+    },
+    {
+      "clave": "ferndale",
+      "conservado": "Ferndale",
+      "pisados": [
+        "Ferndale"
+      ]
+    },
+    {
+      "clave": "filadelfia",
+      "conservado": "Filadélfia",
+      "pisados": [
+        "Filadelfia",
+        "Filadelfia"
+      ]
+    },
+    {
+      "clave": "fitchburg",
+      "conservado": "Fitchburg",
+      "pisados": [
+        "Fitchburg"
+      ]
+    },
+    {
+      "clave": "fleetwood",
+      "conservado": "Fleetwood",
+      "pisados": [
+        "Fleetwood"
+      ]
+    },
+    {
+      "clave": "flint",
+      "conservado": "Flint",
+      "pisados": [
+        "Flint"
+      ]
+    },
+    {
+      "clave": "florence",
+      "conservado": "Florence",
+      "pisados": [
+        "Florence",
+        "Florence",
+        "Florence",
+        "Florence"
+      ]
+    },
+    {
+      "clave": "florencia",
+      "conservado": "Florencia",
+      "pisados": [
+        "Florencia"
+      ]
+    },
+    {
+      "clave": "flores",
+      "conservado": "Flores",
+      "pisados": [
+        "Flores"
+      ]
+    },
+    {
+      "clave": "florida",
+      "conservado": "Florida",
+      "pisados": [
+        "Florida",
+        "Florida"
+      ]
+    },
+    {
+      "clave": "fontana",
+      "conservado": "Fontana",
+      "pisados": [
+        "Fontana"
+      ]
+    },
+    {
+      "clave": "forest hills",
+      "conservado": "Forest Hills",
+      "pisados": [
+        "Forest Hills"
+      ]
+    },
+    {
+      "clave": "forest lake",
+      "conservado": "Forest Lake",
+      "pisados": [
+        "Forest Lake"
+      ]
+    },
+    {
+      "clave": "forest park",
+      "conservado": "Forest Park",
+      "pisados": [
+        "Forest Park"
+      ]
+    },
+    {
+      "clave": "formosa",
+      "conservado": "Formosa",
+      "pisados": [
+        "Formosa"
+      ]
+    },
+    {
+      "clave": "four corners",
+      "conservado": "Four Corners",
+      "pisados": [
+        "Four Corners"
+      ]
+    },
+    {
+      "clave": "frankford",
+      "conservado": "Frankford",
+      "pisados": [
+        "Frankford"
+      ]
+    },
+    {
+      "clave": "frankfort",
+      "conservado": "Frankfort",
+      "pisados": [
+        "Frankfort",
+        "Frankfort",
+        "Frankfort"
+      ]
+    },
+    {
+      "clave": "franklin",
+      "conservado": "Franklin",
+      "pisados": [
+        "Franklin",
+        "Franklin",
+        "Franklin"
+      ]
+    },
+    {
+      "clave": "freeport",
+      "conservado": "Freeport",
+      "pisados": [
+        "Freeport",
+        "Freeport"
+      ]
+    },
+    {
+      "clave": "fremont",
+      "conservado": "Fremont",
+      "pisados": [
+        "Fremont",
+        "Fremont"
+      ]
+    },
+    {
+      "clave": "fresno",
+      "conservado": "Fresno",
+      "pisados": [
+        "Fresno",
+        "Fresno"
+      ]
+    },
+    {
+      "clave": "friedberg",
+      "conservado": "Friedberg",
+      "pisados": [
+        "Friedberg"
+      ]
+    },
+    {
+      "clave": "frontera",
+      "conservado": "Frontera",
+      "pisados": [
+        "Frontera"
+      ]
+    },
+    {
+      "clave": "fuchu",
+      "conservado": "Fuchū",
+      "pisados": [
+        "Fuchū"
+      ]
+    },
+    {
+      "clave": "fuji",
+      "conservado": "Fuji",
+      "pisados": [
+        "Fuji"
+      ]
+    },
+    {
+      "clave": "fujioka",
+      "conservado": "Fujioka",
+      "pisados": [
+        "Fujioka"
+      ]
+    },
+    {
+      "clave": "furukawa",
+      "conservado": "Furukawa",
+      "pisados": [
+        "Furukawa"
+      ]
+    },
+    {
+      "clave": "fuyang",
+      "conservado": "Fuyang",
+      "pisados": [
+        "Fuyang"
+      ]
+    },
+    {
+      "clave": "fuyu",
+      "conservado": "Fuyu",
+      "pisados": [
+        "Fuyu"
+      ]
+    },
+    {
+      "clave": "fuzhou",
+      "conservado": "Fuzhou",
+      "pisados": [
+        "Fuzhou"
+      ]
+    },
+    {
+      "clave": "gagny",
+      "conservado": "Gagny",
+      "pisados": [
+        "Gagny"
+      ]
+    },
+    {
+      "clave": "gainesville",
+      "conservado": "Gainesville",
+      "pisados": [
+        "Gainesville",
+        "Gainesville"
+      ]
+    },
+    {
+      "clave": "gama",
+      "conservado": "Gama",
+      "pisados": [
+        "Gama"
+      ]
+    },
+    {
+      "clave": "gangapur",
+      "conservado": "Gangāpur",
+      "pisados": [
+        "Gangāpur",
+        "Gangāpur"
+      ]
+    },
+    {
+      "clave": "gantang",
+      "conservado": "Gantang",
+      "pisados": [
+        "Gantang"
+      ]
+    },
+    {
+      "clave": "gao",
+      "conservado": "Gao",
+      "pisados": [
+        "Gao"
+      ]
+    },
+    {
+      "clave": "gaofeng",
+      "conservado": "Gaofeng",
+      "pisados": [
+        "Gaofeng"
+      ]
+    },
+    {
+      "clave": "gaoliu",
+      "conservado": "Gaoliu",
+      "pisados": [
+        "Gaoliu"
+      ]
+    },
+    {
+      "clave": "garden city",
+      "conservado": "Garden City",
+      "pisados": [
+        "Garden City",
+        "Garden City"
+      ]
+    },
+    {
+      "clave": "gardner",
+      "conservado": "Gardner",
+      "pisados": [
+        "Gardner"
+      ]
+    },
+    {
+      "clave": "gaya",
+      "conservado": "Gaya",
+      "pisados": [
+        "Gaya",
+        "Gaya"
+      ]
+    },
+    {
+      "clave": "geneva",
+      "conservado": "Geneva",
+      "pisados": [
+        "Geneva"
+      ]
+    },
+    {
+      "clave": "george town",
+      "conservado": "George Town",
+      "pisados": [
+        "George Town"
+      ]
+    },
+    {
+      "clave": "georgetown",
+      "conservado": "Georgetown",
+      "pisados": [
+        "Georgetown",
+        "Georgetown",
+        "Georgetown"
+      ]
+    },
+    {
+      "clave": "germantown",
+      "conservado": "Germantown",
+      "pisados": [
+        "Germantown",
+        "Germantown"
+      ]
+    },
+    {
+      "clave": "githunguri",
+      "conservado": "Githunguri",
+      "pisados": [
+        "Githunguri"
+      ]
+    },
+    {
+      "clave": "gladstone",
+      "conservado": "Gladstone",
+      "pisados": [
+        "Gladstone"
+      ]
+    },
+    {
+      "clave": "glendale",
+      "conservado": "Glendale",
+      "pisados": [
+        "Glendale",
+        "Glendale"
+      ]
+    },
+    {
+      "clave": "glenville",
+      "conservado": "Glenville",
+      "pisados": [
+        "Glenville"
+      ]
+    },
+    {
+      "clave": "gloucester",
+      "conservado": "Gloucester",
+      "pisados": [
+        "Gloucester",
+        "Gloucester"
+      ]
+    },
+    {
+      "clave": "golbas",
+      "conservado": "Gölbaşı",
+      "pisados": [
+        "Gölbaşı"
+      ]
+    },
+    {
+      "clave": "gombe",
+      "conservado": "Gombe",
+      "pisados": [
+        "Gombe",
+        "Gombe"
+      ]
+    },
+    {
+      "clave": "gopalganj",
+      "conservado": "Gopālganj",
+      "pisados": [
+        "Gopālganj"
+      ]
+    },
+    {
+      "clave": "goya",
+      "conservado": "Goya",
+      "pisados": [
+        "Goya",
+        "Goya"
+      ]
+    },
+    {
+      "clave": "grafton",
+      "conservado": "Grafton",
+      "pisados": [
+        "Grafton"
+      ]
+    },
+    {
+      "clave": "grajau",
+      "conservado": "Grajaú",
+      "pisados": [
+        "Grajaú"
+      ]
+    },
+    {
+      "clave": "granada",
+      "conservado": "Granada",
+      "pisados": [
+        "Granada",
+        "Granada"
+      ]
+    },
+    {
+      "clave": "grand island",
+      "conservado": "Grand Island",
+      "pisados": [
+        "Grand Island"
+      ]
+    },
+    {
+      "clave": "gravesend",
+      "conservado": "Gravesend",
+      "pisados": [
+        "Gravesend"
+      ]
+    },
+    {
+      "clave": "great falls",
+      "conservado": "Great Falls",
+      "pisados": [
+        "Great Falls"
+      ]
+    },
+    {
+      "clave": "greenfield",
+      "conservado": "Greenfield",
+      "pisados": [
+        "Greenfield",
+        "Greenfield",
+        "Greenfield"
+      ]
+    },
+    {
+      "clave": "greenville",
+      "conservado": "Greenville",
+      "pisados": [
+        "Greenville",
+        "Greenville",
+        "Greenville",
+        "Greenville"
+      ]
+    },
+    {
+      "clave": "greenwood",
+      "conservado": "Greenwood",
+      "pisados": [
+        "Greenwood",
+        "Greenwood"
+      ]
+    },
+    {
+      "clave": "griffith",
+      "conservado": "Griffith",
+      "pisados": [
+        "Griffith"
+      ]
+    },
+    {
+      "clave": "grimsby",
+      "conservado": "Grimsby",
+      "pisados": [
+        "Grimsby"
+      ]
+    },
+    {
+      "clave": "guadalajara",
+      "conservado": "Guadalajara",
+      "pisados": [
+        "Guadalajara"
+      ]
+    },
+    {
+      "clave": "guadalupe",
+      "conservado": "Guadalupe",
+      "pisados": [
+        "Guadalupe",
+        "Guadalupe",
+        "Guadalupe",
+        "Guadalupe"
+      ]
+    },
+    {
+      "clave": "guaira",
+      "conservado": "Guaíra",
+      "pisados": [
+        "Guaíra"
+      ]
+    },
+    {
+      "clave": "guandu",
+      "conservado": "Guandu",
+      "pisados": [
+        "Guandu"
+      ]
+    },
+    {
+      "clave": "guanzhuang",
+      "conservado": "Guanzhuang",
+      "pisados": [
+        "Guanzhuang"
+      ]
+    },
+    {
+      "clave": "guara",
+      "conservado": "Guará",
+      "pisados": [
+        "Guará"
+      ]
+    },
+    {
+      "clave": "gudalur",
+      "conservado": "Gudalur",
+      "pisados": [
+        "Gudalur"
+      ]
+    },
+    {
+      "clave": "guezon",
+      "conservado": "Guézon",
+      "pisados": [
+        "Guézon"
+      ]
+    },
+    {
+      "clave": "guildford",
+      "conservado": "Guildford",
+      "pisados": [
+        "Guildford"
+      ]
+    },
+    {
+      "clave": "gulu",
+      "conservado": "Gulu",
+      "pisados": [
+        "Gulu",
+        "Gulu"
+      ]
+    },
+    {
+      "clave": "guojia",
+      "conservado": "Guojia",
+      "pisados": [
+        "Guojia"
+      ]
+    },
+    {
+      "clave": "gwangju",
+      "conservado": "Gwangju",
+      "pisados": [
+        "Gwangju"
+      ]
+    },
+    {
+      "clave": "haikou",
+      "conservado": "Haikou",
+      "pisados": [
+        "Haikou"
+      ]
+    },
+    {
+      "clave": "hajjiabad",
+      "conservado": "Ḩājjīābād",
+      "pisados": [
+        "Ḩājjīābād"
+      ]
+    },
+    {
+      "clave": "hale",
+      "conservado": "Hale",
+      "pisados": [
+        "Hale"
+      ]
+    },
+    {
+      "clave": "halifax",
+      "conservado": "Halifax",
+      "pisados": [
+        "Halifax"
+      ]
+    },
+    {
+      "clave": "halle",
+      "conservado": "Halle",
+      "pisados": [
+        "Halle"
+      ]
+    },
+    {
+      "clave": "halwan",
+      "conservado": "Halwan",
+      "pisados": [
+        "Ḩalwān"
+      ]
+    },
+    {
+      "clave": "hamilton",
+      "conservado": "Hamilton",
+      "pisados": [
+        "Hamilton",
+        "Hamilton",
+        "Hamilton",
+        "Hamilton"
+      ]
+    },
+    {
+      "clave": "hamirpur",
+      "conservado": "Hamīrpur",
+      "pisados": [
+        "Hamīrpur"
+      ]
+    },
+    {
+      "clave": "hamm",
+      "conservado": "Hamm",
+      "pisados": [
+        "Hamm"
+      ]
+    },
+    {
+      "clave": "hammamet",
+      "conservado": "Hammamet",
+      "pisados": [
+        "Hammamet"
+      ]
+    },
+    {
+      "clave": "hammond",
+      "conservado": "Hammond",
+      "pisados": [
+        "Hammond"
+      ]
+    },
+    {
+      "clave": "hampton",
+      "conservado": "Hampton",
+      "pisados": [
+        "Hampton"
+      ]
+    },
+    {
+      "clave": "hangu",
+      "conservado": "Hangu",
+      "pisados": [
+        "Hangu"
+      ]
+    },
+    {
+      "clave": "hanover",
+      "conservado": "Hanover",
+      "pisados": [
+        "Hanover",
+        "Hanover"
+      ]
+    },
+    {
+      "clave": "hanwang",
+      "conservado": "Hanwang",
+      "pisados": [
+        "Hanwang"
+      ]
+    },
+    {
+      "clave": "hanyuan",
+      "conservado": "Hanyuan",
+      "pisados": [
+        "Hanyuan"
+      ]
+    },
+    {
+      "clave": "harlingen",
+      "conservado": "Harlingen",
+      "pisados": [
+        "Harlingen"
+      ]
+    },
+    {
+      "clave": "harrison",
+      "conservado": "Harrison",
+      "pisados": [
+        "Harrison"
+      ]
+    },
+    {
+      "clave": "harvey",
+      "conservado": "Harvey",
+      "pisados": [
+        "Harvey"
+      ]
+    },
+    {
+      "clave": "hastings",
+      "conservado": "Hastings",
+      "pisados": [
+        "Hastings",
+        "Hastings",
+        "Hastings"
+      ]
+    },
+    {
+      "clave": "hatta",
+      "conservado": "Ḩattā",
+      "pisados": [
+        "Hatta"
+      ]
+    },
+    {
+      "clave": "haverhill",
+      "conservado": "Haverhill",
+      "pisados": [
+        "Haverhill"
+      ]
+    },
+    {
+      "clave": "hawthorne",
+      "conservado": "Hawthorne",
+      "pisados": [
+        "Hawthorne"
+      ]
+    },
+    {
+      "clave": "hayes",
+      "conservado": "Hayes",
+      "pisados": [
+        "Hayes"
+      ]
+    },
+    {
+      "clave": "heidelberg",
+      "conservado": "Heidelberg",
+      "pisados": [
+        "Heidelberg"
+      ]
+    },
+    {
+      "clave": "hekou",
+      "conservado": "Hekou",
+      "pisados": [
+        "Hekou"
+      ]
+    },
+    {
+      "clave": "helena",
+      "conservado": "Helena",
+      "pisados": [
+        "Helena"
+      ]
+    },
+    {
+      "clave": "henderson",
+      "conservado": "Henderson",
+      "pisados": [
+        "Henderson",
+        "Henderson",
+        "Henderson"
+      ]
+    },
+    {
+      "clave": "hereford",
+      "conservado": "Hereford",
+      "pisados": [
+        "Hereford"
+      ]
+    },
+    {
+      "clave": "hermitage",
+      "conservado": "Hermitage",
+      "pisados": [
+        "Hermitage"
+      ]
+    },
+    {
+      "clave": "heshan",
+      "conservado": "Heshan",
+      "pisados": [
+        "Heshan"
+      ]
+    },
+    {
+      "clave": "hidrolandia",
+      "conservado": "Hidrolândia",
+      "pisados": [
+        "Hidrolândia"
+      ]
+    },
+    {
+      "clave": "highland",
+      "conservado": "Highland",
+      "pisados": [
+        "Highland",
+        "Highland"
+      ]
+    },
+    {
+      "clave": "hillside",
+      "conservado": "Hillside",
+      "pisados": [
+        "Hillside",
+        "Hillside"
+      ]
+    },
+    {
+      "clave": "hino",
+      "conservado": "Hino",
+      "pisados": [
+        "Hino"
+      ]
+    },
+    {
+      "clave": "hobart",
+      "conservado": "Hobart",
+      "pisados": [
+        "Hobart"
+      ]
+    },
+    {
+      "clave": "hoboken",
+      "conservado": "Hoboken",
+      "pisados": [
+        "Hoboken"
+      ]
+    },
+    {
+      "clave": "hokuto",
+      "conservado": "Hokuto",
+      "pisados": [
+        "Hokuto"
+      ]
+    },
+    {
+      "clave": "hollywood",
+      "conservado": "Hollywood",
+      "pisados": [
+        "Hollywood"
+      ]
+    },
+    {
+      "clave": "homewood",
+      "conservado": "Homewood",
+      "pisados": [
+        "Homewood"
+      ]
+    },
+    {
+      "clave": "honcho",
+      "conservado": "Honchō",
+      "pisados": [
+        "Honchō"
+      ]
+    },
+    {
+      "clave": "hongqiao",
+      "conservado": "Hongqiao",
+      "pisados": [
+        "Hongqiao"
+      ]
+    },
+    {
+      "clave": "honjo",
+      "conservado": "Honjō",
+      "pisados": [
+        "Honjō"
+      ]
+    },
+    {
+      "clave": "horodok",
+      "conservado": "Horodok",
+      "pisados": [
+        "Horodok"
+      ]
+    },
+    {
+      "clave": "horsham",
+      "conservado": "Horsham",
+      "pisados": [
+        "Horsham"
+      ]
+    },
+    {
+      "clave": "huanggang",
+      "conservado": "Huanggang",
+      "pisados": [
+        "Huanggang"
+      ]
+    },
+    {
+      "clave": "huangshan",
+      "conservado": "Huangshan",
+      "pisados": [
+        "Huangshan"
+      ]
+    },
+    {
+      "clave": "huicheng",
+      "conservado": "Huicheng",
+      "pisados": [
+        "Huicheng"
+      ]
+    },
+    {
+      "clave": "huilong",
+      "conservado": "Huilong",
+      "pisados": [
+        "Huilong"
+      ]
+    },
+    {
+      "clave": "huimin",
+      "conservado": "Huimin",
+      "pisados": [
+        "Huimin"
+      ]
+    },
+    {
+      "clave": "huntington",
+      "conservado": "Huntington",
+      "pisados": [
+        "Huntington",
+        "Huntington"
+      ]
+    },
+    {
+      "clave": "huntsville",
+      "conservado": "Huntsville",
+      "pisados": [
+        "Huntsville",
+        "Huntsville"
+      ]
+    },
+    {
+      "clave": "hyde park",
+      "conservado": "Hyde Park",
+      "pisados": [
+        "Hyde Park"
+      ]
+    },
+    {
+      "clave": "hyderabad",
+      "conservado": "Hyderabad",
+      "pisados": [
+        "Hyderabad"
+      ]
+    },
+    {
+      "clave": "ibi",
+      "conservado": "Ibi",
+      "pisados": [
+        "Ibi",
+        "Ibi"
+      ]
+    },
+    {
+      "clave": "ibiza",
+      "conservado": "Ibiza",
+      "pisados": [
+        "Ibiza"
+      ]
+    },
+    {
+      "clave": "igusa",
+      "conservado": "Igusa",
+      "pisados": [
+        "Igusa"
+      ]
+    },
+    {
+      "clave": "ilam",
+      "conservado": "Īlām",
+      "pisados": [
+        "Ilām"
+      ]
+    },
+    {
+      "clave": "illela",
+      "conservado": "Illéla",
+      "pisados": [
+        "Illela"
+      ]
+    },
+    {
+      "clave": "imperial",
+      "conservado": "Imperial",
+      "pisados": [
+        "Imperial",
+        "Imperial"
+      ]
+    },
+    {
+      "clave": "indapur",
+      "conservado": "Indāpur",
+      "pisados": [
+        "Indāpur"
+      ]
+    },
+    {
+      "clave": "independence",
+      "conservado": "Independence",
+      "pisados": [
+        "Independence"
+      ]
+    },
+    {
+      "clave": "ipanema",
+      "conservado": "Ipanema",
+      "pisados": [
+        "Ipanema"
+      ]
+    },
+    {
+      "clave": "ipora",
+      "conservado": "Iporã",
+      "pisados": [
+        "Iporá"
+      ]
+    },
+    {
+      "clave": "ipueiras",
+      "conservado": "Ipueiras",
+      "pisados": [
+        "Ipueiras"
+      ]
+    },
+    {
+      "clave": "irvine",
+      "conservado": "Irvine",
+      "pisados": [
+        "Irvine"
+      ]
+    },
+    {
+      "clave": "ishikawa",
+      "conservado": "Ishikawa",
+      "pisados": [
+        "Ishikawa"
+      ]
+    },
+    {
+      "clave": "islampur",
+      "conservado": "Islāmpur",
+      "pisados": [
+        "Islāmpur"
+      ]
+    },
+    {
+      "clave": "itabaiana",
+      "conservado": "Itabaiana",
+      "pisados": [
+        "Itabaiana"
+      ]
+    },
+    {
+      "clave": "itambe",
+      "conservado": "Itambé",
+      "pisados": [
+        "Itambé"
+      ]
+    },
+    {
+      "clave": "itapoa",
+      "conservado": "Itapoá",
+      "pisados": [
+        "Itapoã"
+      ]
+    },
+    {
+      "clave": "itu",
+      "conservado": "Itu",
+      "pisados": [
+        "Itu"
+      ]
+    },
+    {
+      "clave": "ivanovo",
+      "conservado": "Ivanovo",
+      "pisados": [
+        "Ivanovo"
+      ]
+    },
+    {
+      "clave": "iwai",
+      "conservado": "Iwai",
+      "pisados": [
+        "Iwai"
+      ]
+    },
+    {
+      "clave": "izumi",
+      "conservado": "Izumi",
+      "pisados": [
+        "Izumi"
+      ]
+    },
+    {
+      "clave": "jackson",
+      "conservado": "Jackson",
+      "pisados": [
+        "Jackson",
+        "Jackson",
+        "Jackson"
+      ]
+    },
+    {
+      "clave": "jacksonville",
+      "conservado": "Jacksonville",
+      "pisados": [
+        "Jacksonville",
+        "Jacksonville",
+        "Jacksonville"
+      ]
+    },
+    {
+      "clave": "jaen",
+      "conservado": "Jaén",
+      "pisados": [
+        "Jaén",
+        "Jaen"
+      ]
+    },
+    {
+      "clave": "jafarabad",
+      "conservado": "Jāfarābād",
+      "pisados": [
+        "Jāfarābād"
+      ]
+    },
+    {
+      "clave": "jaguare",
+      "conservado": "Jaguaré",
+      "pisados": [
+        "Jaguare"
+      ]
+    },
+    {
+      "clave": "jalalabad",
+      "conservado": "Jalālābād",
+      "pisados": [
+        "Jalālābād",
+        "Jalālābad",
+        "Jalālābād"
+      ]
+    },
+    {
+      "clave": "jalapa",
+      "conservado": "Jalapa",
+      "pisados": [
+        "Jalapa"
+      ]
+    },
+    {
+      "clave": "jaleshwar",
+      "conservado": "Jaleshwar",
+      "pisados": [
+        "Jaleshwar"
+      ]
+    },
+    {
+      "clave": "jamalpur",
+      "conservado": "Jamālpur",
+      "pisados": [
+        "Jamālpur"
+      ]
+    },
+    {
+      "clave": "jamestown",
+      "conservado": "Jamestown",
+      "pisados": [
+        "Jamestown",
+        "Jamestown"
+      ]
+    },
+    {
+      "clave": "jaragua",
+      "conservado": "Jaraguá",
+      "pisados": [
+        "Jaraguá"
+      ]
+    },
+    {
+      "clave": "jardim",
+      "conservado": "Jardim",
+      "pisados": [
+        "Jardim"
+      ]
+    },
+    {
+      "clave": "jesus maria",
+      "conservado": "Jesús María",
+      "pisados": [
+        "Jesús María",
+        "Jesus Maria"
+      ]
+    },
+    {
+      "clave": "jian",
+      "conservado": "Ji’an",
+      "pisados": [
+        "Ji’an",
+        "Ji’an"
+      ]
+    },
+    {
+      "clave": "jiangkou",
+      "conservado": "Jiangkou",
+      "pisados": [
+        "Jiangkou"
+      ]
+    },
+    {
+      "clave": "jiangzhuang",
+      "conservado": "Jiangzhuang",
+      "pisados": [
+        "Jiangzhuang"
+      ]
+    },
+    {
+      "clave": "jieshi",
+      "conservado": "Jieshi",
+      "pisados": [
+        "Jieshi"
+      ]
+    },
+    {
+      "clave": "jincheng",
+      "conservado": "Jincheng",
+      "pisados": [
+        "Jincheng"
+      ]
+    },
+    {
+      "clave": "jingan",
+      "conservado": "Jing’an",
+      "pisados": [
+        "Jing’an"
+      ]
+    },
+    {
+      "clave": "jinhua",
+      "conservado": "Jinhua",
+      "pisados": [
+        "Jinhua"
+      ]
+    },
+    {
+      "clave": "jining",
+      "conservado": "Jining",
+      "pisados": [
+        "Jining",
+        "Jining"
+      ]
+    },
+    {
+      "clave": "jinjiang",
+      "conservado": "Jinjiang",
+      "pisados": [
+        "Jinjiang",
+        "Jinjiang"
+      ]
+    },
+    {
+      "clave": "jinshan",
+      "conservado": "Jinshan",
+      "pisados": [
+        "Jinshan"
+      ]
+    },
+    {
+      "clave": "jinzhou",
+      "conservado": "Jinzhou",
+      "pisados": [
+        "Jinzhou"
+      ]
+    },
+    {
+      "clave": "jobabo",
+      "conservado": "Jobabo",
+      "pisados": [
+        "Jobabo"
+      ]
+    },
+    {
+      "clave": "jodhpur",
+      "conservado": "Jodhpur",
+      "pisados": [
+        "Jodhpur"
+      ]
+    },
+    {
+      "clave": "johnston",
+      "conservado": "Johnston",
+      "pisados": [
+        "Johnston"
+      ]
+    },
+    {
+      "clave": "jose bonifacio",
+      "conservado": "José Bonifácio",
+      "pisados": [
+        "Jose Bonifacio"
+      ]
+    },
+    {
+      "clave": "juan aldama",
+      "conservado": "Juan Aldama",
+      "pisados": [
+        "Juan Aldama"
+      ]
+    },
+    {
+      "clave": "junin",
+      "conservado": "Junín",
+      "pisados": [
+        "Junín"
+      ]
+    },
+    {
+      "clave": "jussara",
+      "conservado": "Jussara",
+      "pisados": [
+        "Jussara"
+      ]
+    },
+    {
+      "clave": "kabala",
+      "conservado": "Kabala",
+      "pisados": [
+        "Kabala"
+      ]
+    },
+    {
+      "clave": "kadoma",
+      "conservado": "Kadoma",
+      "pisados": [
+        "Kadoma"
+      ]
+    },
+    {
+      "clave": "kahrizak",
+      "conservado": "Kahrīzak",
+      "pisados": [
+        "Kahrīzak"
+      ]
+    },
+    {
+      "clave": "kaiyuan",
+      "conservado": "Kaiyuan",
+      "pisados": [
+        "Kaiyuan"
+      ]
+    },
+    {
+      "clave": "kalol",
+      "conservado": "Kalol",
+      "pisados": [
+        "Kālol"
+      ]
+    },
+    {
+      "clave": "kaman",
+      "conservado": "Kāman",
+      "pisados": [
+        "Kaman"
+      ]
+    },
+    {
+      "clave": "kamra",
+      "conservado": "Kamra",
+      "pisados": [
+        "Kamra"
+      ]
+    },
+    {
+      "clave": "kandahar",
+      "conservado": "Kandahār",
+      "pisados": [
+        "Kandahār"
+      ]
+    },
+    {
+      "clave": "kandi",
+      "conservado": "Kandi",
+      "pisados": [
+        "Kāndi"
+      ]
+    },
+    {
+      "clave": "kano",
+      "conservado": "Kanō",
+      "pisados": [
+        "Kano"
+      ]
+    },
+    {
+      "clave": "kansas city",
+      "conservado": "Kansas City",
+      "pisados": [
+        "Kansas City"
+      ]
+    },
+    {
+      "clave": "kant",
+      "conservado": "Kānt",
+      "pisados": [
+        "Kant"
+      ]
+    },
+    {
+      "clave": "kanuru",
+      "conservado": "Kanuru",
+      "pisados": [
+        "Kānūru"
+      ]
+    },
+    {
+      "clave": "kapellen",
+      "conservado": "Kapellen",
+      "pisados": [
+        "Kapellen"
+      ]
+    },
+    {
+      "clave": "kariya",
+      "conservado": "Kariya",
+      "pisados": [
+        "Kariya"
+      ]
+    },
+    {
+      "clave": "karuri",
+      "conservado": "Karuri",
+      "pisados": [
+        "Karuri"
+      ]
+    },
+    {
+      "clave": "kasama",
+      "conservado": "Kasama",
+      "pisados": [
+        "Kasama"
+      ]
+    },
+    {
+      "clave": "kashan",
+      "conservado": "Kashan",
+      "pisados": [
+        "Kāshān"
+      ]
+    },
+    {
+      "clave": "katangi",
+      "conservado": "Katangi",
+      "pisados": [
+        "Katangi"
+      ]
+    },
+    {
+      "clave": "kawasaki",
+      "conservado": "Kawasaki",
+      "pisados": [
+        "Kawasaki"
+      ]
+    },
+    {
+      "clave": "kayes",
+      "conservado": "Kayes",
+      "pisados": [
+        "Kayes"
+      ]
+    },
+    {
+      "clave": "kazan",
+      "conservado": "Kazan",
+      "pisados": [
+        "Kazan"
+      ]
+    },
+    {
+      "clave": "kazo",
+      "conservado": "Kazo",
+      "pisados": [
+        "Kazo"
+      ]
+    },
+    {
+      "clave": "kenmore",
+      "conservado": "Kenmore",
+      "pisados": [
+        "Kenmore"
+      ]
+    },
+    {
+      "clave": "kensington",
+      "conservado": "Kensington",
+      "pisados": [
+        "Kensington",
+        "Kensington"
+      ]
+    },
+    {
+      "clave": "kent",
+      "conservado": "Kent",
+      "pisados": [
+        "Kent"
+      ]
+    },
+    {
+      "clave": "kestel",
+      "conservado": "Kestel",
+      "pisados": [
+        "Kestel"
+      ]
+    },
+    {
+      "clave": "kettering",
+      "conservado": "Kettering",
+      "pisados": [
+        "Kettering"
+      ]
+    },
+    {
+      "clave": "khairagarh",
+      "conservado": "Khairāgarh",
+      "pisados": [
+        "Khairāgarh"
+      ]
+    },
+    {
+      "clave": "kharagpur",
+      "conservado": "Kharagpur",
+      "pisados": [
+        "Kharagpur"
+      ]
+    },
+    {
+      "clave": "khash",
+      "conservado": "Khāsh",
+      "pisados": [
+        "Khāsh"
+      ]
+    },
+    {
+      "clave": "kien an",
+      "conservado": "Kiến An",
+      "pisados": [
+        "Kiến An"
+      ]
+    },
+    {
+      "clave": "killarney",
+      "conservado": "Killarney",
+      "pisados": [
+        "Killarney"
+      ]
+    },
+    {
+      "clave": "kingston",
+      "conservado": "Kingston",
+      "pisados": [
+        "Kingston",
+        "Kingston",
+        "Kingston"
+      ]
+    },
+    {
+      "clave": "kingsville",
+      "conservado": "Kingsville",
+      "pisados": [
+        "Kingsville"
+      ]
+    },
+    {
+      "clave": "kirkland",
+      "conservado": "Kirkland",
+      "pisados": [
+        "Kirkland"
+      ]
+    },
+    {
+      "clave": "kirov",
+      "conservado": "Kirov",
+      "pisados": [
+        "Kirov"
+      ]
+    },
+    {
+      "clave": "kirovsk",
+      "conservado": "Kirovsk",
+      "pisados": [
+        "Kirovsk"
+      ]
+    },
+    {
+      "clave": "kisesa",
+      "conservado": "Kisesa",
+      "pisados": [
+        "Kisesa"
+      ]
+    },
+    {
+      "clave": "kita",
+      "conservado": "Kita",
+      "pisados": [
+        "Kita"
+      ]
+    },
+    {
+      "clave": "kochi",
+      "conservado": "Kochi",
+      "pisados": [
+        "Kochi"
+      ]
+    },
+    {
+      "clave": "kodoli",
+      "conservado": "Kodoli",
+      "pisados": [
+        "Kodoli"
+      ]
+    },
+    {
+      "clave": "koga",
+      "conservado": "Koga",
+      "pisados": [
+        "Koga",
+        "Koga"
+      ]
+    },
+    {
+      "clave": "kolar",
+      "conservado": "Kolār",
+      "pisados": [
+        "Kolar"
+      ]
+    },
+    {
+      "clave": "komarno",
+      "conservado": "Komárno",
+      "pisados": [
+        "Komárno"
+      ]
+    },
+    {
+      "clave": "konan",
+      "conservado": "Kōnan",
+      "pisados": [
+        "Konan"
+      ]
+    },
+    {
+      "clave": "korba",
+      "conservado": "Korba",
+      "pisados": [
+        "Korba"
+      ]
+    },
+    {
+      "clave": "koregaon",
+      "conservado": "Koregaon",
+      "pisados": [
+        "Koregaon"
+      ]
+    },
+    {
+      "clave": "kota",
+      "conservado": "Kota",
+      "pisados": [
+        "Kotā",
+        "Kōta"
+      ]
+    },
+    {
+      "clave": "kottayam",
+      "conservado": "Kōttayam",
+      "pisados": [
+        "Kottayam"
+      ]
+    },
+    {
+      "clave": "kozan",
+      "conservado": "Kōzan",
+      "pisados": [
+        "Kozan"
+      ]
+    },
+    {
+      "clave": "krasnoarmeysk",
+      "conservado": "Krasnoarmeysk",
+      "pisados": [
+        "Krasnoarmeysk"
+      ]
+    },
+    {
+      "clave": "kulu",
+      "conservado": "Kulu",
+      "pisados": [
+        "Kulu"
+      ]
+    },
+    {
+      "clave": "kumano",
+      "conservado": "Kumano",
+      "pisados": [
+        "Kumano"
+      ]
+    },
+    {
+      "clave": "kyauktan",
+      "conservado": "Kyauktan",
+      "pisados": [
+        "Kyauktan"
+      ]
+    },
+    {
+      "clave": "kyivskyi",
+      "conservado": "Kyivskyi",
+      "pisados": [
+        "Kyivskyi",
+        "Kyivskyi"
+      ]
+    },
+    {
+      "clave": "la calera",
+      "conservado": "La Calera",
+      "pisados": [
+        "La Calera"
+      ]
+    },
+    {
+      "clave": "la ceiba",
+      "conservado": "La Ceiba",
+      "pisados": [
+        "La Ceiba"
+      ]
+    },
+    {
+      "clave": "la concepcion",
+      "conservado": "La Concepción",
+      "pisados": [
+        "La Concepción"
+      ]
+    },
+    {
+      "clave": "la cruz",
+      "conservado": "La Cruz",
+      "pisados": [
+        "La Cruz"
+      ]
+    },
+    {
+      "clave": "la libertad",
+      "conservado": "La Libertad",
+      "pisados": [
+        "La Libertad"
+      ]
+    },
+    {
+      "clave": "la mesa",
+      "conservado": "La Mesa",
+      "pisados": [
+        "La Mesa"
+      ]
+    },
+    {
+      "clave": "la paz",
+      "conservado": "La Paz",
+      "pisados": [
+        "La Paz",
+        "La Paz",
+        "La Paz",
+        "La Paz",
+        "La Paz",
+        "La Paz"
+      ]
+    },
+    {
+      "clave": "la plata",
+      "conservado": "La Plata",
+      "pisados": [
+        "La Plata"
+      ]
+    },
+    {
+      "clave": "la porte",
+      "conservado": "La Porte",
+      "pisados": [
+        "La Porte"
+      ]
+    },
+    {
+      "clave": "la rinconada",
+      "conservado": "La Rinconada",
+      "pisados": [
+        "La Rinconada"
+      ]
+    },
+    {
+      "clave": "la union",
+      "conservado": "La Unión",
+      "pisados": [
+        "La Unión",
+        "La Unión",
+        "La Unión",
+        "La Unión",
+        "La Unión",
+        "La Unión",
+        "La Unión"
+      ]
+    },
+    {
+      "clave": "labuan",
+      "conservado": "Labuan",
+      "pisados": [
+        "Labuan"
+      ]
+    },
+    {
+      "clave": "lafayette",
+      "conservado": "Lafayette",
+      "pisados": [
+        "Lafayette",
+        "Lafayette",
+        "Lafayette"
+      ]
+    },
+    {
+      "clave": "lagos",
+      "conservado": "Lagos",
+      "pisados": [
+        "Lagos"
+      ]
+    },
+    {
+      "clave": "laguna",
+      "conservado": "Laguna",
+      "pisados": [
+        "Laguna"
+      ]
+    },
+    {
+      "clave": "lagunillas",
+      "conservado": "Lagunillas",
+      "pisados": [
+        "Lagunillas"
+      ]
+    },
+    {
+      "clave": "lahat",
+      "conservado": "Lahat",
+      "pisados": [
+        "Lahat"
+      ]
+    },
+    {
+      "clave": "lajeado",
+      "conservado": "Lajeado",
+      "pisados": [
+        "Lajeado"
+      ]
+    },
+    {
+      "clave": "lake forest",
+      "conservado": "Lake Forest",
+      "pisados": [
+        "Lake Forest"
+      ]
+    },
+    {
+      "clave": "lakeside",
+      "conservado": "Lakeside",
+      "pisados": [
+        "Lakeside"
+      ]
+    },
+    {
+      "clave": "lakewood",
+      "conservado": "Lakewood",
+      "pisados": [
+        "Lakewood",
+        "Lakewood",
+        "Lakewood",
+        "Lakewood",
+        "Lakewood"
+      ]
+    },
+    {
+      "clave": "lalganj",
+      "conservado": "Lālganj",
+      "pisados": [
+        "Lālganj",
+        "Lalganj"
+      ]
+    },
+    {
+      "clave": "lancaster",
+      "conservado": "Lancaster",
+      "pisados": [
+        "Lancaster",
+        "Lancaster",
+        "Lancaster",
+        "Lancaster"
+      ]
+    },
+    {
+      "clave": "langen",
+      "conservado": "Langen",
+      "pisados": [
+        "Langen"
+      ]
+    },
+    {
+      "clave": "lansing",
+      "conservado": "Lansing",
+      "pisados": [
+        "Lansing"
+      ]
+    },
+    {
+      "clave": "lanxi",
+      "conservado": "Lanxi",
+      "pisados": [
+        "Lanxi"
+      ]
+    },
+    {
+      "clave": "lapa",
+      "conservado": "Lapa",
+      "pisados": [
+        "Lapa"
+      ]
+    },
+    {
+      "clave": "lar",
+      "conservado": "Lar",
+      "pisados": [
+        "Lār"
+      ]
+    },
+    {
+      "clave": "laranjeiro",
+      "conservado": "Laranjeiro",
+      "pisados": [
+        "Laranjeiro"
+      ]
+    },
+    {
+      "clave": "laredo",
+      "conservado": "Laredo",
+      "pisados": [
+        "Laredo"
+      ]
+    },
+    {
+      "clave": "las vegas",
+      "conservado": "Las Vegas",
+      "pisados": [
+        "Las Vegas"
+      ]
+    },
+    {
+      "clave": "lat yao",
+      "conservado": "Lat Yao",
+      "pisados": [
+        "Lat Yao"
+      ]
+    },
+    {
+      "clave": "latina",
+      "conservado": "Latina",
+      "pisados": [
+        "Latina"
+      ]
+    },
+    {
+      "clave": "laurel",
+      "conservado": "Laurel",
+      "pisados": [
+        "Laurel",
+        "Laurel"
+      ]
+    },
+    {
+      "clave": "laval",
+      "conservado": "Laval",
+      "pisados": [
+        "Laval"
+      ]
+    },
+    {
+      "clave": "lawndale",
+      "conservado": "Lawndale",
+      "pisados": [
+        "Lawndale"
+      ]
+    },
+    {
+      "clave": "lawrence",
+      "conservado": "Lawrence",
+      "pisados": [
+        "Lawrence",
+        "Lawrence"
+      ]
+    },
+    {
+      "clave": "lebanon",
+      "conservado": "Lebanon",
+      "pisados": [
+        "Lebanon",
+        "Lebanon",
+        "Lebanon",
+        "Lebanon"
+      ]
+    },
+    {
+      "clave": "leek",
+      "conservado": "Leek",
+      "pisados": [
+        "Leek"
+      ]
+    },
+    {
+      "clave": "leer",
+      "conservado": "Leer",
+      "pisados": [
+        "Leer"
+      ]
+    },
+    {
+      "clave": "leesburg",
+      "conservado": "Leesburg",
+      "pisados": [
+        "Leesburg"
+      ]
+    },
+    {
+      "clave": "leon",
+      "conservado": "León",
+      "pisados": [
+        "León"
+      ]
+    },
+    {
+      "clave": "lere",
+      "conservado": "Lere",
+      "pisados": [
+        "Léré"
+      ]
+    },
+    {
+      "clave": "lesnoy",
+      "conservado": "Lesnoy",
+      "pisados": [
+        "Lesnoy"
+      ]
+    },
+    {
+      "clave": "levittown",
+      "conservado": "Levittown",
+      "pisados": [
+        "Levittown",
+        "Levittown"
+      ]
+    },
+    {
+      "clave": "lewiston",
+      "conservado": "Lewiston",
+      "pisados": [
+        "Lewiston"
+      ]
+    },
+    {
+      "clave": "lexington",
+      "conservado": "Lexington",
+      "pisados": [
+        "Lexington",
+        "Lexington",
+        "Lexington"
+      ]
+    },
+    {
+      "clave": "liangping",
+      "conservado": "Liangping",
+      "pisados": [
+        "Liangping"
+      ]
+    },
+    {
+      "clave": "licheng",
+      "conservado": "Licheng",
+      "pisados": [
+        "Licheng"
+      ]
+    },
+    {
+      "clave": "lille",
+      "conservado": "Lille",
+      "pisados": [
+        "Lille"
+      ]
+    },
+    {
+      "clave": "lima",
+      "conservado": "Lima",
+      "pisados": [
+        "Lima"
+      ]
+    },
+    {
+      "clave": "limay",
+      "conservado": "Limay",
+      "pisados": [
+        "Limay"
+      ]
+    },
+    {
+      "clave": "limerick",
+      "conservado": "Limerick",
+      "pisados": [
+        "Limerick"
+      ]
+    },
+    {
+      "clave": "linares",
+      "conservado": "Linares",
+      "pisados": [
+        "Linares",
+        "Linares"
+      ]
+    },
+    {
+      "clave": "lincoln",
+      "conservado": "Lincoln",
+      "pisados": [
+        "Lincoln",
+        "Lincoln",
+        "Lincoln",
+        "Lincoln",
+        "Lincoln"
+      ]
+    },
+    {
+      "clave": "lincoln park",
+      "conservado": "Lincoln Park",
+      "pisados": [
+        "Lincoln Park"
+      ]
+    },
+    {
+      "clave": "linden",
+      "conservado": "Linden",
+      "pisados": [
+        "Linden",
+        "Linden"
+      ]
+    },
+    {
+      "clave": "linjiang",
+      "conservado": "Linjiang",
+      "pisados": [
+        "Linjiang",
+        "Linjiang"
+      ]
+    },
+    {
+      "clave": "linxi",
+      "conservado": "Linxi",
+      "pisados": [
+        "Linxi",
+        "Linxi"
+      ]
+    },
+    {
+      "clave": "live oak",
+      "conservado": "Live Oak",
+      "pisados": [
+        "Live Oak"
+      ]
+    },
+    {
+      "clave": "liverpool",
+      "conservado": "Liverpool",
+      "pisados": [
+        "Liverpool"
+      ]
+    },
+    {
+      "clave": "livingston",
+      "conservado": "Livingston",
+      "pisados": [
+        "Lívingston",
+        "Livingston"
+      ]
+    },
+    {
+      "clave": "lockport",
+      "conservado": "Lockport",
+      "pisados": [
+        "Lockport"
+      ]
+    },
+    {
+      "clave": "lodi",
+      "conservado": "Lodi",
+      "pisados": [
+        "Lodi",
+        "Lodi"
+      ]
+    },
+    {
+      "clave": "logan",
+      "conservado": "Logan",
+      "pisados": [
+        "Logan"
+      ]
+    },
+    {
+      "clave": "lohne",
+      "conservado": "Lohne",
+      "pisados": [
+        "Löhne"
+      ]
+    },
+    {
+      "clave": "loja",
+      "conservado": "Loja",
+      "pisados": [
+        "Loja"
+      ]
+    },
+    {
+      "clave": "london",
+      "conservado": "London",
+      "pisados": [
+        "London"
+      ]
+    },
+    {
+      "clave": "long beach",
+      "conservado": "Long Beach",
+      "pisados": [
+        "Long Beach",
+        "Long Beach"
+      ]
+    },
+    {
+      "clave": "longchi",
+      "conservado": "Longchi",
+      "pisados": [
+        "Longchi"
+      ]
+    },
+    {
+      "clave": "longfeng",
+      "conservado": "Longfeng",
+      "pisados": [
+        "Longfeng",
+        "Longfeng",
+        "Longfeng"
+      ]
+    },
+    {
+      "clave": "longgang",
+      "conservado": "Longgang",
+      "pisados": [
+        "Longgang",
+        "Longgang"
+      ]
+    },
+    {
+      "clave": "longhe",
+      "conservado": "Longhe",
+      "pisados": [
+        "Longhe"
+      ]
+    },
+    {
+      "clave": "longjing",
+      "conservado": "Longjing",
+      "pisados": [
+        "Longjing"
+      ]
+    },
+    {
+      "clave": "longshan",
+      "conservado": "Longshan",
+      "pisados": [
+        "Longshan",
+        "Longshan"
+      ]
+    },
+    {
+      "clave": "longtan",
+      "conservado": "Longtan",
+      "pisados": [
+        "Longtan"
+      ]
+    },
+    {
+      "clave": "longview",
+      "conservado": "Longview",
+      "pisados": [
+        "Longview"
+      ]
+    },
+    {
+      "clave": "longxing",
+      "conservado": "Longxing",
+      "pisados": [
+        "Longxing",
+        "Longxing"
+      ]
+    },
+    {
+      "clave": "los angeles",
+      "conservado": "Los Ángeles",
+      "pisados": [
+        "Los Angeles",
+        "Los Angeles"
+      ]
+    },
+    {
+      "clave": "los banos",
+      "conservado": "Los Baños",
+      "pisados": [
+        "Los Banos"
+      ]
+    },
+    {
+      "clave": "louisville",
+      "conservado": "Louisville",
+      "pisados": [
+        "Louisville"
+      ]
+    },
+    {
+      "clave": "luanda",
+      "conservado": "Luanda",
+      "pisados": [
+        "Luanda"
+      ]
+    },
+    {
+      "clave": "lubao",
+      "conservado": "Lubao",
+      "pisados": [
+        "Lubao"
+      ]
+    },
+    {
+      "clave": "lucena",
+      "conservado": "Lucena",
+      "pisados": [
+        "Lucena"
+      ]
+    },
+    {
+      "clave": "lugo",
+      "conservado": "Lugo",
+      "pisados": [
+        "Lugo"
+      ]
+    },
+    {
+      "clave": "luoyang",
+      "conservado": "Luoyang",
+      "pisados": [
+        "Luoyang",
+        "Luoyang"
+      ]
+    },
+    {
+      "clave": "macau",
+      "conservado": "Macau",
+      "pisados": [
+        "Macau"
+      ]
+    },
+    {
+      "clave": "macon",
+      "conservado": "Mâcon",
+      "pisados": [
+        "Macon"
+      ]
+    },
+    {
+      "clave": "madera",
+      "conservado": "Madera",
+      "pisados": [
+        "Madera"
+      ]
+    },
+    {
+      "clave": "madhuban",
+      "conservado": "Madhuban",
+      "pisados": [
+        "Madhuban"
+      ]
+    },
+    {
+      "clave": "madison",
+      "conservado": "Madison",
+      "pisados": [
+        "Madison",
+        "Madison",
+        "Madison",
+        "Madison"
+      ]
+    },
+    {
+      "clave": "madrid",
+      "conservado": "Madrid",
+      "pisados": [
+        "Madrid"
+      ]
+    },
+    {
+      "clave": "mafinga",
+      "conservado": "Mafinga",
+      "pisados": [
+        "Mafinga"
+      ]
+    },
+    {
+      "clave": "magdalena",
+      "conservado": "Magdalena",
+      "pisados": [
+        "Magdalena"
+      ]
+    },
+    {
+      "clave": "maghar",
+      "conservado": "Maghār",
+      "pisados": [
+        "Maghar"
+      ]
+    },
+    {
+      "clave": "mahmudabad",
+      "conservado": "Mahmudābād",
+      "pisados": [
+        "Maḩmūdābād"
+      ]
+    },
+    {
+      "clave": "maitland",
+      "conservado": "Maitland",
+      "pisados": [
+        "Maitland"
+      ]
+    },
+    {
+      "clave": "majie",
+      "conservado": "Majie",
+      "pisados": [
+        "Majie"
+      ]
+    },
+    {
+      "clave": "maku",
+      "conservado": "Maku",
+      "pisados": [
+        "Makū"
+      ]
+    },
+    {
+      "clave": "makuyuni",
+      "conservado": "Makuyuni",
+      "pisados": [
+        "Makuyuni"
+      ]
+    },
+    {
+      "clave": "malaba",
+      "conservado": "Malaba",
+      "pisados": [
+        "Malaba"
+      ]
+    },
+    {
+      "clave": "malaga",
+      "conservado": "Málaga",
+      "pisados": [
+        "Málaga"
+      ]
+    },
+    {
+      "clave": "malanday",
+      "conservado": "Malanday",
+      "pisados": [
+        "Malanday"
+      ]
+    },
+    {
+      "clave": "malkapur",
+      "conservado": "Malkāpur",
+      "pisados": [
+        "Malkapur"
+      ]
+    },
+    {
+      "clave": "manati",
+      "conservado": "Manatí",
+      "pisados": [
+        "Manatí"
+      ]
+    },
+    {
+      "clave": "manchester",
+      "conservado": "Manchester",
+      "pisados": [
+        "Manchester",
+        "Manchester",
+        "Manchester"
+      ]
+    },
+    {
+      "clave": "mandvi",
+      "conservado": "Māndvi",
+      "pisados": [
+        "Māndvi"
+      ]
+    },
+    {
+      "clave": "manga",
+      "conservado": "Manga",
+      "pisados": [
+        "Manga"
+      ]
+    },
+    {
+      "clave": "mangalam",
+      "conservado": "Mangalam",
+      "pisados": [
+        "Mangalam"
+      ]
+    },
+    {
+      "clave": "mango",
+      "conservado": "Mango",
+      "pisados": [
+        "Mango"
+      ]
+    },
+    {
+      "clave": "mangrol",
+      "conservado": "Māngrol",
+      "pisados": [
+        "Māngrol"
+      ]
+    },
+    {
+      "clave": "manhattan",
+      "conservado": "Manhattan",
+      "pisados": [
+        "Manhattan"
+      ]
+    },
+    {
+      "clave": "mansa",
+      "conservado": "Mānsa",
+      "pisados": [
+        "Mānsa",
+        "Mansa"
+      ]
+    },
+    {
+      "clave": "mansfield",
+      "conservado": "Mansfield",
+      "pisados": [
+        "Mansfield",
+        "Mansfield",
+        "Mansfield"
+      ]
+    },
+    {
+      "clave": "manzanares",
+      "conservado": "Manzanares",
+      "pisados": [
+        "Manzanares"
+      ]
+    },
+    {
+      "clave": "manzanillo",
+      "conservado": "Manzanillo",
+      "pisados": [
+        "Manzanillo"
+      ]
+    },
+    {
+      "clave": "mao",
+      "conservado": "Mao",
+      "pisados": [
+        "Maó",
+        "Mao"
+      ]
+    },
+    {
+      "clave": "maplewood",
+      "conservado": "Maplewood",
+      "pisados": [
+        "Maplewood"
+      ]
+    },
+    {
+      "clave": "maragheh",
+      "conservado": "Marāgheh",
+      "pisados": [
+        "Marāgheh"
+      ]
+    },
+    {
+      "clave": "marau",
+      "conservado": "Marau",
+      "pisados": [
+        "Maraú"
+      ]
+    },
+    {
+      "clave": "margate",
+      "conservado": "Margate",
+      "pisados": [
+        "Margate",
+        "Margate"
+      ]
+    },
+    {
+      "clave": "marino",
+      "conservado": "Marino",
+      "pisados": [
+        "Mar’ino"
+      ]
+    },
+    {
+      "clave": "marion",
+      "conservado": "Marion",
+      "pisados": [
+        "Marion",
+        "Marion",
+        "Marion"
+      ]
+    },
+    {
+      "clave": "martinez",
+      "conservado": "Martinez",
+      "pisados": [
+        "Martinez"
+      ]
+    },
+    {
+      "clave": "marysville",
+      "conservado": "Marysville",
+      "pisados": [
+        "Marysville"
+      ]
+    },
+    {
+      "clave": "massy",
+      "conservado": "Massy",
+      "pisados": [
+        "Massy"
+      ]
+    },
+    {
+      "clave": "mau",
+      "conservado": "Mau",
+      "pisados": [
+        "Mau"
+      ]
+    },
+    {
+      "clave": "maua",
+      "conservado": "Mauá",
+      "pisados": [
+        "Maua"
+      ]
+    },
+    {
+      "clave": "maywood",
+      "conservado": "Maywood",
+      "pisados": [
+        "Maywood",
+        "Maywood"
+      ]
+    },
+    {
+      "clave": "mbale",
+      "conservado": "Mbale",
+      "pisados": [
+        "Mbale"
+      ]
+    },
+    {
+      "clave": "medford",
+      "conservado": "Medford",
+      "pisados": [
+        "Medford",
+        "Medford"
+      ]
+    },
+    {
+      "clave": "medina",
+      "conservado": "Medina",
+      "pisados": [
+        "Medina",
+        "Medina"
+      ]
+    },
+    {
+      "clave": "melbourne",
+      "conservado": "Melbourne",
+      "pisados": [
+        "Melbourne"
+      ]
+    },
+    {
+      "clave": "melrose",
+      "conservado": "Melrose",
+      "pisados": [
+        "Melrose"
+      ]
+    },
+    {
+      "clave": "mendi",
+      "conservado": "Mendī",
+      "pisados": [
+        "Mendi"
+      ]
+    },
+    {
+      "clave": "mercedes",
+      "conservado": "Mercedes",
+      "pisados": [
+        "Mercedes",
+        "Mercedes",
+        "Mercedes",
+        "Mercedes"
+      ]
+    },
+    {
+      "clave": "merida",
+      "conservado": "Mérida",
+      "pisados": [
+        "Mérida",
+        "Mérida"
+      ]
+    },
+    {
+      "clave": "meridian",
+      "conservado": "Meridian",
+      "pisados": [
+        "Meridian"
+      ]
+    },
+    {
+      "clave": "mesquite",
+      "conservado": "Mesquite",
+      "pisados": [
+        "Mesquite"
+      ]
+    },
+    {
+      "clave": "mianyang",
+      "conservado": "Mianyang",
+      "pisados": [
+        "Mianyang"
+      ]
+    },
+    {
+      "clave": "middelburg",
+      "conservado": "Middelburg",
+      "pisados": [
+        "Middelburg",
+        "Middelburg"
+      ]
+    },
+    {
+      "clave": "middleton",
+      "conservado": "Middleton",
+      "pisados": [
+        "Middleton"
+      ]
+    },
+    {
+      "clave": "middletown",
+      "conservado": "Middletown",
+      "pisados": [
+        "Middletown",
+        "Middletown",
+        "Middletown",
+        "Middletown",
+        "Middletown"
+      ]
+    },
+    {
+      "clave": "midland",
+      "conservado": "Midland",
+      "pisados": [
+        "Midland",
+        "Midland"
+      ]
+    },
+    {
+      "clave": "midlothian",
+      "conservado": "Midlothian",
+      "pisados": [
+        "Midlothian"
+      ]
+    },
+    {
+      "clave": "milford",
+      "conservado": "Milford",
+      "pisados": [
+        "Milford"
+      ]
+    },
+    {
+      "clave": "milton",
+      "conservado": "Milton",
+      "pisados": [
+        "Milton",
+        "Milton"
+      ]
+    },
+    {
+      "clave": "minas",
+      "conservado": "Minas",
+      "pisados": [
+        "Minas"
+      ]
+    },
+    {
+      "clave": "mingguang",
+      "conservado": "Mingguang",
+      "pisados": [
+        "Mingguang"
+      ]
+    },
+    {
+      "clave": "mingshui",
+      "conservado": "Mingshui",
+      "pisados": [
+        "Mingshui"
+      ]
+    },
+    {
+      "clave": "miramar",
+      "conservado": "Miramar",
+      "pisados": [
+        "Miramar",
+        "Miramar"
+      ]
+    },
+    {
+      "clave": "miranda",
+      "conservado": "Miranda",
+      "pisados": [
+        "Miranda",
+        "Miranda",
+        "Miranda"
+      ]
+    },
+    {
+      "clave": "mirganj",
+      "conservado": "Mīrganj",
+      "pisados": [
+        "Mirganj"
+      ]
+    },
+    {
+      "clave": "mirzapur",
+      "conservado": "Mirzāpur",
+      "pisados": [
+        "Mirzāpur"
+      ]
+    },
+    {
+      "clave": "mission",
+      "conservado": "Mission",
+      "pisados": [
+        "Mission"
+      ]
+    },
+    {
+      "clave": "mitcham",
+      "conservado": "Mitcham",
+      "pisados": [
+        "Mitcham"
+      ]
+    },
+    {
+      "clave": "miyako",
+      "conservado": "Miyako",
+      "pisados": [
+        "Miyako"
+      ]
+    },
+    {
+      "clave": "miyoshi",
+      "conservado": "Miyoshi",
+      "pisados": [
+        "Miyoshi"
+      ]
+    },
+    {
+      "clave": "moanda",
+      "conservado": "Moanda",
+      "pisados": [
+        "Moanda"
+      ]
+    },
+    {
+      "clave": "moncao",
+      "conservado": "Monção",
+      "pisados": [
+        "Monção"
+      ]
+    },
+    {
+      "clave": "monroe",
+      "conservado": "Monroe",
+      "pisados": [
+        "Monroe",
+        "Monroe",
+        "Monroe"
+      ]
+    },
+    {
+      "clave": "monrovia",
+      "conservado": "Monrovia",
+      "pisados": [
+        "Monrovia"
+      ]
+    },
+    {
+      "clave": "montclair",
+      "conservado": "Montclair",
+      "pisados": [
+        "Montclair",
+        "Montclair"
+      ]
+    },
+    {
+      "clave": "monte alegre",
+      "conservado": "Monte Alegre",
+      "pisados": [
+        "Monte Alegre"
+      ]
+    },
+    {
+      "clave": "montenegro",
+      "conservado": "Montenegro",
+      "pisados": [
+        "Montenegro"
+      ]
+    },
+    {
+      "clave": "montgomery",
+      "conservado": "Montgomery",
+      "pisados": [
+        "Montgomery"
+      ]
+    },
+    {
+      "clave": "montijo",
+      "conservado": "Montijo",
+      "pisados": [
+        "Montijo"
+      ]
+    },
+    {
+      "clave": "morales",
+      "conservado": "Morales",
+      "pisados": [
+        "Morales",
+        "Morales"
+      ]
+    },
+    {
+      "clave": "moreno",
+      "conservado": "Moreno",
+      "pisados": [
+        "Moreno"
+      ]
+    },
+    {
+      "clave": "morley",
+      "conservado": "Morley",
+      "pisados": [
+        "Morley"
+      ]
+    },
+    {
+      "clave": "moron",
+      "conservado": "Morón",
+      "pisados": [
+        "Morón",
+        "Mörön",
+        "Morón"
+      ]
+    },
+    {
+      "clave": "morong",
+      "conservado": "Morong",
+      "pisados": [
+        "Morong"
+      ]
+    },
+    {
+      "clave": "morrinhos",
+      "conservado": "Morrinhos",
+      "pisados": [
+        "Morrinhos"
+      ]
+    },
+    {
+      "clave": "morristown",
+      "conservado": "Morristown",
+      "pisados": [
+        "Morristown"
+      ]
+    },
+    {
+      "clave": "moscow",
+      "conservado": "Moscow",
+      "pisados": [
+        "Moscow"
+      ]
+    },
+    {
+      "clave": "moskovskiy",
+      "conservado": "Moskovskiy",
+      "pisados": [
+        "Moskovskiy"
+      ]
+    },
+    {
+      "clave": "motherwell",
+      "conservado": "Motherwell",
+      "pisados": [
+        "Motherwell"
+      ]
+    },
+    {
+      "clave": "mount pleasant",
+      "conservado": "Mount Pleasant",
+      "pisados": [
+        "Mount Pleasant",
+        "Mount Pleasant",
+        "Mount Pleasant",
+        "Mount Pleasant",
+        "Mount Pleasant"
+      ]
+    },
+    {
+      "clave": "mount vernon",
+      "conservado": "Mount Vernon",
+      "pisados": [
+        "Mount Vernon",
+        "Mount Vernon",
+        "Mount Vernon"
+      ]
+    },
+    {
+      "clave": "mpanda",
+      "conservado": "Mpanda",
+      "pisados": [
+        "Mpanda"
+      ]
+    },
+    {
+      "clave": "muhammadabad",
+      "conservado": "Muhammadābād",
+      "pisados": [
+        "Muhammadābād",
+        "Muhammadābād"
+      ]
+    },
+    {
+      "clave": "mulheim",
+      "conservado": "Mülheim",
+      "pisados": [
+        "Mülheim"
+      ]
+    },
+    {
+      "clave": "munster",
+      "conservado": "Munster",
+      "pisados": [
+        "Münster",
+        "Munster"
+      ]
+    },
+    {
+      "clave": "murcia",
+      "conservado": "Murcia",
+      "pisados": [
+        "Murcia"
+      ]
+    },
+    {
+      "clave": "muritiba",
+      "conservado": "Muritiba",
+      "pisados": [
+        "Muritiba"
+      ]
+    },
+    {
+      "clave": "murray",
+      "conservado": "Murray",
+      "pisados": [
+        "Murray"
+      ]
+    },
+    {
+      "clave": "mustafabad",
+      "conservado": "Mustafābād",
+      "pisados": [
+        "Mustafabad"
+      ]
+    },
+    {
+      "clave": "mut",
+      "conservado": "Mūţ",
+      "pisados": [
+        "Mut"
+      ]
+    },
+    {
+      "clave": "mwanza",
+      "conservado": "Mwanza",
+      "pisados": [
+        "Mwanza"
+      ]
+    },
+    {
+      "clave": "nabinagar",
+      "conservado": "Nabīnagar",
+      "pisados": [
+        "Nabīnagar"
+      ]
+    },
+    {
+      "clave": "naga",
+      "conservado": "Naga",
+      "pisados": [
+        "Naga"
+      ]
+    },
+    {
+      "clave": "nagasaki",
+      "conservado": "Nagasaki",
+      "pisados": [
+        "Nagasaki"
+      ]
+    },
+    {
+      "clave": "nakano",
+      "conservado": "Nakano",
+      "pisados": [
+        "Nakano"
+      ]
+    },
+    {
+      "clave": "nanfeng",
+      "conservado": "Nanfeng",
+      "pisados": [
+        "Nanfeng"
+      ]
+    },
+    {
+      "clave": "nanping",
+      "conservado": "Nanping",
+      "pisados": [
+        "Nanping"
+      ]
+    },
+    {
+      "clave": "nantong",
+      "conservado": "Nantong",
+      "pisados": [
+        "Nantong"
+      ]
+    },
+    {
+      "clave": "nantou",
+      "conservado": "Nantou",
+      "pisados": [
+        "Nantou",
+        "Nantou"
+      ]
+    },
+    {
+      "clave": "naples",
+      "conservado": "Naples",
+      "pisados": [
+        "Naples"
+      ]
+    },
+    {
+      "clave": "naranjito",
+      "conservado": "Naranjito",
+      "pisados": [
+        "Naranjito"
+      ]
+    },
+    {
+      "clave": "nasirabad",
+      "conservado": "Nasīrābād",
+      "pisados": [
+        "Nasirabad"
+      ]
+    },
+    {
+      "clave": "navegantes",
+      "conservado": "Navegantes",
+      "pisados": [
+        "Navegantes"
+      ]
+    },
+    {
+      "clave": "nawa",
+      "conservado": "Nāwa",
+      "pisados": [
+        "Nawá"
+      ]
+    },
+    {
+      "clave": "nawabganj",
+      "conservado": "Nawābganj",
+      "pisados": [
+        "Nawābganj",
+        "Nawābganj",
+        "Nawābganj"
+      ]
+    },
+    {
+      "clave": "nazareth",
+      "conservado": "Nazareth",
+      "pisados": [
+        "Nazareth"
+      ]
+    },
+    {
+      "clave": "nea ionia",
+      "conservado": "Néa Ionía",
+      "pisados": [
+        "Néa Ionía"
+      ]
+    },
+    {
+      "clave": "negotino",
+      "conservado": "Negotino",
+      "pisados": [
+        "Negotino"
+      ]
+    },
+    {
+      "clave": "nelson",
+      "conservado": "Nelson",
+      "pisados": [
+        "Nelson"
+      ]
+    },
+    {
+      "clave": "neston",
+      "conservado": "Neston",
+      "pisados": [
+        "Neston"
+      ]
+    },
+    {
+      "clave": "new brighton",
+      "conservado": "New Brighton",
+      "pisados": [
+        "New Brighton"
+      ]
+    },
+    {
+      "clave": "new castle",
+      "conservado": "New Castle",
+      "pisados": [
+        "New Castle"
+      ]
+    },
+    {
+      "clave": "new city",
+      "conservado": "New City",
+      "pisados": [
+        "New City"
+      ]
+    },
+    {
+      "clave": "new haven",
+      "conservado": "New Haven",
+      "pisados": [
+        "New Haven"
+      ]
+    },
+    {
+      "clave": "newark",
+      "conservado": "Newark",
+      "pisados": [
+        "Newark",
+        "Newark",
+        "Newark"
+      ]
+    },
+    {
+      "clave": "newcastle",
+      "conservado": "Newcastle",
+      "pisados": [
+        "Newcastle"
+      ]
+    },
+    {
+      "clave": "newmarket",
+      "conservado": "Newmarket",
+      "pisados": [
+        "Newmarket"
+      ]
+    },
+    {
+      "clave": "newport",
+      "conservado": "Newport",
+      "pisados": [
+        "Newport",
+        "Newport",
+        "Newport"
+      ]
+    },
+    {
+      "clave": "newton",
+      "conservado": "Newton",
+      "pisados": [
+        "Newton",
+        "Newton",
+        "Newton"
+      ]
+    },
+    {
+      "clave": "niagara falls",
+      "conservado": "Niagara Falls",
+      "pisados": [
+        "Niagara Falls"
+      ]
+    },
+    {
+      "clave": "nikolskoye",
+      "conservado": "Nikol’skoye",
+      "pisados": [
+        "Nikol’skoye"
+      ]
+    },
+    {
+      "clave": "niles",
+      "conservado": "Niles",
+      "pisados": [
+        "Niles"
+      ]
+    },
+    {
+      "clave": "ninghai",
+      "conservado": "Ninghai",
+      "pisados": [
+        "Ninghai"
+      ]
+    },
+    {
+      "clave": "njombe",
+      "conservado": "Njombé",
+      "pisados": [
+        "Njombe"
+      ]
+    },
+    {
+      "clave": "nogales",
+      "conservado": "Nogales",
+      "pisados": [
+        "Nogales",
+        "Nogales"
+      ]
+    },
+    {
+      "clave": "nokha",
+      "conservado": "Nokha",
+      "pisados": [
+        "Nokha"
+      ]
+    },
+    {
+      "clave": "nola",
+      "conservado": "Nola",
+      "pisados": [
+        "Nola"
+      ]
+    },
+    {
+      "clave": "noord",
+      "conservado": "Noord",
+      "pisados": [
+        "Noord"
+      ]
+    },
+    {
+      "clave": "norfolk",
+      "conservado": "Norfolk",
+      "pisados": [
+        "Norfolk"
+      ]
+    },
+    {
+      "clave": "northampton",
+      "conservado": "Northampton",
+      "pisados": [
+        "Northampton"
+      ]
+    },
+    {
+      "clave": "norton",
+      "conservado": "Norton",
+      "pisados": [
+        "Norton"
+      ]
+    },
+    {
+      "clave": "norwalk",
+      "conservado": "Norwalk",
+      "pisados": [
+        "Norwalk",
+        "Norwalk"
+      ]
+    },
+    {
+      "clave": "norwich",
+      "conservado": "Norwich",
+      "pisados": [
+        "Norwich"
+      ]
+    },
+    {
+      "clave": "norwood",
+      "conservado": "Norwood",
+      "pisados": [
+        "Norwood"
+      ]
+    },
+    {
+      "clave": "ntungamo",
+      "conservado": "Ntungamo",
+      "pisados": [
+        "Ntungamo"
+      ]
+    },
+    {
+      "clave": "nurabad",
+      "conservado": "Nūrābād",
+      "pisados": [
+        "Nūrābād"
+      ]
+    },
+    {
+      "clave": "nzega",
+      "conservado": "Nzega",
+      "pisados": [
+        "Nzega"
+      ]
+    },
+    {
+      "clave": "o'fallon",
+      "conservado": "O'Fallon",
+      "pisados": [
+        "O'Fallon"
+      ]
+    },
+    {
+      "clave": "oak park",
+      "conservado": "Oak Park",
+      "pisados": [
+        "Oak Park"
+      ]
+    },
+    {
+      "clave": "oak ridge",
+      "conservado": "Oak Ridge",
+      "pisados": [
+        "Oak Ridge"
+      ]
+    },
+    {
+      "clave": "oakdale",
+      "conservado": "Oakdale",
+      "pisados": [
+        "Oakdale"
+      ]
+    },
+    {
+      "clave": "oakville",
+      "conservado": "Oakville",
+      "pisados": [
+        "Oakville"
+      ]
+    },
+    {
+      "clave": "oceanside",
+      "conservado": "Oceanside",
+      "pisados": [
+        "Oceanside"
+      ]
+    },
+    {
+      "clave": "oeiras",
+      "conservado": "Oeiras",
+      "pisados": [
+        "Oeiras"
+      ]
+    },
+    {
+      "clave": "ogawa",
+      "conservado": "Ogawa",
+      "pisados": [
+        "Ogawa"
+      ]
+    },
+    {
+      "clave": "ogi",
+      "conservado": "Ōgi",
+      "pisados": [
+        "Ogi"
+      ]
+    },
+    {
+      "clave": "oji",
+      "conservado": "Ōji",
+      "pisados": [
+        "Oji"
+      ]
+    },
+    {
+      "clave": "okha",
+      "conservado": "Okha",
+      "pisados": [
+        "Okha"
+      ]
+    },
+    {
+      "clave": "olney",
+      "conservado": "Olney",
+      "pisados": [
+        "Olney"
+      ]
+    },
+    {
+      "clave": "ono",
+      "conservado": "Ono",
+      "pisados": [
+        "Ono",
+        "Ōno"
+      ]
+    },
+    {
+      "clave": "orange",
+      "conservado": "Orange",
+      "pisados": [
+        "Orange",
+        "Orange",
+        "Orange",
+        "Orange"
+      ]
+    },
+    {
+      "clave": "orleans",
+      "conservado": "Orleans",
+      "pisados": [
+        "Orléans",
+        "Orléans"
+      ]
+    },
+    {
+      "clave": "ostrov",
+      "conservado": "Ostrov",
+      "pisados": [
+        "Ostrov"
+      ]
+    },
+    {
+      "clave": "oswego",
+      "conservado": "Oswego",
+      "pisados": [
+        "Oswego"
+      ]
+    },
+    {
+      "clave": "ota",
+      "conservado": "Ōta",
+      "pisados": [
+        "Ōta",
+        "Ota"
+      ]
+    },
+    {
+      "clave": "otradnoye",
+      "conservado": "Otradnoye",
+      "pisados": [
+        "Otradnoye"
+      ]
+    },
+    {
+      "clave": "ottawa",
+      "conservado": "Ottawa",
+      "pisados": [
+        "Ottawa"
+      ]
+    },
+    {
+      "clave": "oviedo",
+      "conservado": "Oviedo",
+      "pisados": [
+        "Oviedo"
+      ]
+    },
+    {
+      "clave": "oxford",
+      "conservado": "Oxford",
+      "pisados": [
+        "Oxford",
+        "Oxford",
+        "Oxford"
+      ]
+    },
+    {
+      "clave": "oyama",
+      "conservado": "Oyama",
+      "pisados": [
+        "Oyama",
+        "Ōyama"
+      ]
+    },
+    {
+      "clave": "oyo",
+      "conservado": "Oyo",
+      "pisados": [
+        "Oyo"
+      ]
+    },
+    {
+      "clave": "ozu",
+      "conservado": "Ōzu",
+      "pisados": [
+        "Ōzu"
+      ]
+    },
+    {
+      "clave": "padampur",
+      "conservado": "Padampur",
+      "pisados": [
+        "Padampur"
+      ]
+    },
+    {
+      "clave": "padua",
+      "conservado": "Padua",
+      "pisados": [
+        "Padua"
+      ]
+    },
+    {
+      "clave": "palencia",
+      "conservado": "Palencia",
+      "pisados": [
+        "Palencia"
+      ]
+    },
+    {
+      "clave": "palermo",
+      "conservado": "Palermo",
+      "pisados": [
+        "Palermo"
+      ]
+    },
+    {
+      "clave": "pali",
+      "conservado": "Pāli",
+      "pisados": [
+        "Pāli"
+      ]
+    },
+    {
+      "clave": "palm springs",
+      "conservado": "Palm Springs",
+      "pisados": [
+        "Palm Springs"
+      ]
+    },
+    {
+      "clave": "palmas",
+      "conservado": "Palmas",
+      "pisados": [
+        "Palmas"
+      ]
+    },
+    {
+      "clave": "palmira",
+      "conservado": "Palmira",
+      "pisados": [
+        "Palmira",
+        "Palmira"
+      ]
+    },
+    {
+      "clave": "pamplona",
+      "conservado": "Pamplona",
+      "pisados": [
+        "Pamplona"
+      ]
+    },
+    {
+      "clave": "panama city",
+      "conservado": "Panama City",
+      "pisados": [
+        "Panama City"
+      ]
+    },
+    {
+      "clave": "panauti",
+      "conservado": "Panauti̇̄",
+      "pisados": [
+        "Panauti"
+      ]
+    },
+    {
+      "clave": "panjim",
+      "conservado": "Panjim",
+      "pisados": [
+        "Panjim"
+      ]
+    },
+    {
+      "clave": "panlong",
+      "conservado": "Panlong",
+      "pisados": [
+        "Panlong"
+      ]
+    },
+    {
+      "clave": "paradise",
+      "conservado": "Paradise",
+      "pisados": [
+        "Paradise",
+        "Paradise",
+        "Paradise"
+      ]
+    },
+    {
+      "clave": "paraiso",
+      "conservado": "Paraíso",
+      "pisados": [
+        "Paraiso",
+        "Paraiso"
+      ]
+    },
+    {
+      "clave": "paris",
+      "conservado": "Paris",
+      "pisados": [
+        "Paris"
+      ]
+    },
+    {
+      "clave": "parkland",
+      "conservado": "Parkland",
+      "pisados": [
+        "Parkland"
+      ]
+    },
+    {
+      "clave": "parma",
+      "conservado": "Parma",
+      "pisados": [
+        "Parma"
+      ]
+    },
+    {
+      "clave": "parnamirim",
+      "conservado": "Parnamirim",
+      "pisados": [
+        "Parnamirim"
+      ]
+    },
+    {
+      "clave": "pasadena",
+      "conservado": "Pasadena",
+      "pisados": [
+        "Pasadena",
+        "Pasadena"
+      ]
+    },
+    {
+      "clave": "pasan",
+      "conservado": "Pasān",
+      "pisados": [
+        "Pasan"
+      ]
+    },
+    {
+      "clave": "patan",
+      "conservado": "Pātan",
+      "pisados": [
+        "Pātan"
+      ]
+    },
+    {
+      "clave": "patos",
+      "conservado": "Patos",
+      "pisados": [
+        "Patos"
+      ]
+    },
+    {
+      "clave": "pavlovsk",
+      "conservado": "Pavlovsk",
+      "pisados": [
+        "Pavlovsk"
+      ]
+    },
+    {
+      "clave": "payson",
+      "conservado": "Payson",
+      "pisados": [
+        "Payson"
+      ]
+    },
+    {
+      "clave": "pedregal",
+      "conservado": "Pedregal",
+      "pisados": [
+        "Pedregal"
+      ]
+    },
+    {
+      "clave": "pedreira",
+      "conservado": "Pedreira",
+      "pisados": [
+        "Pedreira"
+      ]
+    },
+    {
+      "clave": "peoria",
+      "conservado": "Peoria",
+      "pisados": [
+        "Peoria"
+      ]
+    },
+    {
+      "clave": "perdizes",
+      "conservado": "Perdizes",
+      "pisados": [
+        "Perdizes"
+      ]
+    },
+    {
+      "clave": "perth",
+      "conservado": "Perth",
+      "pisados": [
+        "Perth"
+      ]
+    },
+    {
+      "clave": "peterborough",
+      "conservado": "Peterborough",
+      "pisados": [
+        "Peterborough"
+      ]
+    },
+    {
+      "clave": "phong ien",
+      "conservado": "Phong Điền",
+      "pisados": [
+        "Phong Điền"
+      ]
+    },
+    {
+      "clave": "phu quoc",
+      "conservado": "Phu Quoc",
+      "pisados": [
+        "Phú Quốc"
+      ]
+    },
+    {
+      "clave": "piedade",
+      "conservado": "Piedade",
+      "pisados": [
+        "Piedade"
+      ]
+    },
+    {
+      "clave": "pilar",
+      "conservado": "Pilar",
+      "pisados": [
+        "Pilar",
+        "Pilar",
+        "Pilar",
+        "Pilar",
+        "Pilar"
+      ]
+    },
+    {
+      "clave": "pingshan",
+      "conservado": "Pingshan",
+      "pisados": [
+        "Pingshan"
+      ]
+    },
+    {
+      "clave": "pingxiang",
+      "conservado": "Pingxiang",
+      "pisados": [
+        "Pingxiang"
+      ]
+    },
+    {
+      "clave": "pinhalzinho",
+      "conservado": "Pinhalzinho",
+      "pisados": [
+        "Pinhalzinho"
+      ]
+    },
+    {
+      "clave": "pinheiros",
+      "conservado": "Pinheiros",
+      "pisados": [
+        "Pinheiros"
+      ]
+    },
+    {
+      "clave": "pipri",
+      "conservado": "Pīpri",
+      "pisados": [
+        "Pipri"
+      ]
+    },
+    {
+      "clave": "pishin",
+      "conservado": "Pīshīn",
+      "pisados": [
+        "Pishin"
+      ]
+    },
+    {
+      "clave": "pittsburg",
+      "conservado": "Pittsburg",
+      "pisados": [
+        "Pittsburg"
+      ]
+    },
+    {
+      "clave": "plainfield",
+      "conservado": "Plainfield",
+      "pisados": [
+        "Plainfield",
+        "Plainfield",
+        "Plainfield"
+      ]
+    },
+    {
+      "clave": "plainview",
+      "conservado": "Plainview",
+      "pisados": [
+        "Plainview"
+      ]
+    },
+    {
+      "clave": "planaltina",
+      "conservado": "Planaltina",
+      "pisados": [
+        "Planaltina"
+      ]
+    },
+    {
+      "clave": "plymouth",
+      "conservado": "Plymouth",
+      "pisados": [
+        "Plymouth",
+        "Plymouth"
+      ]
+    },
+    {
+      "clave": "podil",
+      "conservado": "Podil",
+      "pisados": [
+        "Podil"
+      ]
+    },
+    {
+      "clave": "pokrov",
+      "conservado": "Pokrov",
+      "pisados": [
+        "Pokrov"
+      ]
+    },
+    {
+      "clave": "pombal",
+      "conservado": "Pombal",
+      "pisados": [
+        "Pombal"
+      ]
+    },
+    {
+      "clave": "ponmana",
+      "conservado": "Ponmana",
+      "pisados": [
+        "Ponmana"
+      ]
+    },
+    {
+      "clave": "pontevedra",
+      "conservado": "Pontevedra",
+      "pisados": [
+        "Pontevedra"
+      ]
+    },
+    {
+      "clave": "port richmond",
+      "conservado": "Port Richmond",
+      "pisados": [
+        "Port Richmond"
+      ]
+    },
+    {
+      "clave": "portage",
+      "conservado": "Portage",
+      "pisados": [
+        "Portage"
+      ]
+    },
+    {
+      "clave": "portland",
+      "conservado": "Portland",
+      "pisados": [
+        "Portland",
+        "Portland"
+      ]
+    },
+    {
+      "clave": "portsmouth",
+      "conservado": "Portsmouth",
+      "pisados": [
+        "Portsmouth",
+        "Portsmouth",
+        "Portsmouth",
+        "Portsmouth"
+      ]
+    },
+    {
+      "clave": "presidente dutra",
+      "conservado": "Presidente Dutra",
+      "pisados": [
+        "Presidente Dutra"
+      ]
+    },
+    {
+      "clave": "preston",
+      "conservado": "Preston",
+      "pisados": [
+        "Preston"
+      ]
+    },
+    {
+      "clave": "prince edward",
+      "conservado": "Prince Edward",
+      "pisados": [
+        "Prince Edward"
+      ]
+    },
+    {
+      "clave": "princeton",
+      "conservado": "Princeton",
+      "pisados": [
+        "Princeton"
+      ]
+    },
+    {
+      "clave": "progreso",
+      "conservado": "Progreso",
+      "pisados": [
+        "Progreso"
+      ]
+    },
+    {
+      "clave": "prosperidad",
+      "conservado": "Prosperidad",
+      "pisados": [
+        "Prosperidad"
+      ]
+    },
+    {
+      "clave": "pudukkottai",
+      "conservado": "Pudukkottai",
+      "pisados": [
+        "Pudukkottai"
+      ]
+    },
+    {
+      "clave": "puebla",
+      "conservado": "Puebla",
+      "pisados": [
+        "Puebla"
+      ]
+    },
+    {
+      "clave": "pueblo nuevo",
+      "conservado": "Pueblo Nuevo",
+      "pisados": [
+        "Pueblo Nuevo",
+        "Pueblo Nuevo"
+      ]
+    },
+    {
+      "clave": "puerto rico",
+      "conservado": "Puerto Rico",
+      "pisados": [
+        "Puerto Rico"
+      ]
+    },
+    {
+      "clave": "pushkino",
+      "conservado": "Pushkino",
+      "pisados": [
+        "Pushkino"
+      ]
+    },
+    {
+      "clave": "putatan",
+      "conservado": "Putatan",
+      "pisados": [
+        "Putatan"
+      ]
+    },
+    {
+      "clave": "puttur",
+      "conservado": "Puttūr",
+      "pisados": [
+        "Puttūr"
+      ]
+    },
+    {
+      "clave": "puyang",
+      "conservado": "Puyang",
+      "pisados": [
+        "Puyang"
+      ]
+    },
+    {
+      "clave": "qianjiang",
+      "conservado": "Qianjiang",
+      "pisados": [
+        "Qianjiang"
+      ]
+    },
+    {
+      "clave": "qiaotou",
+      "conservado": "Qiaotou",
+      "pisados": [
+        "Qiaotou"
+      ]
+    },
+    {
+      "clave": "qina",
+      "conservado": "Qina",
+      "pisados": [
+        "Qina"
+      ]
+    },
+    {
+      "clave": "qinggang",
+      "conservado": "Qinggang",
+      "pisados": [
+        "Qinggang"
+      ]
+    },
+    {
+      "clave": "qingnian",
+      "conservado": "Qingnian",
+      "pisados": [
+        "Qingnian"
+      ]
+    },
+    {
+      "clave": "qingyang",
+      "conservado": "Qingyang",
+      "pisados": [
+        "Qingyang",
+        "Qingyang"
+      ]
+    },
+    {
+      "clave": "qishan",
+      "conservado": "Qishan",
+      "pisados": [
+        "Qishan"
+      ]
+    },
+    {
+      "clave": "queenstown",
+      "conservado": "Queenstown",
+      "pisados": [
+        "Queenstown"
+      ]
+    },
+    {
+      "clave": "queimadas",
+      "conservado": "Queimadas",
+      "pisados": [
+        "Queimadas"
+      ]
+    },
+    {
+      "clave": "quezon",
+      "conservado": "Quezon",
+      "pisados": [
+        "Quezon"
+      ]
+    },
+    {
+      "clave": "quincy",
+      "conservado": "Quincy",
+      "pisados": [
+        "Quincy"
+      ]
+    },
+    {
+      "clave": "qurayyat",
+      "conservado": "Qurayyāt",
+      "pisados": [
+        "Qurayyat"
+      ]
+    },
+    {
+      "clave": "rafah",
+      "conservado": "Rafaḩ",
+      "pisados": [
+        "Rafaḩ"
+      ]
+    },
+    {
+      "clave": "raipur",
+      "conservado": "Rāipur",
+      "pisados": [
+        "Rāipur",
+        "Raipur",
+        "Raipur"
+      ]
+    },
+    {
+      "clave": "rajgarh",
+      "conservado": "Rājgarh",
+      "pisados": [
+        "Rājgarh",
+        "Rājgarh",
+        "Rājgarh"
+      ]
+    },
+    {
+      "clave": "ramapuram",
+      "conservado": "Rāmāpuram",
+      "pisados": [
+        "Ramapuram"
+      ]
+    },
+    {
+      "clave": "rameswaram",
+      "conservado": "Rameswaram",
+      "pisados": [
+        "Rameswaram"
+      ]
+    },
+    {
+      "clave": "ramgarh",
+      "conservado": "Rāmgarh",
+      "pisados": [
+        "Rāmgarh",
+        "Rāmgarh"
+      ]
+    },
+    {
+      "clave": "ramnagar",
+      "conservado": "Rāmnagar",
+      "pisados": [
+        "Rāmnagar",
+        "Rāmnagar"
+      ]
+    },
+    {
+      "clave": "rampur",
+      "conservado": "Rāmpur",
+      "pisados": [
+        "Rāmpur",
+        "Rāmpur"
+      ]
+    },
+    {
+      "clave": "rampura",
+      "conservado": "Rāmpura",
+      "pisados": [
+        "Rāmpura"
+      ]
+    },
+    {
+      "clave": "ramsey",
+      "conservado": "Ramsey",
+      "pisados": [
+        "Ramsey"
+      ]
+    },
+    {
+      "clave": "randolph",
+      "conservado": "Randolph",
+      "pisados": [
+        "Randolph"
+      ]
+    },
+    {
+      "clave": "raniganj",
+      "conservado": "Rānīganj",
+      "pisados": [
+        "Rāniganj"
+      ]
+    },
+    {
+      "clave": "ranipur",
+      "conservado": "Rānīpur",
+      "pisados": [
+        "Ranipur"
+      ]
+    },
+    {
+      "clave": "ranyah",
+      "conservado": "Rānyah",
+      "pisados": [
+        "Ranyah"
+      ]
+    },
+    {
+      "clave": "rawson",
+      "conservado": "Rawson",
+      "pisados": [
+        "Rawson"
+      ]
+    },
+    {
+      "clave": "reading",
+      "conservado": "Reading",
+      "pisados": [
+        "Reading",
+        "Reading"
+      ]
+    },
+    {
+      "clave": "redencao",
+      "conservado": "Redenção",
+      "pisados": [
+        "Redenção"
+      ]
+    },
+    {
+      "clave": "redhill",
+      "conservado": "Redhill",
+      "pisados": [
+        "Redhill"
+      ]
+    },
+    {
+      "clave": "redmond",
+      "conservado": "Redmond",
+      "pisados": [
+        "Redmond"
+      ]
+    },
+    {
+      "clave": "requena",
+      "conservado": "Requena",
+      "pisados": [
+        "Requena"
+      ]
+    },
+    {
+      "clave": "retiro",
+      "conservado": "Retiro",
+      "pisados": [
+        "Retiro",
+        "Retiro"
+      ]
+    },
+    {
+      "clave": "richmond",
+      "conservado": "Richmond",
+      "pisados": [
+        "Richmond",
+        "Richmond",
+        "Richmond",
+        "Richmond",
+        "Richmond",
+        "Richmond",
+        "Richmond",
+        "Richmond"
+      ]
+    },
+    {
+      "clave": "richmond hill",
+      "conservado": "Richmond Hill",
+      "pisados": [
+        "Richmond Hill"
+      ]
+    },
+    {
+      "clave": "ridgewood",
+      "conservado": "Ridgewood",
+      "pisados": [
+        "Ridgewood"
+      ]
+    },
+    {
+      "clave": "rio blanco",
+      "conservado": "Río Blanco",
+      "pisados": [
+        "Río Blanco"
+      ]
+    },
+    {
+      "clave": "rio claro",
+      "conservado": "Rio Claro",
+      "pisados": [
+        "Rio Claro",
+        "Rio Claro"
+      ]
+    },
+    {
+      "clave": "rio grande",
+      "conservado": "Río Grande",
+      "pisados": [
+        "Rio Grande",
+        "Río Grande",
+        "Río Grande"
+      ]
+    },
+    {
+      "clave": "rio tinto",
+      "conservado": "Rio Tinto",
+      "pisados": [
+        "Rio Tinto"
+      ]
+    },
+    {
+      "clave": "ripon",
+      "conservado": "Ripon",
+      "pisados": [
+        "Ripon"
+      ]
+    },
+    {
+      "clave": "rivera",
+      "conservado": "Rivera",
+      "pisados": [
+        "Rivera"
+      ]
+    },
+    {
+      "clave": "riverside",
+      "conservado": "Riverside",
+      "pisados": [
+        "Riverside"
+      ]
+    },
+    {
+      "clave": "riverview",
+      "conservado": "Riverview",
+      "pisados": [
+        "Riverview"
+      ]
+    },
+    {
+      "clave": "robit",
+      "conservado": "Robīt",
+      "pisados": [
+        "Robit"
+      ]
+    },
+    {
+      "clave": "rochester",
+      "conservado": "Rochester",
+      "pisados": [
+        "Rochester",
+        "Rochester",
+        "Rochester"
+      ]
+    },
+    {
+      "clave": "rome",
+      "conservado": "Rome",
+      "pisados": [
+        "Rome",
+        "Rome"
+      ]
+    },
+    {
+      "clave": "rosario",
+      "conservado": "Rosario",
+      "pisados": [
+        "Rosário",
+        "Rosario"
+      ]
+    },
+    {
+      "clave": "rosedale",
+      "conservado": "Rosedale",
+      "pisados": [
+        "Rosedale"
+      ]
+    },
+    {
+      "clave": "roselle",
+      "conservado": "Roselle",
+      "pisados": [
+        "Roselle"
+      ]
+    },
+    {
+      "clave": "roseville",
+      "conservado": "Roseville",
+      "pisados": [
+        "Roseville",
+        "Roseville"
+      ]
+    },
+    {
+      "clave": "rossosh",
+      "conservado": "Rossosh’",
+      "pisados": [
+        "Rossosh’"
+      ]
+    },
+    {
+      "clave": "rossville",
+      "conservado": "Rossville",
+      "pisados": [
+        "Rossville"
+      ]
+    },
+    {
+      "clave": "roswell",
+      "conservado": "Roswell",
+      "pisados": [
+        "Roswell"
+      ]
+    },
+    {
+      "clave": "rotterdam",
+      "conservado": "Rotterdam",
+      "pisados": [
+        "Rotterdam"
+      ]
+    },
+    {
+      "clave": "roxas",
+      "conservado": "Roxas",
+      "pisados": [
+        "Roxas"
+      ]
+    },
+    {
+      "clave": "rustaq",
+      "conservado": "Rustāq",
+      "pisados": [
+        "Rustaq"
+      ]
+    },
+    {
+      "clave": "rutland",
+      "conservado": "Rutland",
+      "pisados": [
+        "Rutland"
+      ]
+    },
+    {
+      "clave": "ryde",
+      "conservado": "Ryde",
+      "pisados": [
+        "Ryde"
+      ]
+    },
+    {
+      "clave": "sabanagrande",
+      "conservado": "Sabanagrande",
+      "pisados": [
+        "Sabanagrande"
+      ]
+    },
+    {
+      "clave": "sabaneta",
+      "conservado": "Sabaneta",
+      "pisados": [
+        "Sabaneta"
+      ]
+    },
+    {
+      "clave": "sacramento",
+      "conservado": "Sacramento",
+      "pisados": [
+        "Sacramento"
+      ]
+    },
+    {
+      "clave": "safi",
+      "conservado": "Safi",
+      "pisados": [
+        "Safi"
+      ]
+    },
+    {
+      "clave": "saginaw",
+      "conservado": "Saginaw",
+      "pisados": [
+        "Saginaw"
+      ]
+    },
+    {
+      "clave": "sagrada familia",
+      "conservado": "Sagrada Familia",
+      "pisados": [
+        "Sagrada Família"
+      ]
+    },
+    {
+      "clave": "sahibganj",
+      "conservado": "Sāhibganj",
+      "pisados": [
+        "Sāhibganj"
+      ]
+    },
+    {
+      "clave": "sahiwal",
+      "conservado": "Sahiwal",
+      "pisados": [
+        "Sahiwal"
+      ]
+    },
+    {
+      "clave": "saidpur",
+      "conservado": "Saidpur",
+      "pisados": [
+        "Saidpur"
+      ]
+    },
+    {
+      "clave": "saint andrews",
+      "conservado": "Saint Andrews",
+      "pisados": [
+        "Saint Andrews"
+      ]
+    },
+    {
+      "clave": "saint charles",
+      "conservado": "Saint Charles",
+      "pisados": [
+        "Saint Charles"
+      ]
+    },
+    {
+      "clave": "saint cloud",
+      "conservado": "Saint Cloud",
+      "pisados": [
+        "Saint Cloud"
+      ]
+    },
+    {
+      "clave": "saint ives",
+      "conservado": "Saint Ives",
+      "pisados": [
+        "Saint Ives"
+      ]
+    },
+    {
+      "clave": "saint peters",
+      "conservado": "Saint Peters",
+      "pisados": [
+        "Saint Peters"
+      ]
+    },
+    {
+      "clave": "saint-denis",
+      "conservado": "Saint-Denis",
+      "pisados": [
+        "Saint-Denis"
+      ]
+    },
+    {
+      "clave": "saint-joseph",
+      "conservado": "Saint-Joseph",
+      "pisados": [
+        "Saint-Joseph"
+      ]
+    },
+    {
+      "clave": "saint-leu",
+      "conservado": "Saint-Leu",
+      "pisados": [
+        "Saint-Leu"
+      ]
+    },
+    {
+      "clave": "saint-louis",
+      "conservado": "Saint-Louis",
+      "pisados": [
+        "Saint-Louis",
+        "Saint-Louis"
+      ]
+    },
+    {
+      "clave": "saint-pierre",
+      "conservado": "Saint-Pierre",
+      "pisados": [
+        "Saint-Pierre"
+      ]
+    },
+    {
+      "clave": "saint-raphael",
+      "conservado": "Saint-Raphaël",
+      "pisados": [
+        "Saint-Raphaël"
+      ]
+    },
+    {
+      "clave": "sainte-catherine",
+      "conservado": "Sainte-Catherine",
+      "pisados": [
+        "Sainte-Catherine"
+      ]
+    },
+    {
+      "clave": "sainte-marguerite",
+      "conservado": "Sainte-Marguerite",
+      "pisados": [
+        "Sainte-Marguerite"
+      ]
+    },
+    {
+      "clave": "sainte-marie",
+      "conservado": "Sainte-Marie",
+      "pisados": [
+        "Sainte-Marie"
+      ]
+    },
+    {
+      "clave": "sakai",
+      "conservado": "Sakai",
+      "pisados": [
+        "Sakai",
+        "Sakai",
+        "Sakai"
+      ]
+    },
+    {
+      "clave": "sakura",
+      "conservado": "Sakura",
+      "pisados": [
+        "Sakura"
+      ]
+    },
+    {
+      "clave": "salamanca",
+      "conservado": "Salamanca",
+      "pisados": [
+        "Salamanca",
+        "Salamanca"
+      ]
+    },
+    {
+      "clave": "salamina",
+      "conservado": "Salamina",
+      "pisados": [
+        "Salamína"
+      ]
+    },
+    {
+      "clave": "sale",
+      "conservado": "Sale",
+      "pisados": [
+        "Salé"
+      ]
+    },
+    {
+      "clave": "salem",
+      "conservado": "Salem",
+      "pisados": [
+        "Salem",
+        "Salem",
+        "Salem",
+        "Salem"
+      ]
+    },
+    {
+      "clave": "salinas",
+      "conservado": "Salinas",
+      "pisados": [
+        "Salinas",
+        "Salinas"
+      ]
+    },
+    {
+      "clave": "salisbury",
+      "conservado": "Salisbury",
+      "pisados": [
+        "Salisbury",
+        "Salisbury"
+      ]
+    },
+    {
+      "clave": "salto",
+      "conservado": "Salto",
+      "pisados": [
+        "Salto",
+        "Salto"
+      ]
+    },
+    {
+      "clave": "samal",
+      "conservado": "Samal",
+      "pisados": [
+        "Samal"
+      ]
+    },
+    {
+      "clave": "samara",
+      "conservado": "Samara",
+      "pisados": [
+        "Samara"
+      ]
+    },
+    {
+      "clave": "samba",
+      "conservado": "Samba",
+      "pisados": [
+        "Sāmba"
+      ]
+    },
+    {
+      "clave": "san antonio",
+      "conservado": "San Antonio",
+      "pisados": [
+        "San Antonio",
+        "San Antonio",
+        "San Antonio",
+        "San Antonio",
+        "San Antonio"
+      ]
+    },
+    {
+      "clave": "san benito",
+      "conservado": "San Benito",
+      "pisados": [
+        "San Benito"
+      ]
+    },
+    {
+      "clave": "san buenaventura",
+      "conservado": "San Buenaventura",
+      "pisados": [
+        "San Buenaventura"
+      ]
+    },
+    {
+      "clave": "san carlos",
+      "conservado": "San Carlos",
+      "pisados": [
+        "San Carlos",
+        "San Carlos",
+        "San Carlos",
+        "San Carlos"
+      ]
+    },
+    {
+      "clave": "san clemente",
+      "conservado": "San Clemente",
+      "pisados": [
+        "San Clemente",
+        "San Clemente"
+      ]
+    },
+    {
+      "clave": "san cristobal",
+      "conservado": "San Cristobal",
+      "pisados": [
+        "San Cristóbal",
+        "San Cristobal",
+        "San Cristóbal"
+      ]
+    },
+    {
+      "clave": "san diego",
+      "conservado": "San Diego",
+      "pisados": [
+        "San Diego",
+        "San Diego",
+        "San Diego"
+      ]
+    },
+    {
+      "clave": "san felipe",
+      "conservado": "San Felipe",
+      "pisados": [
+        "San Felipe",
+        "San Felipe",
+        "San Felipe",
+        "San Felipe",
+        "San Felipe"
+      ]
+    },
+    {
+      "clave": "san fernando",
+      "conservado": "San Fernando",
+      "pisados": [
+        "San Fernando",
+        "San Fernando",
+        "San Fernando",
+        "San Fernando",
+        "San Fernando",
+        "San Fernando",
+        "San Fernando"
+      ]
+    },
+    {
+      "clave": "san francisco",
+      "conservado": "San Francisco",
+      "pisados": [
+        "San Francisco",
+        "San Francisco",
+        "San Francisco",
+        "San Francisco",
+        "San Francisco"
+      ]
+    },
+    {
+      "clave": "san isidro",
+      "conservado": "San Isidro",
+      "pisados": [
+        "San Isidro",
+        "San Isidro",
+        "San Isidro",
+        "San Isidro",
+        "San Isidro",
+        "San Isidro"
+      ]
+    },
+    {
+      "clave": "san jacinto",
+      "conservado": "San Jacinto",
+      "pisados": [
+        "San Jacinto"
+      ]
+    },
+    {
+      "clave": "san javier",
+      "conservado": "San Javier",
+      "pisados": [
+        "San Javier",
+        "San Javier"
+      ]
+    },
+    {
+      "clave": "san jose",
+      "conservado": "San José",
+      "pisados": [
+        "San José",
+        "San Jose",
+        "San Jose",
+        "San Jose",
+        "San Jose"
+      ]
+    },
+    {
+      "clave": "san juan",
+      "conservado": "San Juan",
+      "pisados": [
+        "San Juan",
+        "San Juan",
+        "San Juan",
+        "San Juan",
+        "San Juan"
+      ]
+    },
+    {
+      "clave": "san juan bautista",
+      "conservado": "San Juan Bautista",
+      "pisados": [
+        "San Juan Bautista"
+      ]
+    },
+    {
+      "clave": "san justo",
+      "conservado": "San Justo",
+      "pisados": [
+        "San Justo"
+      ]
+    },
+    {
+      "clave": "san lorenzo",
+      "conservado": "San Lorenzo",
+      "pisados": [
+        "San Lorenzo",
+        "San Lorenzo",
+        "San Lorenzo",
+        "San Lorenzo",
+        "San Lorenzo",
+        "San Lorenzo"
+      ]
+    },
+    {
+      "clave": "san luis",
+      "conservado": "San Luis",
+      "pisados": [
+        "San Luis",
+        "San Luis",
+        "San Luis",
+        "San Luis"
+      ]
+    },
+    {
+      "clave": "san marcos",
+      "conservado": "San Marcos",
+      "pisados": [
+        "San Marcos",
+        "San Marcos",
+        "San Marcos",
+        "San Marcos",
+        "San Marcos"
+      ]
+    },
+    {
+      "clave": "san martin",
+      "conservado": "San Martín",
+      "pisados": [
+        "San Martín",
+        "San Martín",
+        "San Martin",
+        "San Martín"
+      ]
+    },
+    {
+      "clave": "san mateo",
+      "conservado": "San Mateo",
+      "pisados": [
+        "San Mateo",
+        "San Mateo",
+        "San Mateo"
+      ]
+    },
+    {
+      "clave": "san miguel",
+      "conservado": "San Miguel",
+      "pisados": [
+        "San Miguel",
+        "San Miguel",
+        "San Miguel",
+        "San Miguel",
+        "San Miguel"
+      ]
+    },
+    {
+      "clave": "san pablo",
+      "conservado": "San Pablo",
+      "pisados": [
+        "San Pablo",
+        "San Pablo",
+        "San Pablo"
+      ]
+    },
+    {
+      "clave": "san pascual",
+      "conservado": "San Pascual",
+      "pisados": [
+        "San Pascual"
+      ]
+    },
+    {
+      "clave": "san pedro",
+      "conservado": "San Pedro",
+      "pisados": [
+        "San Pedro",
+        "San Pedro",
+        "San Pedro",
+        "San Pedro",
+        "San Pedro",
+        "San Pedro",
+        "San Pedro"
+      ]
+    },
+    {
+      "clave": "san rafael",
+      "conservado": "San Rafael",
+      "pisados": [
+        "San Rafael",
+        "San Rafael",
+        "San Rafael",
+        "San Rafael"
+      ]
+    },
+    {
+      "clave": "san tin",
+      "conservado": "San Tin",
+      "pisados": [
+        "San Tin"
+      ]
+    },
+    {
+      "clave": "san vicente",
+      "conservado": "San Vicente",
+      "pisados": [
+        "San Vicente",
+        "San Vicente",
+        "San Vicente",
+        "San Vicente",
+        "San Vicente",
+        "San Vicente",
+        "San Vicente"
+      ]
+    },
+    {
+      "clave": "sanford",
+      "conservado": "Sanford",
+      "pisados": [
+        "Sanford",
+        "Sanford"
+      ]
+    },
+    {
+      "clave": "sangaria",
+      "conservado": "Sangariā",
+      "pisados": [
+        "Sāngaria"
+      ]
+    },
+    {
+      "clave": "sanhe",
+      "conservado": "Sanhe",
+      "pisados": [
+        "Sanhe",
+        "Sanhe"
+      ]
+    },
+    {
+      "clave": "sanjiao",
+      "conservado": "Sanjiao",
+      "pisados": [
+        "Sanjiao"
+      ]
+    },
+    {
+      "clave": "sankt peter",
+      "conservado": "Sankt Peter",
+      "pisados": [
+        "Sankt Peter"
+      ]
+    },
+    {
+      "clave": "santa ana",
+      "conservado": "Santa Ana",
+      "pisados": [
+        "Santa Ana",
+        "Santa Ana",
+        "Santa Ana",
+        "Santa Ana",
+        "Santa Ana"
+      ]
+    },
+    {
+      "clave": "santa barbara",
+      "conservado": "Santa Bárbara",
+      "pisados": [
+        "Santa Bárbara",
+        "Santa Bárbara",
+        "Santa Bárbara",
+        "Santa Barbara",
+        "Santa Barbara",
+        "Santa Bárbara"
+      ]
+    },
+    {
+      "clave": "santa cecilia",
+      "conservado": "Santa Cecília",
+      "pisados": [
+        "Santa Cecilia"
+      ]
+    },
+    {
+      "clave": "santa clara",
+      "conservado": "Santa Clara",
+      "pisados": [
+        "Santa Clara",
+        "Santa Clara"
+      ]
+    },
+    {
+      "clave": "santa cruz",
+      "conservado": "Santa Cruz",
+      "pisados": [
+        "Santa Cruz",
+        "Santa Cruz",
+        "Santa Cruz",
+        "Santa Cruz",
+        "Santa Cruz",
+        "Santa Cruz",
+        "Santa Cruz"
+      ]
+    },
+    {
+      "clave": "santa elena",
+      "conservado": "Santa Elena",
+      "pisados": [
+        "Santa Elena"
+      ]
+    },
+    {
+      "clave": "santa fe",
+      "conservado": "Santa Fe",
+      "pisados": [
+        "Santa Fe"
+      ]
+    },
+    {
+      "clave": "santa helena",
+      "conservado": "Santa Helena",
+      "pisados": [
+        "Santa Helena"
+      ]
+    },
+    {
+      "clave": "santa isabel",
+      "conservado": "Santa Isabel",
+      "pisados": [
+        "Santa Isabel"
+      ]
+    },
+    {
+      "clave": "santa lucia",
+      "conservado": "Santa Lucía",
+      "pisados": [
+        "Santa Lucía",
+        "Santa Lucía",
+        "Santa Lucía"
+      ]
+    },
+    {
+      "clave": "santa luzia",
+      "conservado": "Santa Luzia",
+      "pisados": [
+        "Santa Luzia",
+        "Santa Luzia",
+        "Santa Luzia"
+      ]
+    },
+    {
+      "clave": "santa maria",
+      "conservado": "Santa María",
+      "pisados": [
+        "Santa Maria",
+        "Santa Maria",
+        "Santa Maria",
+        "Santa Maria",
+        "Santa Maria"
+      ]
+    },
+    {
+      "clave": "santa rita",
+      "conservado": "Santa Rita",
+      "pisados": [
+        "Santa Rita",
+        "Santa Rita",
+        "Santa Rita",
+        "Santa Rita"
+      ]
+    },
+    {
+      "clave": "santa rosa",
+      "conservado": "Santa Rosa",
+      "pisados": [
+        "Santa Rosa",
+        "Santa Rosa",
+        "Santa Rosa",
+        "Santa Rosa",
+        "Santa Rosa",
+        "Santa Rosa",
+        "Santa Rosa"
+      ]
+    },
+    {
+      "clave": "santa teresa",
+      "conservado": "Santa Teresa",
+      "pisados": [
+        "Santa Teresa",
+        "Santa Teresa"
+      ]
+    },
+    {
+      "clave": "santana",
+      "conservado": "Santana",
+      "pisados": [
+        "Santana",
+        "Santana"
+      ]
+    },
+    {
+      "clave": "santarem",
+      "conservado": "Santarém",
+      "pisados": [
+        "Santarém"
+      ]
+    },
+    {
+      "clave": "santiago",
+      "conservado": "Santiago",
+      "pisados": [
+        "Santiago",
+        "Santiago",
+        "Santiago",
+        "Santiago"
+      ]
+    },
+    {
+      "clave": "santo amaro",
+      "conservado": "Santo Amaro",
+      "pisados": [
+        "Santo Amaro"
+      ]
+    },
+    {
+      "clave": "santo antonio",
+      "conservado": "Santo Antônio",
+      "pisados": [
+        "Santo António",
+        "Santo António"
+      ]
+    },
+    {
+      "clave": "santo domingo",
+      "conservado": "Santo Domingo",
+      "pisados": [
+        "Santo Domingo"
+      ]
+    },
+    {
+      "clave": "santo tomas",
+      "conservado": "Santo Tomás",
+      "pisados": [
+        "Santo Tomas"
+      ]
+    },
+    {
+      "clave": "santo tome",
+      "conservado": "Santo Tomé",
+      "pisados": [
+        "Santo Tomé"
+      ]
+    },
+    {
+      "clave": "sao bento",
+      "conservado": "São Bento",
+      "pisados": [
+        "São Bento"
+      ]
+    },
+    {
+      "clave": "sao gabriel",
+      "conservado": "São Gabriel",
+      "pisados": [
+        "São Gabriel"
+      ]
+    },
+    {
+      "clave": "sao goncalo do amarante",
+      "conservado": "São Gonçalo do Amarante",
+      "pisados": [
+        "São Gonçalo do Amarante"
+      ]
+    },
+    {
+      "clave": "sao joao batista",
+      "conservado": "São João Batista",
+      "pisados": [
+        "São João Batista"
+      ]
+    },
+    {
+      "clave": "sao jose",
+      "conservado": "São José",
+      "pisados": [
+        "São José"
+      ]
+    },
+    {
+      "clave": "sao lourenco",
+      "conservado": "São Lourenço",
+      "pisados": [
+        "São Lourenço"
+      ]
+    },
+    {
+      "clave": "sao mateus",
+      "conservado": "São Mateus",
+      "pisados": [
+        "São Mateus"
+      ]
+    },
+    {
+      "clave": "sao miguel",
+      "conservado": "São Miguel",
+      "pisados": [
+        "São Miguel"
+      ]
+    },
+    {
+      "clave": "sao pedro",
+      "conservado": "São Pedro",
+      "pisados": [
+        "São Pedro"
+      ]
+    },
+    {
+      "clave": "sao sebastiao",
+      "conservado": "São Sebastião",
+      "pisados": [
+        "São Sebastião",
+        "São Sebastião"
+      ]
+    },
+    {
+      "clave": "sao vicente ferrer",
+      "conservado": "São Vicente Férrer",
+      "pisados": [
+        "São Vicente Ferrer"
+      ]
+    },
+    {
+      "clave": "saran",
+      "conservado": "Saran",
+      "pisados": [
+        "Saran"
+      ]
+    },
+    {
+      "clave": "sarandi",
+      "conservado": "Sarandí",
+      "pisados": [
+        "Sarandi",
+        "Sarandi"
+      ]
+    },
+    {
+      "clave": "saratoga springs",
+      "conservado": "Saratoga Springs",
+      "pisados": [
+        "Saratoga Springs"
+      ]
+    },
+    {
+      "clave": "sayama",
+      "conservado": "Sayama",
+      "pisados": [
+        "Sayama",
+        "Sayama"
+      ]
+    },
+    {
+      "clave": "scarborough",
+      "conservado": "Scarborough",
+      "pisados": [
+        "Scarborough",
+        "Scarborough"
+      ]
+    },
+    {
+      "clave": "se",
+      "conservado": "Sé",
+      "pisados": [
+        "Se",
+        "Sé"
+      ]
+    },
+    {
+      "clave": "seaford",
+      "conservado": "Seaford",
+      "pisados": [
+        "Seaford",
+        "Seaford"
+      ]
+    },
+    {
+      "clave": "segovia",
+      "conservado": "Segovia",
+      "pisados": [
+        "Segovia"
+      ]
+    },
+    {
+      "clave": "selma",
+      "conservado": "Selma",
+      "pisados": [
+        "Selma"
+      ]
+    },
+    {
+      "clave": "sendai",
+      "conservado": "Sendai",
+      "pisados": [
+        "Sendai"
+      ]
+    },
+    {
+      "clave": "senden",
+      "conservado": "Senden",
+      "pisados": [
+        "Senden"
+      ]
+    },
+    {
+      "clave": "sevilla",
+      "conservado": "Sevilla",
+      "pisados": [
+        "Sevilla"
+      ]
+    },
+    {
+      "clave": "seymour",
+      "conservado": "Seymour",
+      "pisados": [
+        "Seymour"
+      ]
+    },
+    {
+      "clave": "shahabad",
+      "conservado": "Shāhābād",
+      "pisados": [
+        "Shāhābād",
+        "Shāhābād",
+        "Shāhābād"
+      ]
+    },
+    {
+      "clave": "shahe",
+      "conservado": "Shahe",
+      "pisados": [
+        "Shahe"
+      ]
+    },
+    {
+      "clave": "shahpur",
+      "conservado": "Shāhpur",
+      "pisados": [
+        "Shāhpur",
+        "Shāhpur",
+        "Shāhpur"
+      ]
+    },
+    {
+      "clave": "shahpura",
+      "conservado": "Shāhpura",
+      "pisados": [
+        "Shāhpura"
+      ]
+    },
+    {
+      "clave": "shamsabad",
+      "conservado": "Shamsābād",
+      "pisados": [
+        "Shamsābād"
+      ]
+    },
+    {
+      "clave": "shaping",
+      "conservado": "Shaping",
+      "pisados": [
+        "Shaping"
+      ]
+    },
+    {
+      "clave": "sharifabad",
+      "conservado": "Sharīfābād",
+      "pisados": [
+        "Sharifabad"
+      ]
+    },
+    {
+      "clave": "shawnee",
+      "conservado": "Shawnee",
+      "pisados": [
+        "Shawnee"
+      ]
+    },
+    {
+      "clave": "shelby",
+      "conservado": "Shelby",
+      "pisados": [
+        "Shelby"
+      ]
+    },
+    {
+      "clave": "shelbyville",
+      "conservado": "Shelbyville",
+      "pisados": [
+        "Shelbyville",
+        "Shelbyville"
+      ]
+    },
+    {
+      "clave": "shendi",
+      "conservado": "Shendi",
+      "pisados": [
+        "Shendi"
+      ]
+    },
+    {
+      "clave": "sherwood",
+      "conservado": "Sherwood",
+      "pisados": [
+        "Sherwood"
+      ]
+    },
+    {
+      "clave": "shevchenkivskyi",
+      "conservado": "Shevchenkivskyi",
+      "pisados": [
+        "Shevchenkivskyi",
+        "Shevchenkivskyi"
+      ]
+    },
+    {
+      "clave": "shibetsu",
+      "conservado": "Shibetsu",
+      "pisados": [
+        "Shibetsu"
+      ]
+    },
+    {
+      "clave": "shibganj",
+      "conservado": "Shibganj",
+      "pisados": [
+        "Shibganj"
+      ]
+    },
+    {
+      "clave": "shikarpur",
+      "conservado": "Shikārpūr",
+      "pisados": [
+        "Shikarpur"
+      ]
+    },
+    {
+      "clave": "shilong",
+      "conservado": "Shilong",
+      "pisados": [
+        "Shilong"
+      ]
+    },
+    {
+      "clave": "shima",
+      "conservado": "Shima",
+      "pisados": [
+        "Shima",
+        "Shima",
+        "Shima"
+      ]
+    },
+    {
+      "clave": "shimada",
+      "conservado": "Shimada",
+      "pisados": [
+        "Shimada"
+      ]
+    },
+    {
+      "clave": "shimoda",
+      "conservado": "Shimoda",
+      "pisados": [
+        "Shimoda"
+      ]
+    },
+    {
+      "clave": "shingu",
+      "conservado": "Shingū",
+      "pisados": [
+        "Shingū"
+      ]
+    },
+    {
+      "clave": "shiqiao",
+      "conservado": "Shiqiao",
+      "pisados": [
+        "Shiqiao"
+      ]
+    },
+    {
+      "clave": "shirley",
+      "conservado": "Shirley",
+      "pisados": [
+        "Shirley"
+      ]
+    },
+    {
+      "clave": "shiwan",
+      "conservado": "Shiwan",
+      "pisados": [
+        "Shiwan",
+        "Shiwan"
+      ]
+    },
+    {
+      "clave": "shiyan",
+      "conservado": "Shiyan",
+      "pisados": [
+        "Shiyan"
+      ]
+    },
+    {
+      "clave": "shrewsbury",
+      "conservado": "Shrewsbury",
+      "pisados": [
+        "Shrewsbury"
+      ]
+    },
+    {
+      "clave": "shrirampur",
+      "conservado": "Shrīrāmpur",
+      "pisados": [
+        "Shrirampur"
+      ]
+    },
+    {
+      "clave": "shuangjiang",
+      "conservado": "Shuangjiang",
+      "pisados": [
+        "Shuangjiang"
+      ]
+    },
+    {
+      "clave": "shuanglong",
+      "conservado": "Shuanglong",
+      "pisados": [
+        "Shuanglong",
+        "Shuanglong"
+      ]
+    },
+    {
+      "clave": "shuikou",
+      "conservado": "Shuikou",
+      "pisados": [
+        "Shuikou"
+      ]
+    },
+    {
+      "clave": "sibi",
+      "conservado": "Sibi",
+      "pisados": [
+        "Sibi"
+      ]
+    },
+    {
+      "clave": "silvania",
+      "conservado": "Silvânia",
+      "pisados": [
+        "Silvania"
+      ]
+    },
+    {
+      "clave": "sinop",
+      "conservado": "Sinop",
+      "pisados": [
+        "Sinop"
+      ]
+    },
+    {
+      "clave": "sirsi",
+      "conservado": "Sirsi",
+      "pisados": [
+        "Sirsi"
+      ]
+    },
+    {
+      "clave": "sisauli",
+      "conservado": "Sisauli",
+      "pisados": [
+        "Sisauli"
+      ]
+    },
+    {
+      "clave": "sivagiri",
+      "conservado": "Sivagiri",
+      "pisados": [
+        "Sivagiri"
+      ]
+    },
+    {
+      "clave": "slobozia",
+      "conservado": "Slobozia",
+      "pisados": [
+        "Slobozia"
+      ]
+    },
+    {
+      "clave": "smyrna",
+      "conservado": "Smyrna",
+      "pisados": [
+        "Smyrna"
+      ]
+    },
+    {
+      "clave": "sobradinho",
+      "conservado": "Sobradinho",
+      "pisados": [
+        "Sobradinho",
+        "Sobradinho"
+      ]
+    },
+    {
+      "clave": "socorro",
+      "conservado": "Socorro",
+      "pisados": [
+        "Socorro",
+        "Socorro",
+        "Socorro"
+      ]
+    },
+    {
+      "clave": "soest",
+      "conservado": "Soest",
+      "pisados": [
+        "Soest"
+      ]
+    },
+    {
+      "clave": "sokol",
+      "conservado": "Sokol",
+      "pisados": [
+        "Sokol"
+      ]
+    },
+    {
+      "clave": "soledad",
+      "conservado": "Soledad",
+      "pisados": [
+        "Soledad",
+        "Soledad"
+      ]
+    },
+    {
+      "clave": "soledade",
+      "conservado": "Soledade",
+      "pisados": [
+        "Soledade"
+      ]
+    },
+    {
+      "clave": "soma",
+      "conservado": "Soma",
+      "pisados": [
+        "Sōma",
+        "Soma"
+      ]
+    },
+    {
+      "clave": "somerset",
+      "conservado": "Somerset",
+      "pisados": [
+        "Somerset"
+      ]
+    },
+    {
+      "clave": "somerton",
+      "conservado": "Somerton",
+      "pisados": [
+        "Somerton"
+      ]
+    },
+    {
+      "clave": "sonepur",
+      "conservado": "Sonepur",
+      "pisados": [
+        "Sonepur"
+      ]
+    },
+    {
+      "clave": "songo",
+      "conservado": "Songo",
+      "pisados": [
+        "Songo"
+      ]
+    },
+    {
+      "clave": "south gate",
+      "conservado": "South Gate",
+      "pisados": [
+        "South Gate"
+      ]
+    },
+    {
+      "clave": "southport",
+      "conservado": "Southport",
+      "pisados": [
+        "Southport"
+      ]
+    },
+    {
+      "clave": "sovetsk",
+      "conservado": "Sovetsk",
+      "pisados": [
+        "Sovetsk"
+      ]
+    },
+    {
+      "clave": "sparta",
+      "conservado": "Sparta",
+      "pisados": [
+        "Sparta"
+      ]
+    },
+    {
+      "clave": "spring hill",
+      "conservado": "Spring Hill",
+      "pisados": [
+        "Spring Hill"
+      ]
+    },
+    {
+      "clave": "spring valley",
+      "conservado": "Spring Valley",
+      "pisados": [
+        "Spring Valley",
+        "Spring Valley"
+      ]
+    },
+    {
+      "clave": "springfield",
+      "conservado": "Springfield",
+      "pisados": [
+        "Springfield",
+        "Springfield",
+        "Springfield",
+        "Springfield",
+        "Springfield",
+        "Springfield",
+        "Springfield"
+      ]
+    },
+    {
+      "clave": "srinagar",
+      "conservado": "Srinagar",
+      "pisados": [
+        "Srīnagar"
+      ]
+    },
+    {
+      "clave": "sriramnagar",
+      "conservado": "Srīrāmnagar",
+      "pisados": [
+        "Sriramnagar"
+      ]
+    },
+    {
+      "clave": "srodmiescie",
+      "conservado": "Śródmieście",
+      "pisados": [
+        "Środmieście",
+        "Śródmieście"
+      ]
+    },
+    {
+      "clave": "st albans",
+      "conservado": "St Albans",
+      "pisados": [
+        "St Albans"
+      ]
+    },
+    {
+      "clave": "st. charles",
+      "conservado": "St. Charles",
+      "pisados": [
+        "St. Charles"
+      ]
+    },
+    {
+      "clave": "stafford",
+      "conservado": "Stafford",
+      "pisados": [
+        "Stafford"
+      ]
+    },
+    {
+      "clave": "stamford",
+      "conservado": "Stamford",
+      "pisados": [
+        "Stamford"
+      ]
+    },
+    {
+      "clave": "stanley",
+      "conservado": "Stanley",
+      "pisados": [
+        "Stanley"
+      ]
+    },
+    {
+      "clave": "sterling",
+      "conservado": "Sterling",
+      "pisados": [
+        "Sterling"
+      ]
+    },
+    {
+      "clave": "stillwater",
+      "conservado": "Stillwater",
+      "pisados": [
+        "Stillwater"
+      ]
+    },
+    {
+      "clave": "stratford",
+      "conservado": "Stratford",
+      "pisados": [
+        "Stratford",
+        "Stratford"
+      ]
+    },
+    {
+      "clave": "sucre",
+      "conservado": "Sucre",
+      "pisados": [
+        "Sucre",
+        "Sucre"
+      ]
+    },
+    {
+      "clave": "sudbury",
+      "conservado": "Sudbury",
+      "pisados": [
+        "Sudbury"
+      ]
+    },
+    {
+      "clave": "sultanpur",
+      "conservado": "Sultanpur",
+      "pisados": [
+        "Sultānpur"
+      ]
+    },
+    {
+      "clave": "sun city",
+      "conservado": "Sun City",
+      "pisados": [
+        "Sun City"
+      ]
+    },
+    {
+      "clave": "sunnyside",
+      "conservado": "Sunnyside",
+      "pisados": [
+        "Sunnyside"
+      ]
+    },
+    {
+      "clave": "sunset",
+      "conservado": "Sunset",
+      "pisados": [
+        "Sunset"
+      ]
+    },
+    {
+      "clave": "suzhou",
+      "conservado": "Suzhou",
+      "pisados": [
+        "Suzhou"
+      ]
+    },
+    {
+      "clave": "swansea",
+      "conservado": "Swansea",
+      "pisados": [
+        "Swansea"
+      ]
+    },
+    {
+      "clave": "sydney",
+      "conservado": "Sydney",
+      "pisados": [
+        "Sydney"
+      ]
+    },
+    {
+      "clave": "syracuse",
+      "conservado": "Syracuse",
+      "pisados": [
+        "Syracuse"
+      ]
+    },
+    {
+      "clave": "tabuk",
+      "conservado": "Tabuk",
+      "pisados": [
+        "Tabuk"
+      ]
+    },
+    {
+      "clave": "taian",
+      "conservado": "Tai’an",
+      "pisados": [
+        "Tai’an",
+        "Tai’an"
+      ]
+    },
+    {
+      "clave": "taiping",
+      "conservado": "Taiping",
+      "pisados": [
+        "Taiping",
+        "Taiping",
+        "Taiping"
+      ]
+    },
+    {
+      "clave": "taizhou",
+      "conservado": "Taizhou",
+      "pisados": [
+        "Taizhou"
+      ]
+    },
+    {
+      "clave": "takeo",
+      "conservado": "Takeo",
+      "pisados": [
+        "Takeo"
+      ]
+    },
+    {
+      "clave": "tala",
+      "conservado": "Talā",
+      "pisados": [
+        "Tala"
+      ]
+    },
+    {
+      "clave": "talas",
+      "conservado": "Talas",
+      "pisados": [
+        "Talas"
+      ]
+    },
+    {
+      "clave": "talisay",
+      "conservado": "Talisay",
+      "pisados": [
+        "Talisay",
+        "Talisay"
+      ]
+    },
+    {
+      "clave": "talitsa",
+      "conservado": "Talitsa",
+      "pisados": [
+        "Talitsa"
+      ]
+    },
+    {
+      "clave": "tamboril",
+      "conservado": "Tamboril",
+      "pisados": [
+        "Tamboril"
+      ]
+    },
+    {
+      "clave": "tamworth",
+      "conservado": "Tamworth",
+      "pisados": [
+        "Tamworth"
+      ]
+    },
+    {
+      "clave": "tanabe",
+      "conservado": "Tanabe",
+      "pisados": [
+        "Tanabe"
+      ]
+    },
+    {
+      "clave": "tanauan",
+      "conservado": "Tanauan",
+      "pisados": [
+        "Tanauan"
+      ]
+    },
+    {
+      "clave": "tanda",
+      "conservado": "Tanda",
+      "pisados": [
+        "Tānda",
+        "Tāndā"
+      ]
+    },
+    {
+      "clave": "tantou",
+      "conservado": "Tantou",
+      "pisados": [
+        "Tantou"
+      ]
+    },
+    {
+      "clave": "taoyuan",
+      "conservado": "Taoyuan",
+      "pisados": [
+        "Taoyuan",
+        "Taoyuan"
+      ]
+    },
+    {
+      "clave": "tapejara",
+      "conservado": "Tapejara",
+      "pisados": [
+        "Tapejara"
+      ]
+    },
+    {
+      "clave": "taranagar",
+      "conservado": "Tārānagar",
+      "pisados": [
+        "Taranagar"
+      ]
+    },
+    {
+      "clave": "tata",
+      "conservado": "Tata",
+      "pisados": [
+        "Tata"
+      ]
+    },
+    {
+      "clave": "tatsuno",
+      "conservado": "Tatsuno",
+      "pisados": [
+        "Tatsuno"
+      ]
+    },
+    {
+      "clave": "taunton",
+      "conservado": "Taunton",
+      "pisados": [
+        "Taunton"
+      ]
+    },
+    {
+      "clave": "taylor",
+      "conservado": "Taylor",
+      "pisados": [
+        "Taylor"
+      ]
+    },
+    {
+      "clave": "ternate",
+      "conservado": "Ternate",
+      "pisados": [
+        "Ternate"
+      ]
+    },
+    {
+      "clave": "texarkana",
+      "conservado": "Texarkana",
+      "pisados": [
+        "Texarkana"
+      ]
+    },
+    {
+      "clave": "thomasville",
+      "conservado": "Thomasville",
+      "pisados": [
+        "Thomasville"
+      ]
+    },
+    {
+      "clave": "tianfu",
+      "conservado": "Tianfu",
+      "pisados": [
+        "Tianfu"
+      ]
+    },
+    {
+      "clave": "tokai",
+      "conservado": "Tōkai",
+      "pisados": [
+        "Tokai",
+        "Tokai"
+      ]
+    },
+    {
+      "clave": "toledo",
+      "conservado": "Toledo",
+      "pisados": [
+        "Toledo",
+        "Toledo",
+        "Toledo"
+      ]
+    },
+    {
+      "clave": "tome",
+      "conservado": "Tomé",
+      "pisados": [
+        "Tome"
+      ]
+    },
+    {
+      "clave": "tonala",
+      "conservado": "Tonalá",
+      "pisados": [
+        "Tonalá"
+      ]
+    },
+    {
+      "clave": "tongchuan",
+      "conservado": "Tongchuan",
+      "pisados": [
+        "Tongchuan"
+      ]
+    },
+    {
+      "clave": "tonggu",
+      "conservado": "Tonggu",
+      "pisados": [
+        "Tonggu"
+      ]
+    },
+    {
+      "clave": "tongren",
+      "conservado": "Tongren",
+      "pisados": [
+        "Tongren"
+      ]
+    },
+    {
+      "clave": "torquay",
+      "conservado": "Torquay",
+      "pisados": [
+        "Torquay"
+      ]
+    },
+    {
+      "clave": "touba",
+      "conservado": "Touba",
+      "pisados": [
+        "Touba"
+      ]
+    },
+    {
+      "clave": "toyota",
+      "conservado": "Toyota",
+      "pisados": [
+        "Toyota"
+      ]
+    },
+    {
+      "clave": "trento",
+      "conservado": "Trento",
+      "pisados": [
+        "Trento"
+      ]
+    },
+    {
+      "clave": "trenton",
+      "conservado": "Trenton",
+      "pisados": [
+        "Trenton"
+      ]
+    },
+    {
+      "clave": "trindade",
+      "conservado": "Trindade",
+      "pisados": [
+        "Trindade",
+        "Trindade"
+      ]
+    },
+    {
+      "clave": "trinidad",
+      "conservado": "Trinidad",
+      "pisados": [
+        "Trinidad",
+        "Trinidad"
+      ]
+    },
+    {
+      "clave": "tripoli",
+      "conservado": "Trípoli",
+      "pisados": [
+        "Tripoli",
+        "Tripoli"
+      ]
+    },
+    {
+      "clave": "triunfo",
+      "conservado": "Triunfo",
+      "pisados": [
+        "Triunfo"
+      ]
+    },
+    {
+      "clave": "troitsk",
+      "conservado": "Troitsk",
+      "pisados": [
+        "Troitsk"
+      ]
+    },
+    {
+      "clave": "troy",
+      "conservado": "Troy",
+      "pisados": [
+        "Troy",
+        "Troy",
+        "Troy"
+      ]
+    },
+    {
+      "clave": "trujillo",
+      "conservado": "Trujillo",
+      "pisados": [
+        "Trujillo"
+      ]
+    },
+    {
+      "clave": "tsentralno-miskyi",
+      "conservado": "Tsentralno-Miskyi",
+      "pisados": [
+        "Tsentralno-Miskyi"
+      ]
+    },
+    {
+      "clave": "tsushima",
+      "conservado": "Tsushima",
+      "pisados": [
+        "Tsushima"
+      ]
+    },
+    {
+      "clave": "tuban",
+      "conservado": "Tuban",
+      "pisados": [
+        "Tuban"
+      ]
+    },
+    {
+      "clave": "tucuma",
+      "conservado": "Tucumã",
+      "pisados": [
+        "Tucumã"
+      ]
+    },
+    {
+      "clave": "tulsipur",
+      "conservado": "Tulsīpur",
+      "pisados": [
+        "Tulsi̇̄pur"
+      ]
+    },
+    {
+      "clave": "tunis",
+      "conservado": "Tūnis",
+      "pisados": [
+        "Tunis"
+      ]
+    },
+    {
+      "clave": "tuxpan",
+      "conservado": "Tuxpan",
+      "pisados": [
+        "Tuxpan"
+      ]
+    },
+    {
+      "clave": "udaipur",
+      "conservado": "Udaipur",
+      "pisados": [
+        "Udaipur",
+        "Udaipur"
+      ]
+    },
+    {
+      "clave": "uman",
+      "conservado": "Umán",
+      "pisados": [
+        "Uman"
+      ]
+    },
+    {
+      "clave": "umarkot",
+      "conservado": "Umarkot",
+      "pisados": [
+        "Umarkot"
+      ]
+    },
+    {
+      "clave": "un",
+      "conservado": "Ūn",
+      "pisados": [
+        "Un"
+      ]
+    },
+    {
+      "clave": "una",
+      "conservado": "Una",
+      "pisados": [
+        "Una",
+        "Una"
+      ]
+    },
+    {
+      "clave": "union city",
+      "conservado": "Union City",
+      "pisados": [
+        "Union City",
+        "Union City"
+      ]
+    },
+    {
+      "clave": "universal city",
+      "conservado": "Universal City",
+      "pisados": [
+        "Universal City"
+      ]
+    },
+    {
+      "clave": "university city",
+      "conservado": "University City",
+      "pisados": [
+        "University City"
+      ]
+    },
+    {
+      "clave": "university heights",
+      "conservado": "University Heights",
+      "pisados": [
+        "University Heights"
+      ]
+    },
+    {
+      "clave": "university park",
+      "conservado": "University Park",
+      "pisados": [
+        "University Park"
+      ]
+    },
+    {
+      "clave": "uxbridge",
+      "conservado": "Uxbridge",
+      "pisados": [
+        "Uxbridge"
+      ]
+    },
+    {
+      "clave": "vahidiyeh",
+      "conservado": "Vaḩīdīyeh",
+      "pisados": [
+        "Vaḩīdīyeh"
+      ]
+    },
+    {
+      "clave": "valenca",
+      "conservado": "Valença",
+      "pisados": [
+        "Valença"
+      ]
+    },
+    {
+      "clave": "valencia",
+      "conservado": "Valencia",
+      "pisados": [
+        "Valencia",
+        "Valencia",
+        "Valencia"
+      ]
+    },
+    {
+      "clave": "valladolid",
+      "conservado": "Valladolid",
+      "pisados": [
+        "Valladolid"
+      ]
+    },
+    {
+      "clave": "valparaiso",
+      "conservado": "Valparaíso",
+      "pisados": [
+        "Valparaíso",
+        "Valparaiso"
+      ]
+    },
+    {
+      "clave": "vancouver",
+      "conservado": "Vancouver",
+      "pisados": [
+        "Vancouver"
+      ]
+    },
+    {
+      "clave": "vanier",
+      "conservado": "Vanier",
+      "pisados": [
+        "Vanier"
+      ]
+    },
+    {
+      "clave": "varzea alegre",
+      "conservado": "Várzea Alegre",
+      "pisados": [
+        "Várzea Alegre"
+      ]
+    },
+    {
+      "clave": "venice",
+      "conservado": "Venice",
+      "pisados": [
+        "Venice",
+        "Venice"
+      ]
+    },
+    {
+      "clave": "venustiano carranza",
+      "conservado": "Venustiano Carranza",
+      "pisados": [
+        "Venustiano Carranza"
+      ]
+    },
+    {
+      "clave": "vera cruz",
+      "conservado": "Vera Cruz",
+      "pisados": [
+        "Vera Cruz",
+        "Vera Cruz"
+      ]
+    },
+    {
+      "clave": "veracruz",
+      "conservado": "Veracruz",
+      "pisados": [
+        "Veracruz"
+      ]
+    },
+    {
+      "clave": "verdun",
+      "conservado": "Verdun",
+      "pisados": [
+        "Verdun"
+      ]
+    },
+    {
+      "clave": "vernon",
+      "conservado": "Vernon",
+      "pisados": [
+        "Vernon"
+      ]
+    },
+    {
+      "clave": "viana",
+      "conservado": "Viana",
+      "pisados": [
+        "Viana",
+        "Viana"
+      ]
+    },
+    {
+      "clave": "vicosa",
+      "conservado": "Viçosa",
+      "pisados": [
+        "Viçosa"
+      ]
+    },
+    {
+      "clave": "victoria",
+      "conservado": "Victoria",
+      "pisados": [
+        "Victoria",
+        "Victoria",
+        "Victoria",
+        "Victoria",
+        "Victoria",
+        "Victoria",
+        "Victoria",
+        "Victoria"
+      ]
+    },
+    {
+      "clave": "vienna",
+      "conservado": "Vienna",
+      "pisados": [
+        "Vienna"
+      ]
+    },
+    {
+      "clave": "vijayapura",
+      "conservado": "Vijayapura",
+      "pisados": [
+        "Vijayapura"
+      ]
+    },
+    {
+      "clave": "villa del rosario",
+      "conservado": "Villa del Rosario",
+      "pisados": [
+        "Villa del Rosario"
+      ]
+    },
+    {
+      "clave": "villa mercedes",
+      "conservado": "Villa Mercedes",
+      "pisados": [
+        "Villa Mercedes"
+      ]
+    },
+    {
+      "clave": "villa nueva",
+      "conservado": "Villa Nueva",
+      "pisados": [
+        "Villa Nueva"
+      ]
+    },
+    {
+      "clave": "villanueva",
+      "conservado": "Villanueva",
+      "pisados": [
+        "Villanueva",
+        "Villanueva"
+      ]
+    },
+    {
+      "clave": "villarrica",
+      "conservado": "Villarrica",
+      "pisados": [
+        "Villarrica"
+      ]
+    },
+    {
+      "clave": "villeta",
+      "conservado": "Villeta",
+      "pisados": [
+        "Villeta"
+      ]
+    },
+    {
+      "clave": "vincennes",
+      "conservado": "Vincennes",
+      "pisados": [
+        "Vincennes"
+      ]
+    },
+    {
+      "clave": "vincent",
+      "conservado": "Vincent",
+      "pisados": [
+        "Vincent"
+      ]
+    },
+    {
+      "clave": "viseu",
+      "conservado": "Viseu",
+      "pisados": [
+        "Viseu"
+      ]
+    },
+    {
+      "clave": "vostryakovo",
+      "conservado": "Vostryakovo",
+      "pisados": [
+        "Vostryakovo"
+      ]
+    },
+    {
+      "clave": "wakefield",
+      "conservado": "Wakefield",
+      "pisados": [
+        "Wakefield",
+        "Wakefield"
+      ]
+    },
+    {
+      "clave": "wamba",
+      "conservado": "Wamba",
+      "pisados": [
+        "Wamba"
+      ]
+    },
+    {
+      "clave": "warren",
+      "conservado": "Warren",
+      "pisados": [
+        "Warren"
+      ]
+    },
+    {
+      "clave": "warwick",
+      "conservado": "Warwick",
+      "pisados": [
+        "Warwick",
+        "Warwick"
+      ]
+    },
+    {
+      "clave": "wasco",
+      "conservado": "Wasco",
+      "pisados": [
+        "Wasco"
+      ]
+    },
+    {
+      "clave": "washington",
+      "conservado": "Washington",
+      "pisados": [
+        "Washington",
+        "Washington",
+        "Washington"
+      ]
+    },
+    {
+      "clave": "waterford",
+      "conservado": "Waterford",
+      "pisados": [
+        "Waterford",
+        "Waterford"
+      ]
+    },
+    {
+      "clave": "waterloo",
+      "conservado": "Waterloo",
+      "pisados": [
+        "Waterloo",
+        "Waterloo",
+        "Waterloo"
+      ]
+    },
+    {
+      "clave": "watertown",
+      "conservado": "Watertown",
+      "pisados": [
+        "Watertown",
+        "Watertown",
+        "Watertown"
+      ]
+    },
+    {
+      "clave": "wayne",
+      "conservado": "Wayne",
+      "pisados": [
+        "Wayne",
+        "Wayne"
+      ]
+    },
+    {
+      "clave": "wellington",
+      "conservado": "Wellington",
+      "pisados": [
+        "Wellington",
+        "Wellington",
+        "Wellington",
+        "Wellington"
+      ]
+    },
+    {
+      "clave": "wenquan",
+      "conservado": "Wenquan",
+      "pisados": [
+        "Wenquan",
+        "Wenquan"
+      ]
+    },
+    {
+      "clave": "west end",
+      "conservado": "West End",
+      "pisados": [
+        "West End"
+      ]
+    },
+    {
+      "clave": "west hollywood",
+      "conservado": "West Hollywood",
+      "pisados": [
+        "West Hollywood"
+      ]
+    },
+    {
+      "clave": "west springfield",
+      "conservado": "West Springfield",
+      "pisados": [
+        "West Springfield"
+      ]
+    },
+    {
+      "clave": "westbury",
+      "conservado": "Westbury",
+      "pisados": [
+        "Westbury"
+      ]
+    },
+    {
+      "clave": "westchester",
+      "conservado": "Westchester",
+      "pisados": [
+        "Westchester"
+      ]
+    },
+    {
+      "clave": "westfield",
+      "conservado": "Westfield",
+      "pisados": [
+        "Westfield",
+        "Westfield"
+      ]
+    },
+    {
+      "clave": "westminster",
+      "conservado": "Westminster",
+      "pisados": [
+        "Westminster",
+        "Westminster"
+      ]
+    },
+    {
+      "clave": "westmont",
+      "conservado": "Westmont",
+      "pisados": [
+        "Westmont"
+      ]
+    },
+    {
+      "clave": "weston",
+      "conservado": "Weston",
+      "pisados": [
+        "Weston",
+        "Weston"
+      ]
+    },
+    {
+      "clave": "weymouth",
+      "conservado": "Weymouth",
+      "pisados": [
+        "Weymouth"
+      ]
+    },
+    {
+      "clave": "wheaton",
+      "conservado": "Wheaton",
+      "pisados": [
+        "Wheaton"
+      ]
+    },
+    {
+      "clave": "wheeling",
+      "conservado": "Wheeling",
+      "pisados": [
+        "Wheeling"
+      ]
+    },
+    {
+      "clave": "white oak",
+      "conservado": "White Oak",
+      "pisados": [
+        "White Oak"
+      ]
+    },
+    {
+      "clave": "williamsburg",
+      "conservado": "Williamsburg",
+      "pisados": [
+        "Williamsburg"
+      ]
+    },
+    {
+      "clave": "willoughby",
+      "conservado": "Willoughby",
+      "pisados": [
+        "Willoughby"
+      ]
+    },
+    {
+      "clave": "wilmington",
+      "conservado": "Wilmington",
+      "pisados": [
+        "Wilmington",
+        "Wilmington",
+        "Wilmington"
+      ]
+    },
+    {
+      "clave": "wilton",
+      "conservado": "Wilton",
+      "pisados": [
+        "Wilton"
+      ]
+    },
+    {
+      "clave": "winchester",
+      "conservado": "Winchester",
+      "pisados": [
+        "Winchester",
+        "Winchester",
+        "Winchester",
+        "Winchester"
+      ]
+    },
+    {
+      "clave": "windsor",
+      "conservado": "Windsor",
+      "pisados": [
+        "Windsor",
+        "Windsor",
+        "Windsor",
+        "Windsor"
+      ]
+    },
+    {
+      "clave": "woburn",
+      "conservado": "Woburn",
+      "pisados": [
+        "Woburn"
+      ]
+    },
+    {
+      "clave": "woodbridge",
+      "conservado": "Woodbridge",
+      "pisados": [
+        "Woodbridge"
+      ]
+    },
+    {
+      "clave": "woodlawn",
+      "conservado": "Woodlawn",
+      "pisados": [
+        "Woodlawn",
+        "Woodlawn",
+        "Woodlawn"
+      ]
+    },
+    {
+      "clave": "woodstock",
+      "conservado": "Woodstock",
+      "pisados": [
+        "Woodstock",
+        "Woodstock"
+      ]
+    },
+    {
+      "clave": "worcester",
+      "conservado": "Worcester",
+      "pisados": [
+        "Worcester",
+        "Worcester"
+      ]
+    },
+    {
+      "clave": "wuchang",
+      "conservado": "Wuchang",
+      "pisados": [
+        "Wuchang"
+      ]
+    },
+    {
+      "clave": "wujia",
+      "conservado": "Wujia",
+      "pisados": [
+        "Wujia"
+      ]
+    },
+    {
+      "clave": "wushan",
+      "conservado": "Wushan",
+      "pisados": [
+        "Wushan",
+        "Wushan",
+        "Wushan"
+      ]
+    },
+    {
+      "clave": "wuxi",
+      "conservado": "Wuxi",
+      "pisados": [
+        "Wuxi"
+      ]
+    },
+    {
+      "clave": "xiangcheng",
+      "conservado": "Xiangcheng",
+      "pisados": [
+        "Xiangcheng"
+      ]
+    },
+    {
+      "clave": "xiasi",
+      "conservado": "Xiasi",
+      "pisados": [
+        "Xiasi"
+      ]
+    },
+    {
+      "clave": "xiazhuang",
+      "conservado": "Xiazhuang",
+      "pisados": [
+        "Xiazhuang",
+        "Xiazhuang"
+      ]
+    },
+    {
+      "clave": "xichang",
+      "conservado": "Xichang",
+      "pisados": [
+        "Xichang"
+      ]
+    },
+    {
+      "clave": "xico",
+      "conservado": "Xico",
+      "pisados": [
+        "Xico"
+      ]
+    },
+    {
+      "clave": "xihu",
+      "conservado": "Xihu",
+      "pisados": [
+        "Xihu",
+        "Xihu"
+      ]
+    },
+    {
+      "clave": "xincheng",
+      "conservado": "Xincheng",
+      "pisados": [
+        "Xincheng"
+      ]
+    },
+    {
+      "clave": "xindian",
+      "conservado": "Xindian",
+      "pisados": [
+        "Xindian",
+        "Xindian"
+      ]
+    },
+    {
+      "clave": "xinglong",
+      "conservado": "Xinglong",
+      "pisados": [
+        "Xinglong",
+        "Xinglong",
+        "Xinglong"
+      ]
+    },
+    {
+      "clave": "xingyi",
+      "conservado": "Xingyi",
+      "pisados": [
+        "Xingyi"
+      ]
+    },
+    {
+      "clave": "xinhe",
+      "conservado": "Xinhe",
+      "pisados": [
+        "Xinhe"
+      ]
+    },
+    {
+      "clave": "xinmin",
+      "conservado": "Xinmin",
+      "pisados": [
+        "Xinmin",
+        "Xinmin"
+      ]
+    },
+    {
+      "clave": "xinsheng",
+      "conservado": "Xinsheng",
+      "pisados": [
+        "Xinsheng"
+      ]
+    },
+    {
+      "clave": "xinshi",
+      "conservado": "Xinshi",
+      "pisados": [
+        "Xinshi"
+      ]
+    },
+    {
+      "clave": "xintian",
+      "conservado": "Xintian",
+      "pisados": [
+        "Xintian"
+      ]
+    },
+    {
+      "clave": "xinxing",
+      "conservado": "Xinxing",
+      "pisados": [
+        "Xinxing"
+      ]
+    },
+    {
+      "clave": "xinyi",
+      "conservado": "Xinyi",
+      "pisados": [
+        "Xinyi"
+      ]
+    },
+    {
+      "clave": "xinzhou",
+      "conservado": "Xinzhou",
+      "pisados": [
+        "Xinzhou",
+        "Xinzhou"
+      ]
+    },
+    {
+      "clave": "xiulin",
+      "conservado": "Xiulin",
+      "pisados": [
+        "Xiulin"
+      ]
+    },
+    {
+      "clave": "xixiang",
+      "conservado": "Xixiang",
+      "pisados": [
+        "Xixiang",
+        "Xixiang"
+      ]
+    },
+    {
+      "clave": "yachiyo",
+      "conservado": "Yachiyo",
+      "pisados": [
+        "Yachiyo"
+      ]
+    },
+    {
+      "clave": "yamagata",
+      "conservado": "Yamagata",
+      "pisados": [
+        "Yamagata"
+      ]
+    },
+    {
+      "clave": "yanacancha",
+      "conservado": "Yanacancha",
+      "pisados": [
+        "Yanacancha"
+      ]
+    },
+    {
+      "clave": "yanggu",
+      "conservado": "Yanggu",
+      "pisados": [
+        "Yanggu"
+      ]
+    },
+    {
+      "clave": "yanghe",
+      "conservado": "Yanghe",
+      "pisados": [
+        "Yanghe"
+      ]
+    },
+    {
+      "clave": "yangzhou",
+      "conservado": "Yangzhou",
+      "pisados": [
+        "Yangzhou"
+      ]
+    },
+    {
+      "clave": "yantai",
+      "conservado": "Yantai",
+      "pisados": [
+        "Yantai"
+      ]
+    },
+    {
+      "clave": "yenisehir",
+      "conservado": "Yenişehir",
+      "pisados": [
+        "Yenişehir"
+      ]
+    },
+    {
+      "clave": "yichun",
+      "conservado": "Yichun",
+      "pisados": [
+        "Yichun"
+      ]
+    },
+    {
+      "clave": "yihe",
+      "conservado": "Yihe",
+      "pisados": [
+        "Yihe"
+      ]
+    },
+    {
+      "clave": "yilan",
+      "conservado": "Yilan",
+      "pisados": [
+        "Yilan"
+      ]
+    },
+    {
+      "clave": "yokkaichi",
+      "conservado": "Yokkaichi",
+      "pisados": [
+        "Yokkaichi"
+      ]
+    },
+    {
+      "clave": "yongan",
+      "conservado": "Yong’an",
+      "pisados": [
+        "Yong’an"
+      ]
+    },
+    {
+      "clave": "yongning",
+      "conservado": "Yongning",
+      "pisados": [
+        "Yongning"
+      ]
+    },
+    {
+      "clave": "yongxing",
+      "conservado": "Yongxing",
+      "pisados": [
+        "Yongxing"
+      ]
+    },
+    {
+      "clave": "yono",
+      "conservado": "Yono",
+      "pisados": [
+        "Yono"
+      ]
+    },
+    {
+      "clave": "york",
+      "conservado": "York",
+      "pisados": [
+        "York"
+      ]
+    },
+    {
+      "clave": "yuanyang",
+      "conservado": "Yuanyang",
+      "pisados": [
+        "Yuanyang"
+      ]
+    },
+    {
+      "clave": "yulong",
+      "conservado": "Yulong",
+      "pisados": [
+        "Yulong"
+      ]
+    },
+    {
+      "clave": "yunlong",
+      "conservado": "Yunlong",
+      "pisados": [
+        "Yunlong"
+      ]
+    },
+    {
+      "clave": "yunshan",
+      "conservado": "Yunshan",
+      "pisados": [
+        "Yunshan"
+      ]
+    },
+    {
+      "clave": "yushu",
+      "conservado": "Yushu",
+      "pisados": [
+        "Yushu"
+      ]
+    },
+    {
+      "clave": "yuxi",
+      "conservado": "Yuxi",
+      "pisados": [
+        "Yuxi"
+      ]
+    },
+    {
+      "clave": "zamora",
+      "conservado": "Zamora",
+      "pisados": [
+        "Zamora"
+      ]
+    },
+    {
+      "clave": "zaragoza",
+      "conservado": "Zaragoza",
+      "pisados": [
+        "Zaragoza",
+        "Zaragoza",
+        "Zaragoza",
+        "Zaragoza"
+      ]
+    },
+    {
+      "clave": "zarechnyy",
+      "conservado": "Zarechnyy",
+      "pisados": [
+        "Zarechnyy",
+        "Zarechnyy"
+      ]
+    },
+    {
+      "clave": "zhaoyuan",
+      "conservado": "Zhaoyuan",
+      "pisados": [
+        "Zhaoyuan"
+      ]
+    },
+    {
+      "clave": "zheleznogorsk",
+      "conservado": "Zheleznogorsk",
+      "pisados": [
+        "Zheleznogorsk"
+      ]
+    },
+    {
+      "clave": "zhicheng",
+      "conservado": "Zhicheng",
+      "pisados": [
+        "Zhicheng"
+      ]
+    },
+    {
+      "clave": "zhonghe",
+      "conservado": "Zhonghe",
+      "pisados": [
+        "Zhonghe",
+        "Zhonghe",
+        "Zhonghe"
+      ]
+    },
+    {
+      "clave": "zhongshan",
+      "conservado": "Zhongshan",
+      "pisados": [
+        "Zhongshan",
+        "Zhongshan"
+      ]
+    },
+    {
+      "clave": "zhuhai",
+      "conservado": "Zhuhai",
+      "pisados": [
+        "Zhuhai"
+      ]
+    },
+    {
+      "clave": "zhushan",
+      "conservado": "Zhushan",
+      "pisados": [
+        "Zhushan"
+      ]
+    },
+    {
+      "clave": "zhuxi",
+      "conservado": "Zhuxi",
+      "pisados": [
+        "Zhuxi"
+      ]
+    },
+    {
+      "clave": "zwijndrecht",
+      "conservado": "Zwijndrecht",
+      "pisados": [
+        "Zwijndrecht"
+      ]
+    }
+  ],
+  "conserva": true,
+  "cubetas": {
+    "colisiones": 2024,
+    "imagen": 32171,
+    "rechazos": 0,
+    "sin_clave": 0
+  },
+  "ecuacion": {
+    "colisiones_por_proyeccion": 153,
+    "colisiones_por_repetido": 1871,
+    "dominio": 34195,
+    "imagen": 32171,
+    "rechazos": 0,
+    "sin_clave": 0
+  },
+  "entrada": {
+    "archivo": "export.csv",
+    "filas": 34195,
+    "sha256": "9edb0db14c312fb27058d6fe9633a6904cc915163cff939db92553125c154d30"
+  },
+  "estado": "COLISION_SILENCIOSA",
+  "instrument": "ingest-conservation-guard",
+  "instrument_version": "0.4.3",
+  "perdidas_silenciosas": 0,
+  "proyeccion": {
+    "clave": "name:plano:lower",
+    "crudo": "name",
+    "validar": null
+  },
+  "rc": 1,
+  "salida": {
+    "archivo": "s1.csv",
+    "claves": 32171,
+    "sha256": "7772f383e2647f3ecc255355ba5108c46bcc9eb7c34c0d42426a03ed7f0fe7e6",
+    "sha256_archivo": "812b6ef708220b993544f2eb2232a27d4cbfec3b97c6baf49430e796483898ac"
+  }
+}
