@@ -36,12 +36,21 @@ def test_el_censo_por_fixture_conserva_y_su_etiqueta_es_el_ultimo_segmento():
     assert verificar(r).residuo == 0
 
 
-def test_el_censo_de_trece_filas_no_publica_terminos_y_por_eso_no_es_cero():
+def test_el_censo_de_trece_filas_cierra_su_ecuacion_y_no_necesita_creerla():
     doc = json.loads((RECIBOS / "censo.json").read_text(encoding="utf-8"))
     recibos = adaptar("raw", doc)
     assert len(recibos) == 13
     assert len({r.area for r in recibos}) == 13
-    assert all(verificar(r).clase == "NO_VERIFICABLE" for r in recibos)
+    assert all(verificar(r).residuo == 0 for r in recibos)
+    assert {verificar(r).clase for r in recibos} == {"CONSERVADO", "VACIO"}
+
+
+def test_una_fila_de_censo_sin_cubetas_sigue_siendo_no_verificable():
+    """Lo escrito antes de v0.4.3 no se certifica por cortesia."""
+    doc = {"rows": [{"package": "p", "version": "1", "scope": ".", "stores": 3,
+                     "pierde": 1, "reconciles": True, "rc": 1}]}
+    (r,) = adaptar("censo", doc)
+    assert verificar(r).clase == "NO_VERIFICABLE"
 
 
 def test_el_mismo_paquete_con_dos_sujetos_no_comparte_etiqueta():

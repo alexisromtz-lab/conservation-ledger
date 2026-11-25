@@ -81,13 +81,18 @@ def desde_fiber(doc: dict[str, Any]) -> Recibo:
     )
 
 
-def desde_censo(doc: dict[str, Any]) -> list[Recibo]:
-    """``fiber-ast-lint/censo.json``: thirteen rows that publish no terms.
+CUBETAS_CENSO = ("pierde", "guardadas", "acumulacion", "posicional", "sin_len")
 
-    Each row states ``reconciles: true`` without the buckets that prove it, so
-    the only honest reading is ``NO_VERIFICABLE``. The adapter does not
-    reconstruct them from ``pierde``: that would be inventing the evidence the
-    census withheld.
+
+def desde_censo(doc: dict[str, Any]) -> list[Recibo]:
+    """``fiber-ast-lint/censo.json``.
+
+    Until the census published its buckets, each row stated ``reconciles: true``
+    with nothing to prove it and the only honest reading was
+    ``NO_VERIFICABLE``. The adapter did not reconstruct the terms from
+    ``pierde`` -- that would be inventing the evidence that was withheld. Now
+    that the rows carry them, the equation is handed over intact; rows written
+    before that change still yield no buckets and are still not certified.
     """
     recibos: list[Recibo] = []
     for fila in doc.get("rows") or []:
@@ -105,7 +110,8 @@ def desde_censo(doc: dict[str, Any]) -> list[Recibo]:
             instrumento="fiber-ast-lint",
             version=str(version) if version else None,
             dominio=int(fila.get("stores", 0) or 0),
-            cubetas={},
+            cubetas=({k: int(fila[k]) for k in CUBETAS_CENSO}
+                     if all(k in fila for k in CUBETAS_CENSO) else {}),
             digest_entrada=fila.get("sha256"),
             declarado_conserva=fila.get("reconciles"),
             declarado_rc=fila.get("rc"),

@@ -54,24 +54,28 @@ Exit code is the **recomputed** severity of the act, never the declared one.
 
 ## Receipts measured today
 
+Sixteen receipts, sixteen recomputed equations: `CONSERVADO 12 · COLISION 2 · VACIO 2`, and **no
+row refused for lack of terms** — which was thirteen rows out of sixteen before the census in the
+sibling repo learned to publish them.
+
 <!-- ledger-table:begin -->
 | Área | Instrumento | Ecuación | Residuo | Declara | Recomputa |
 |---|---|---|---:|---|---|
 | `acta:migracion.csv` | ingest-conservation-guard | `6 = colisiones_por_proyeccion 2 + colisiones_por_repetido 0 + imagen 4 + rechazos 0 + sin_clave 0  (residuo 0)` | 0 | `conserva=true rc=1` | **COLISION** |
 | `acta:pacientes` | ingest-conservation-guard | `8 = colisiones 2 + imagen 4 + rechazos 2 + sin_clave 0  (residuo 0)` | 0 | `conserva=true rc=1` | **COLISION** |
-| `censo:astroid@4.3.4#.` | fiber-ast-lint | `37 = ?` | 37 | `conserva=true rc=1` | **NO_VERIFICABLE** |
-| `censo:black@26.10.1#.` | fiber-ast-lint | `23 = ?` | 23 | `conserva=true rc=1` | **NO_VERIFICABLE** |
-| `censo:dill@0.4.1#.` | fiber-ast-lint | `16 = ?` | 16 | `conserva=true rc=0` | **NO_VERIFICABLE** |
-| `censo:flake8@7.5.0#.` | fiber-ast-lint | `3 = ?` | 3 | `conserva=true rc=1` | **NO_VERIFICABLE** |
-| `censo:isort@9.0.2#.` | fiber-ast-lint | `21 = ?` | 21 | `conserva=true rc=1` | **NO_VERIFICABLE** |
-| `censo:jsonschema@4.26.0#.` | fiber-ast-lint | `2 = ?` | 2 | `conserva=true rc=0` | **NO_VERIFICABLE** |
-| `censo:mypy@2.4.1` | fiber-ast-lint | `173 = ?` | 173 | `conserva=true rc=1` | **NO_VERIFICABLE** |
-| `censo:mypy@2.4.1#.` | fiber-ast-lint | `226 = ?` | 226 | `conserva=true rc=1` | **NO_VERIFICABLE** |
-| `censo:platformdirs@4.14.8#.` | fiber-ast-lint | `0 = ?` | 0 | `conserva=true rc=0` | **NO_VERIFICABLE** |
-| `censo:pydantic@2.14.4#.` | fiber-ast-lint | `143 = ?` | 143 | `conserva=true rc=1` | **NO_VERIFICABLE** |
-| `censo:pyflakes@4.1.0#.` | fiber-ast-lint | `0 = ?` | 0 | `conserva=true rc=0` | **NO_VERIFICABLE** |
-| `censo:pylint@4.1.4#.` | fiber-ast-lint | `55 = ?` | 55 | `conserva=true rc=1` | **NO_VERIFICABLE** |
-| `censo:tomlkit@0.15.3#.` | fiber-ast-lint | `6 = ?` | 6 | `conserva=true rc=1` | **NO_VERIFICABLE** |
+| `censo:astroid@4.3.4#.` | fiber-ast-lint | `37 = pierde 0 + guardadas 10 + acumulacion 0 + posicional 1 + sin_len 26  (residuo 0)` | 0 | `conserva=true rc=1` | **CONSERVADO** |
+| `censo:black@26.10.1#.` | fiber-ast-lint | `23 = pierde 2 + guardadas 1 + acumulacion 0 + posicional 1 + sin_len 19  (residuo 0)` | 0 | `conserva=true rc=1` | **CONSERVADO** |
+| `censo:dill@0.4.1#.` | fiber-ast-lint | `16 = pierde 4 + guardadas 1 + acumulacion 1 + posicional 1 + sin_len 9  (residuo 0)` | 0 | `conserva=true rc=0` | **CONSERVADO** |
+| `censo:flake8@7.5.0#.` | fiber-ast-lint | `3 = pierde 0 + guardadas 0 + acumulacion 0 + posicional 0 + sin_len 3  (residuo 0)` | 0 | `conserva=true rc=1` | **CONSERVADO** |
+| `censo:isort@9.0.2#.` | fiber-ast-lint | `21 = pierde 0 + guardadas 2 + acumulacion 2 + posicional 3 + sin_len 14  (residuo 0)` | 0 | `conserva=true rc=1` | **CONSERVADO** |
+| `censo:jsonschema@4.26.0#.` | fiber-ast-lint | `2 = pierde 0 + guardadas 2 + acumulacion 0 + posicional 0 + sin_len 0  (residuo 0)` | 0 | `conserva=true rc=0` | **CONSERVADO** |
+| `censo:mypy@2.4.1` | fiber-ast-lint | `173 = pierde 4 + guardadas 25 + acumulacion 7 + posicional 12 + sin_len 125  (residuo 0)` | 0 | `conserva=true rc=1` | **CONSERVADO** |
+| `censo:mypy@2.4.1#.` | fiber-ast-lint | `226 = pierde 4 + guardadas 34 + acumulacion 9 + posicional 16 + sin_len 163  (residuo 0)` | 0 | `conserva=true rc=1` | **CONSERVADO** |
+| `censo:platformdirs@4.14.8#.` | fiber-ast-lint | `0 = pierde 0 + guardadas 0 + acumulacion 0 + posicional 0 + sin_len 0  (residuo 0)` | 0 | `conserva=true rc=0` | **VACIO** |
+| `censo:pydantic@2.14.4#.` | fiber-ast-lint | `143 = pierde 0 + guardadas 17 + acumulacion 6 + posicional 2 + sin_len 118  (residuo 0)` | 0 | `conserva=true rc=1` | **CONSERVADO** |
+| `censo:pyflakes@4.1.0#.` | fiber-ast-lint | `0 = pierde 0 + guardadas 0 + acumulacion 0 + posicional 0 + sin_len 0  (residuo 0)` | 0 | `conserva=true rc=0` | **VACIO** |
+| `censo:pylint@4.1.4#.` | fiber-ast-lint | `55 = pierde 1 + guardadas 14 + acumulacion 4 + posicional 4 + sin_len 32  (residuo 0)` | 0 | `conserva=true rc=1` | **CONSERVADO** |
+| `censo:tomlkit@0.15.3#.` | fiber-ast-lint | `6 = pierde 0 + guardadas 2 + acumulacion 1 + posicional 0 + sin_len 3  (residuo 0)` | 0 | `conserva=true rc=1` | **CONSERVADO** |
 | `fiber:fixtures` | fiber-ast-lint | `9 = pierde 0 + guardadas 2 + acumulacion 1 + posicional 1 + sin_len 5  (residuo 0)` | 0 | `conserva=true rc=1` | **CONSERVADO** |
 <!-- ledger-table:end -->
 
@@ -82,11 +86,32 @@ failure of arithmetic — the merged units are accounted for in a named bucket, 
 no unit vanished. It is a warning that a projection dropped information, and the
 instrument said so itself.
 
-**`NO_VERIFICABLE` is the interesting column.** Thirteen rows declare
-`conserva=true` and publish no terms at all. The ledger does not believe them
-and does not call them liars: it calls them *unmeasured*, which is the honest
-reading. This is not a defect of the ledger — it is the ledger doing its job on
-a corpus that was written before it existed.
+**`VACIO` is the interesting column.** Two rows — `platformdirs` and
+`pyflakes` — close over a domain of zero. The equation holds and proves
+nothing: no store was measured, so no store can be shown accounted for.
+
+### What this table looked like before the census published its terms
+
+The first version of this ledger read `fiber-ast-lint`'s `censo.json` as it was
+shipped in `v0.4.2`: thirteen rows, each declaring `"reconciles": true` and
+publishing `stores` and `pierde` — and **not one of the four buckets**
+(`guardadas`, `acumulacion`, `posicional`, `sin_len`) that make the sum close.
+The honest verdict was `NO_VERIFICABLE` on all thirteen, and the ledger printed
+`CONSERVADO 2 · COLISION 1 · NO_VERIFICABLE 13 · RC 1`.
+
+The fix belonged to the producer, not here. `fiber-ast-lint v0.4.3` publishes
+the buckets in every row, and `desde_censo` hands them over intact; rows written
+before that change still yield no buckets and are still refused. The table
+above is the same receipts, re-derived: nothing in this repository's verdict
+logic changed to make them pass.
+
+Closing the producer also exposed a defect *inside* the producer. The census keyed
+its measurements by artifact alone, and the two `mypy` rows share one wheel
+(`mypy-2.4.1-py3-none-any.whl`) with two scopes, so the wheel-root measurement
+(226 stores) overwrote the package-scoped one (173) and produced an apparent
+rupture that existed only in the producing script. Keyed by `(artifact, scope)`,
+both rows reconcile. A duplicate label hid a subtraction — the same defect this
+ledger exists to name.
 
 ### Two findings the ledger surfaced on real data
 
@@ -103,6 +128,12 @@ a corpus that was written before it existed.
 3. **`censo:platformdirs@4.14.8#.` and `censo:pyflakes@4.1.0#.` measure zero.**
    A zero domain is `VACIO`, not `CONSERVADO`: an equation over an empty
    population closes trivially and proves nothing about the instrument.
+4. **A closed equation can still declare a loss.** Eleven census rows declare
+   `rc=1` — the producer's code for "stores whose consumer was not found" — while
+   their terms show `pierde` and nothing else missing. The ledger reports
+   `CONSERVADO` and prints the disagreement as a non-fatal motivo: the arithmetic
+   closed, and the producer's severity is a judgement this ledger cannot
+   recompute from the terms alone.
 
 ## Contract `conservation/1`
 
@@ -185,7 +216,7 @@ place the numbers live.
 ```yaml
 repos:
   - repo: https://github.com/alexisromtz-lab/conservation-ledger
-    rev: v0.1.0
+    rev: v0.1.1
     hooks: [{id: conservation-ledger-verify}]
 ```
 
@@ -199,8 +230,14 @@ declare as benign.
   before counting passes with a clean equation.
 - It cannot check a receipt whose terms were never published — it can only
   refuse to certify it, which is what `NO_VERIFICABLE` does.
-- The census adapter cannot yet verify `fiber-ast-lint`; the fix belongs in that
-  repo (publish per-row terms) and is the next act, not a patch here.
+- Severity is inferred from a **bucket-name convention**: a bucket whose name
+  starts with `colisiones` raises `COLISION`. A dialect that names its loss
+  something else — `fiber-ast-lint` calls it `pierde` — closes as `CONSERVADO`
+  and the declared `rc=1` shows up only as a non-fatal motivo. Making that
+  comparison honest needs the receipt to declare which buckets are defects,
+  which no producer publishes yet.
+- It certifies the equation over the population **the instrument declared**. If
+  the input was drained before `dominio` was counted, every row still closes.
 
 ## License
 

@@ -12,8 +12,7 @@ def test_verify_por_json_da_un_codigo_por_recibo(capsys):
     assert rc == 1
     assert salida["rc"] == 1
     assert len(salida["recibos"]) == 16
-    assert {r["clase"] for r in salida["recibos"]} == {"COLISION", "CONSERVADO",
-                                                       "NO_VERIFICABLE"}
+    assert {r["clase"] for r in salida["recibos"]} == {"COLISION", "CONSERVADO", "VACIO"}
 
 
 def test_verify_imprime_una_linea_de_cierre(capsys):
@@ -39,7 +38,7 @@ def test_panel_escribe_el_fichero(tmp_path):
     assert rc == 1
     texto = destino.read_text(encoding="utf-8")
     assert texto.count("<tr>") == 17  # cabecera + 16 areas
-    assert "NO_VERIFICABLE" in texto
+    assert "VACIO" in texto
 
 
 def test_collect_ejecuta_un_instrumento_y_archiva_su_recibo(tmp_path, capsys):
