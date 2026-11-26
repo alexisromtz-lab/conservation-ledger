@@ -321,6 +321,18 @@ that knows nothing about this package. `tests/test_agregado.py` runs both routes
 and the three manipulations: a tampered class and a deleted row each turn four of
 its six tests red, while a reversed row order turns none.
 
+And when a reader would rather not clone anything, one file and one command:
+
+```
+curl -sSfLO https://raw.githubusercontent.com/alexisromtz-lab/conservation-ledger/main/aggregates/censo.json
+uvx --from git+https://github.com/alexisromtz-lab/conservation-ledger@v0.3.0 \
+    conservation-ledger aggregate --check censo.json
+```
+
+Measured from an empty directory on 26-Nov-2026: 6.0 s wall, `RC=0`, the same
+digest — and the `jq` pipeline above agrees with it on the downloaded file before
+our code is even installed.
+
 ## Verifying without our code
 
 A certificate is worth what an auditor can confirm **without trusting the issuer**. `verify.sh` at
