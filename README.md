@@ -374,11 +374,18 @@ uvx --from git+https://github.com/alexisromtz-lab/conservation-ledger@v0.3.1 \
     conservation-ledger aggregate --check censo.json
 ```
 
-Measured from an empty directory on 26-Nov-2026: 6.0 s wall, `RC=0`, the same
+Measured from an empty directory on 26-Nov-2026, two runs of the same command
+after the version bump: **6.0 s and 8.0 s** wall, `RC=0` in both, the same
 digest — and the `jq` pipelines above agree with it on the downloaded file before
-our code is even installed. That run is the *self* level: the file carries the
-name and digest of its source, but the source itself is what `--base` reads, and
-it is not in the download.
+our code is even installed. One run is one run, so the figure is published as the
+band it is, not as a constant: what it establishes is the order of magnitude
+(seconds, not minutes) and that the route works from cold cache.
+
+That run is the *self* level: the file carries the name and digest of its source,
+but the source itself is what `--base` reads, and it is not in the download.
+Fetching it too closes the stronger level, and both were run against the published
+bytes on 26-Nov-2026 — `RC=0` intact, `RC=1` after removing one receipt from the
+source, naming the byte mismatch:
 
 ## Verifying without our code
 
