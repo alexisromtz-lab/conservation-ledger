@@ -274,9 +274,11 @@ report `ok` for a check it skipped.
 ```console
 $ ./verify.sh -d tests/fixtures/cadena/artefactos tests/fixtures/cadena/paso1.json tests/fixtures/cadena/paso2.json
 ACTO 1 paso1.json 6 = 6 ok declarado=1
-ARTEFACTO paso1.csv sha256 ok filas 4 ok (3 + cabecera)
+ARTEFACTO paso1.csv sha256 ok filas 4 ok (3 + cabecera) nivel 2
 ACTO 2 paso2.json 3 = 3 ok declarado=0
+ARTEFACTO - nivel 1 (el recibo no publica archivo: solo se midio lo declarado)
 COSTURA 1->2 paso1.json -> paso2.json filas 3 -> 3 ok bytes ok
+COBERTURA nivel2=1/2 actos (nivel 2: fichero abierto y digest igual)
 COMPUESTO 6 = 3 + 3 residuo 0 ok telescopia si
 ```
 
@@ -287,9 +289,11 @@ it catches the same rupture, with the same blindness to counting:
 ```console
 $ ./verify.sh -d tests/fixtures/cadena/artefactos tests/fixtures/cadena/paso1.json tests/fixtures/cadena/paso2-alterado.json
 ACTO 1 paso1.json 6 = 6 ok declarado=1
-ARTEFACTO paso1.csv sha256 ok filas 4 ok (3 + cabecera)
+ARTEFACTO paso1.csv sha256 ok filas 4 ok (3 + cabecera) nivel 2
 ACTO 2 paso2-alterado.json 3 = 3 ok declarado=0
+ARTEFACTO - nivel 1 (el recibo no publica archivo: solo se midio lo declarado)
 COSTURA 1->2 paso1.json -> paso2-alterado.json filas 3 -> 3 ok bytes !
+COBERTURA nivel2=1/2 actos (nivel 2: fichero abierto y digest igual)
 COMPUESTO 6 = 3 + 3 residuo 0 ok telescopia si
 ```
 
@@ -301,18 +305,66 @@ files it could not open:
 ```console
 $ ./verify.sh tests/fixtures/cadena/paso1-censo.json tests/fixtures/cadena/paso2-censo.json tests/fixtures/cadena/paso3-censo.json
 ACTO 1 paso1-censo.json 34195 = 34195 ok declarado=1
-ARTEFACTO s1.csv NO_MEDIDO (no esta bajo .; solo se verifican los digests declarados)
+ARTEFACTO s1.csv nivel 1 NO_MEDIDO (no esta bajo .; solo se verifican los digests declarados)
 ACTO 2 paso2-censo.json 32171 = 32171 ok declarado=1
-ARTEFACTO s2.csv NO_MEDIDO (no esta bajo .; solo se verifican los digests declarados)
+ARTEFACTO s2.csv nivel 1 NO_MEDIDO (no esta bajo .; solo se verifican los digests declarados)
 COSTURA 1->2 paso1-censo.json -> paso2-censo.json filas 32171 -> 32171 ok bytes ok
 ACTO 3 paso3-censo.json 30 = 30 ok declarado=0
+ARTEFACTO - nivel 1 (el recibo no publica archivo: solo se midio lo declarado)
 COSTURA 2->3 paso2-censo.json -> paso3-censo.json filas 30 -> 30 ok bytes ok
+COBERTURA nivel2=0/3 actos (nivel 2: fichero abierto y digest igual)
 COMPUESTO 34195 = 30 + 34165 residuo 0 ok telescopia si
 ```
 
 `34195 = 30 + 34165 · residuo 0 · telescopia si · RC=1`: the same four numbers `ledger chain`
 printed above, from a program that shares no line with it. Two implementations that disagree on one
-number would mean the law is an artifact of the implementation; none does.
+number would mean the law is an artifact of the implementation; none does. The coverage row is the
+honest part: none of those three files is in the repository, so the census chain is confirmed at
+level 1 — its declarations — and it says so instead of printing `ok`.
+
+### Two levels, and a verdict that refuses to collapse them
+
+`dominio == Σ cubetas` partitions **one** population: the identity `|A| + |B| = |S|` holds for any
+data whatsoever, which is why thousands of input-output equivalences can pass while the channel is
+already blind. The measurement that is independent of the receipt is the file itself: opened,
+digested, counted. So every act is labelled with the level it reached, and the chain publishes how
+many acts reached level 2.
+
+Here both acts close, the seam seals by count **and** by digest, and the composite telescopes. One
+of the two acts digested its map instead of the file it wrote:
+
+```console
+$ ./verify.sh -d tests/fixtures/cadena/artefactos tests/fixtures/cadena/paso2-completo.json tests/fixtures/cadena/paso2.json
+ACTO 1 paso2-completo.json 3 = 3 ok declarado=0
+ARTEFACTO paso2.csv sha256 ok filas 4 ok (3 + cabecera) nivel 2
+ACTO 2 paso2.json 3 = 3 ok declarado=0
+ARTEFACTO - nivel 1 (el recibo no publica archivo: solo se midio lo declarado)
+COSTURA 1->2 paso2-completo.json -> paso2.json filas 3 -> 3 ok bytes ok
+COBERTURA nivel2=1/2 actos (nivel 2: fichero abierto y digest igual)
+COMPUESTO 3 = 3 + 0 residuo 0 ok telescopia si
+```
+
+Exit 2, and `ledger chain` on the same two receipts prints `residuo=0 telescopia=si RC=0`. Both are
+right: the composer reads receipts, and a receipt with no `salida.archivo` looks complete from where
+it stands. Only the program that can open the file knows half the chain was never measured. That is
+the difference between **consistent** and **conserved**, and it is why `RC 0` now demands full
+coverage rather than a closed sum.
+
+Coverage is not a rule that makes zero unreachable. Same arithmetic, but this time the second act
+exported too:
+
+```console
+$ ./verify.sh -d tests/fixtures/cadena/artefactos tests/fixtures/cadena/paso2-completo.json tests/fixtures/cadena/paso3.json
+ACTO 1 paso2-completo.json 3 = 3 ok declarado=0
+ARTEFACTO paso2.csv sha256 ok filas 4 ok (3 + cabecera) nivel 2
+ACTO 2 paso3.json 3 = 3 ok declarado=0
+ARTEFACTO paso3.csv sha256 ok filas 4 ok (3 + cabecera) nivel 2
+COSTURA 1->2 paso2-completo.json -> paso3.json filas 3 -> 3 ok bytes ok
+COBERTURA nivel2=2/2 actos (nivel 2: fichero abierto y digest igual)
+COMPUESTO 3 = 3 + 0 residuo 0 ok telescopia si
+```
+
+Exit 0. Only the coverage changed between the two runs — same equation, same residue, same seam.
 
 The script only wraps three commands, and an auditor who prefers to type them does not need it:
 
@@ -322,10 +374,13 @@ The script only wraps three commands, and an auditor who prefers to type them do
 | the file is the whole image | `wc -l < tests/fixtures/cadena/artefactos/paso1.csv` | `4` = 3 claves + cabecera |
 | the act closes | `jq .ecuacion tests/fixtures/cadena/paso1.json` | `6 = 3 + 2 + 1 + 0 + 0` |
 
-`tests/test_verificar_sin_codigo.py` runs all three blocks and the three raw commands, compares them
+`tests/test_verificar_sin_codigo.py` runs all five blocks and the three raw commands, compares them
 line by line with this section, and checks that the shell composite equals the `chain` composite term
 by term. It also corrupts a copy of the artifact and asserts the file-level row turns `!` while the
 digest-only route still says `bytes ok` — which is why the artifact exists in the repository at all.
+And it pins the asymmetry: over receipts that `chain` composes to `RC=0` with half the chain
+unmeasured, the script must exit 2 — if a future edit makes those two verdicts agree, the coverage
+row has stopped meaning anything.
 
 ## Adapters: the only instrument-aware code
 
@@ -371,7 +426,7 @@ place the numbers live.
 ```yaml
 repos:
   - repo: https://github.com/alexisromtz-lab/conservation-ledger
-    rev: v0.2.2
+    rev: v0.2.3
     hooks: [{id: conservation-ledger-verify}]
 ```
 

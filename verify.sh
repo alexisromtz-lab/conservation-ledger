@@ -20,8 +20,16 @@
 # y compone con los mismos numeros que la ley: restos = suma de lo que no es
 # imagen, residuo = dominio(1) - (imagen(n) + restos).
 #
+# Dos niveles, y el veredicto no los colapsa. Nivel 1 es lo que el recibo
+# declara: la ecuacion de una sola poblacion, que cierra por particion y por eso
+# no distingue nada. Nivel 2 es una medicion independiente: el fichero se abrio y
+# su digest coincide con el que el acto publico. Un acto sin fichero aporta cero
+# grados de libertad al nivel 2, y la linea COBERTURA lo cuenta.
+#
 # RC 0 conservado · 1 hay una colision declarada · 2 algo no se pudo mirar ·
 # 4 una costura rota o una ecuacion que no cierra. Precedencia 4 > 1 > 2 > 0.
+# RC 0 exige cobertura completa: si algun acto no midio su fichero, la cadena
+# sale 2 aunque su aritmetica cierre. Conservado no es lo mismo que consistente.
 #
 # Necesita: sh (POSIX), jq, y shasum o sha256sum.
 set -eu
@@ -48,6 +56,7 @@ fi
 roto=0
 colision=0
 ciego=0
+nivel2=0
 
 n=0
 dominio1=""
@@ -92,32 +101,38 @@ for r in "$@"; do
     esac
 
     # -- el artefacto: el fichero que viaja y el digest que lo certifica -------
+    # Nivel 1 cuando solo se leyo la declaracion; nivel 2 cuando se abrio el
+    # fichero. Un acto sin la ruta del archivo es invisible al nivel 2 y se dice.
     arch=$(jq -r '.salida.archivo // empty' "$r")
     sha=$(jq -r '.salida.sha256_archivo // empty' "$r")
     claves=$(jq -r '.salida.claves // empty' "$r")
-    if [ -n "$arch" ] && [ -n "$sha" ]; then
-        if [ -n "$DIR" ] && [ -f "$DIR/$arch" ]; then
-            real=$($DESTAJO "$DIR/$arch" | awk '{print $1}')
-            lineas=$(wc -l <"$DIR/$arch" | tr -d ' ')
-            if [ "$real" = "$sha" ]; then
-                bytes_ok=ok
-            else
-                bytes_ok="!"
-                roto=1
-            fi
-            if [ -n "$claves" ] && [ "$lineas" -eq $((claves + 1)) ]; then
-                filas_ok="ok ($claves + cabecera)"
-            else
-                filas_ok="!"
-                roto=1
-            fi
-            echo "ARTEFACTO $arch sha256 $bytes_ok filas $lineas $filas_ok"
+    if [ -z "$arch" ]; then
+        echo "ARTEFACTO - nivel 1 (el recibo no publica archivo: solo se midio lo declarado)"
+        ciego=1
+    elif [ -z "$sha" ]; then
+        echo "ARTEFACTO $arch nivel 1 (el recibo no digiere el fichero que escribio)"
+        ciego=1
+    elif [ -n "$DIR" ] && [ -f "$DIR/$arch" ]; then
+        real=$($DESTAJO "$DIR/$arch" | awk '{print $1}')
+        lineas=$(wc -l <"$DIR/$arch" | tr -d ' ')
+        if [ "$real" = "$sha" ]; then
+            bytes_ok=ok
         else
-            echo "ARTEFACTO $arch NO_MEDIDO (no esta bajo ${DIR:-.}; solo se verifican los digests declarados)"
-            ciego=1
+            bytes_ok="!"
+            roto=1
         fi
-    elif [ -n "$arch" ]; then
-        echo "ARTEFACTO $arch NO_MEDIDO (el recibo no digiere el fichero que escribio)"
+        if [ -n "$claves" ] && [ "$lineas" -eq $((claves + 1)) ]; then
+            filas_ok="ok ($claves + cabecera)"
+        else
+            filas_ok="!"
+            roto=1
+        fi
+        echo "ARTEFACTO $arch sha256 $bytes_ok filas $lineas $filas_ok nivel 2"
+        if [ "$bytes_ok" = ok ] && [ "$filas_ok" != "!" ]; then
+            nivel2=$((nivel2 + 1))
+        fi
+    else
+        echo "ARTEFACTO $arch nivel 1 NO_MEDIDO (no esta bajo ${DIR:-.}; solo se verifican los digests declarados)"
         ciego=1
     fi
 
@@ -153,6 +168,12 @@ for r in "$@"; do
     prev_sha=$sha
     prev_nombre=$nombre
 done
+
+# -- la cobertura: cuantos actos se midieron con el fichero, no con la fe ------
+echo "COBERTURA nivel2=$nivel2/$n actos (nivel 2: fichero abierto y digest igual)"
+if [ "$nivel2" -lt "$n" ]; then
+    ciego=1
+fi
 
 # -- el compuesto: el telescopio, con los numeros de arriba -------------------
 if [ -z "$dominio1" ] || [ -z "$imagen_n" ]; then

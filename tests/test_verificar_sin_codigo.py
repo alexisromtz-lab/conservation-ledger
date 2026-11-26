@@ -26,7 +26,7 @@ def _bloques() -> list[str]:
     seccion = re.search(r"^## Verifying without our code.*?(?=^## )", texto, re.S | re.M)
     assert seccion, "README.md no tiene la sección 'Verifying without our code'"
     bloques = re.findall(r"```console\n(.*?)```", seccion.group(0), re.S)
-    assert len(bloques) == 3, f"se esperaban 3 corridas publicadas, hay {len(bloques)}"
+    assert len(bloques) == 5, f"se esperaban 5 corridas publicadas, hay {len(bloques)}"
     return [
         "\n".join(l for l in b.rstrip("\n").split("\n") if not l.startswith("$ "))
         for b in bloques
@@ -85,6 +85,40 @@ def test_las_dos_implementaciones_cuadran_termino_a_termino():
         assert rc == comp.rc, f"el script y la ley discrepan en el RC de {rutas}"
 
 
+def test_el_veredicto_no_colapsa_dos_poblaciones():
+    """Misma aritmetica, media cadena sin medir: `chain` dice 0, el script dice 2.
+
+    El compositor lee recibos y un recibo sin `salida.archivo` le parece completo:
+    la particion de una sola poblacion cierra siempre. El unico que puede abrir el
+    fichero es el script, y por eso su RC es un refinamiento del del compositor.
+    """
+    rutas = (FIX / "paso2-completo.json", FIX / "paso2.json")
+    rc, salida = _correr("-d", ART, *rutas)
+    assert salida == _bloques()[3]
+    assert "COBERTURA nivel2=1/2" in salida
+    assert "nivel 1 (el recibo no publica archivo" in salida
+    assert rc == 2, "un acto que no midio su fichero no deja la cadena conservada"
+
+    comp = cadena(_leer(rutas, None))
+    dominio, imagen, restos, residuo, _, _ = _numeros(salida)
+    assert (dominio, imagen, restos, residuo) == (
+        comp.dominio, comp.imagen, comp.restos, comp.residuo), "la aritmetica coincide"
+    assert comp.rc == 0, "el compositor, ciego al fichero, aprueba la misma cadena"
+    assert rc != comp.rc, "si ambos veredictos coincidieran, la cobertura no mediria nada"
+
+
+def test_la_cobertura_completa_sigue_dando_cero():
+    """La regla de cobertura no puede hacer el cero inalcanzable."""
+    rc, salida = _correr("-d", ART, FIX / "paso2-completo.json", FIX / "paso3.json")
+    assert salida == _bloques()[4]
+    assert "COBERTURA nivel2=2/2" in salida
+    assert rc == 0
+
+    # Entre las dos corridas sólo cambian la cobertura y el RC: misma ecuacion.
+    _, sin_medir = _correr("-d", ART, FIX / "paso2-completo.json", FIX / "paso2.json")
+    assert _numeros(salida)[:4] == _numeros(sin_medir)[:4]
+
+
 def test_las_tres_ordenas_del_auditor():
     """Las tres celdas de la tabla se miden con shasum y wc, sin Python."""
     artefacto = ART / "paso1.csv"
@@ -94,6 +128,8 @@ def test_las_tres_ordenas_del_auditor():
                             capture_output=True, text=True, check=True)
     assert digest.startswith("ede784ce0813c547")
     assert int(lineas.stdout.split()[0]) == 4
+    # el commit be9b01d publico «62 bytes»: el fichero mide 59 (medido 25-Nov-2026)
+    assert artefacto.stat().st_size == 59
     recibo = (FIX / "paso1.json").read_text(encoding="utf-8")
     assert digest in recibo, "el digest medido tiene que ser el que el recibo publica"
 
