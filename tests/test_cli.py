@@ -9,17 +9,17 @@ from conservation_ledger.cli import main
 def test_verify_por_json_da_un_codigo_por_recibo(capsys):
     rc = main(["verify", "--json", *map(str, sorted(RECIBOS.glob("*.json")))])
     salida = json.loads(capsys.readouterr().out)
-    assert rc == 4
-    assert salida["rc"] == 4
+    assert rc == 1
+    assert salida["rc"] == 1
     assert len(salida["recibos"]) == 16
-    assert {r["clase"] for r in salida["recibos"]} == {"COLISION", "CONSERVADO", "DISCREPANCIA"}
+    assert {r["clase"] for r in salida["recibos"]} == {"COLISION", "CONSERVADO", "VACIO"}
 
 
 def test_verify_imprime_una_linea_de_cierre(capsys):
     main(["verify", *map(str, sorted(RECIBOS.glob("*.json")))])
     texto = capsys.readouterr().out
     assert "LEDGER 16 recibos" in texto
-    assert "RC=4" in texto
+    assert "RC=1" in texto
 
 
 def test_un_recibo_mentiroso_puesto_en_disco_sale_con_ruptura(tmp_path, capsys):
@@ -35,10 +35,10 @@ def test_un_recibo_mentiroso_puesto_en_disco_sale_con_ruptura(tmp_path, capsys):
 def test_panel_escribe_el_fichero(tmp_path):
     destino = tmp_path / "panel.html"
     rc = main(["panel", "-o", str(destino), *map(str, sorted(RECIBOS.glob("*.json")))])
-    assert rc == 4
+    assert rc == 1
     texto = destino.read_text(encoding="utf-8")
     assert texto.count("<tr>") == 20  # cabecera + 16 areas + cabecera y 2 unidades
-    assert "DISCREPANCIA" in texto
+    assert "VACIO" in texto and "DISCREPANCIA" not in texto
 
 
 def test_collect_ejecuta_un_instrumento_y_archiva_su_recibo(tmp_path, capsys):

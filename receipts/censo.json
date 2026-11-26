@@ -12,7 +12,7 @@
       "posicional": 12,
       "sin_len": 125
     },
-    "version": "0.4.4",
+    "version": "0.4.5",
     "digests": {
       "entrada": "1784648d6ec8c2b5465e3f26241b845a0b3cb4e56c993c64abe16989e7698999"
     },
@@ -34,7 +34,7 @@
       "posicional": 4,
       "sin_len": 32
     },
-    "version": "0.4.4",
+    "version": "0.4.5",
     "digests": {
       "entrada": "b39fcc762ec4a7fe385d01b8e170fd996847297cdc0e3850bdda1435c74cfd95"
     },
@@ -56,7 +56,7 @@
       "posicional": 1,
       "sin_len": 26
     },
-    "version": "0.4.4",
+    "version": "0.4.5",
     "digests": {
       "entrada": "2bcd0d02648a443a4b818c952c3550091989daefac3c12d3b83b2289482e0818"
     },
@@ -78,7 +78,7 @@
       "posicional": 1,
       "sin_len": 9
     },
-    "version": "0.4.4",
+    "version": "0.4.5",
     "digests": {
       "entrada": "1e1ce33e978ae97fcfcff5638477032b801c46c7c65cf717f95fbc2248f79a9d"
     },
@@ -100,7 +100,7 @@
       "posicional": 3,
       "sin_len": 14
     },
-    "version": "0.4.4",
+    "version": "0.4.5",
     "digests": {
       "entrada": "6c29deeb39698a8717823b7f75b2ac58c5e8ab8dcf6cf31205a72a6617fb454e"
     },
@@ -122,13 +122,13 @@
       "posicional": 0,
       "sin_len": 0
     },
-    "version": "0.4.4",
+    "version": "0.4.5",
     "digests": {
       "entrada": "1e34af590de4d978631b751eb2202f2fee4497537a17c1720b12fcf57b331392"
     },
     "declarado": {
-      "conserva": true,
-      "rc": 0
+      "conserva": false,
+      "rc": 2
     }
   },
   {
@@ -144,7 +144,7 @@
       "posicional": 0,
       "sin_len": 3
     },
-    "version": "0.4.4",
+    "version": "0.4.5",
     "digests": {
       "entrada": "a83ce6de3b648e68dd9b50aabadad749ba823eb58b1d026f3c0a283c4767a9c1"
     },
@@ -166,7 +166,7 @@
       "posicional": 16,
       "sin_len": 163
     },
-    "version": "0.4.4",
+    "version": "0.4.5",
     "digests": {
       "entrada": "1784648d6ec8c2b5465e3f26241b845a0b3cb4e56c993c64abe16989e7698999"
     },
@@ -188,7 +188,7 @@
       "posicional": 2,
       "sin_len": 118
     },
-    "version": "0.4.4",
+    "version": "0.4.5",
     "digests": {
       "entrada": "653a2ad9f6d8858529c77c72717d0ea991d6c6837fe683246b2f4b2bbfc3fadc"
     },
@@ -210,7 +210,7 @@
       "posicional": 0,
       "sin_len": 0
     },
-    "version": "0.4.4",
+    "version": "0.4.5",
     "digests": {
       "entrada": "d489f15263b8d200f8387e64b4c3a75f06629559fb73deb8fdfb525f2dab50ce"
     },
@@ -232,13 +232,13 @@
       "posicional": 0,
       "sin_len": 0
     },
-    "version": "0.4.4",
+    "version": "0.4.5",
     "digests": {
       "entrada": "b2e05e6bac8e49b67be2a6ffa63422c60f7193fc72e8180255907b41ec997dc1"
     },
     "declarado": {
-      "conserva": true,
-      "rc": 0
+      "conserva": false,
+      "rc": 2
     }
   },
   {
@@ -254,7 +254,7 @@
       "posicional": 0,
       "sin_len": 3
     },
-    "version": "0.4.4",
+    "version": "0.4.5",
     "digests": {
       "entrada": "637ea1a443a78ed6ee461725cdf71ca93bc5cde0abf25436dbebdc3880b4e078"
     },
@@ -276,7 +276,7 @@
       "posicional": 1,
       "sin_len": 19
     },
-    "version": "0.4.4",
+    "version": "0.4.5",
     "digests": {
       "entrada": "28842f9a8207cc1df6eb983a35a14c5a0dfcd603d214fe82d84bef552afd2e3a"
     },

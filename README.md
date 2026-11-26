@@ -55,33 +55,38 @@ Exit code is the **recomputed** severity of the act, never the declared one.
 
 ## Receipts measured today
 
-Sixteen receipts, sixteen recomputed equations: `CONSERVADO 12 · COLISION 2 · DISCREPANCIA 2`, and
+Sixteen receipts, sixteen recomputed equations: `CONSERVADO 12 · COLISION 2 · VACIO 2`, and
 **no row refused for lack of terms** — which was thirteen rows out of sixteen before the census in
 the sibling repo learned to publish them.
 
-Those last two rows used to read `VACIO`. They do not any more: both close over a domain of zero
-**and declare `conserva=true rc=0`**, and a receipt that certifies a conservation over an empty
-population is not unmeasured, it is wrong. `v0.4.5` of the producer stopped emitting that claim;
-until its census re-runs, this ledger is red on purpose.
+Two of those rows close over a domain of zero and say so. For one version of this ledger they said
+something else: `platformdirs` and `pyflakes` shipped `conserva=true rc=0` over `0 = 0`, and this
+table graded them **`DISCREPANCIA`** — a receipt may report an unmeasured area, but it may not
+certify a conservation it never measured. The rule was not softened to make the table green; the
+producer was fixed. `fiber-ast-lint v0.4.5` separates closing the identity (`reconcilia`) from
+signing it (`certifica`, which also requires a non-empty population) and re-emitted both rows from
+the pinned wheels, with eleven measured cells unchanged and only the declared verdict moving. The
+two rows are now `VACIO`, which is the *weaker* and honest claim — and the `DISCREPANCIA` rule still
+fires on the receipts the 0.4.4 binary wrote, kept as fixtures.
 
 <!-- ledger-table:begin -->
 | Área | Instrumento | Firma | Ecuación | Residuo | Declara | Recomputa |
 |---|---|---|---|---:|---|---|
 | `acta:migracion.csv` | ingest-conservation-guard | 0.4.2 | `6 = colisiones_por_proyeccion 2 + colisiones_por_repetido 1 + imagen 3 + rechazos 0 + sin_clave 0  (residuo 0)` | 0 | `conserva=true rc=1` | **COLISION** |
 | `acta:pacientes` | ingest-conservation-guard | 0.4.2 | `8 = colisiones 2 + imagen 4 + rechazos 2 + sin_clave 0  (residuo 0)` | 0 | `conserva=true rc=1` | **COLISION** |
-| `censo:astroid@4.3.4#.` | fiber-ast-lint | 0.4.4 | `37 = pierde 0 + guardadas 10 + acumulacion 0 + posicional 1 + sin_len 26  (residuo 0)` | 0 | `conserva=true rc=1` | **CONSERVADO** |
-| `censo:black@26.10.1#.` | fiber-ast-lint | 0.4.4 | `23 = pierde 2 + guardadas 1 + acumulacion 0 + posicional 1 + sin_len 19  (residuo 0)` | 0 | `conserva=true rc=1` | **CONSERVADO** |
-| `censo:dill@0.4.1#.` | fiber-ast-lint | 0.4.4 | `16 = pierde 4 + guardadas 1 + acumulacion 1 + posicional 1 + sin_len 9  (residuo 0)` | 0 | `conserva=true rc=0` | **CONSERVADO** |
-| `censo:flake8@7.5.0#.` | fiber-ast-lint | 0.4.4 | `3 = pierde 0 + guardadas 0 + acumulacion 0 + posicional 0 + sin_len 3  (residuo 0)` | 0 | `conserva=true rc=1` | **CONSERVADO** |
-| `censo:isort@9.0.2#.` | fiber-ast-lint | 0.4.4 | `21 = pierde 0 + guardadas 2 + acumulacion 2 + posicional 3 + sin_len 14  (residuo 0)` | 0 | `conserva=true rc=1` | **CONSERVADO** |
-| `censo:jsonschema@4.26.0#.` | fiber-ast-lint | 0.4.4 | `2 = pierde 0 + guardadas 2 + acumulacion 0 + posicional 0 + sin_len 0  (residuo 0)` | 0 | `conserva=true rc=0` | **CONSERVADO** |
-| `censo:mypy@2.4.1` | fiber-ast-lint | 0.4.4 | `173 = pierde 4 + guardadas 25 + acumulacion 7 + posicional 12 + sin_len 125  (residuo 0)` | 0 | `conserva=true rc=1` | **CONSERVADO** |
-| `censo:mypy@2.4.1#.` | fiber-ast-lint | 0.4.4 | `226 = pierde 4 + guardadas 34 + acumulacion 9 + posicional 16 + sin_len 163  (residuo 0)` | 0 | `conserva=true rc=1` | **CONSERVADO** |
-| `censo:platformdirs@4.14.8#.` | fiber-ast-lint | 0.4.4 | `0 = pierde 0 + guardadas 0 + acumulacion 0 + posicional 0 + sin_len 0  (residuo 0)` | 0 | `conserva=true rc=0` | **DISCREPANCIA** |
-| `censo:pydantic@2.14.4#.` | fiber-ast-lint | 0.4.4 | `143 = pierde 0 + guardadas 17 + acumulacion 6 + posicional 2 + sin_len 118  (residuo 0)` | 0 | `conserva=true rc=1` | **CONSERVADO** |
-| `censo:pyflakes@4.1.0#.` | fiber-ast-lint | 0.4.4 | `0 = pierde 0 + guardadas 0 + acumulacion 0 + posicional 0 + sin_len 0  (residuo 0)` | 0 | `conserva=true rc=0` | **DISCREPANCIA** |
-| `censo:pylint@4.1.4#.` | fiber-ast-lint | 0.4.4 | `55 = pierde 1 + guardadas 14 + acumulacion 4 + posicional 4 + sin_len 32  (residuo 0)` | 0 | `conserva=true rc=1` | **CONSERVADO** |
-| `censo:tomlkit@0.15.3#.` | fiber-ast-lint | 0.4.4 | `6 = pierde 0 + guardadas 2 + acumulacion 1 + posicional 0 + sin_len 3  (residuo 0)` | 0 | `conserva=true rc=1` | **CONSERVADO** |
+| `censo:astroid@4.3.4#.` | fiber-ast-lint | 0.4.5 | `37 = pierde 0 + guardadas 10 + acumulacion 0 + posicional 1 + sin_len 26  (residuo 0)` | 0 | `conserva=true rc=1` | **CONSERVADO** |
+| `censo:black@26.10.1#.` | fiber-ast-lint | 0.4.5 | `23 = pierde 2 + guardadas 1 + acumulacion 0 + posicional 1 + sin_len 19  (residuo 0)` | 0 | `conserva=true rc=1` | **CONSERVADO** |
+| `censo:dill@0.4.1#.` | fiber-ast-lint | 0.4.5 | `16 = pierde 4 + guardadas 1 + acumulacion 1 + posicional 1 + sin_len 9  (residuo 0)` | 0 | `conserva=true rc=0` | **CONSERVADO** |
+| `censo:flake8@7.5.0#.` | fiber-ast-lint | 0.4.5 | `3 = pierde 0 + guardadas 0 + acumulacion 0 + posicional 0 + sin_len 3  (residuo 0)` | 0 | `conserva=true rc=1` | **CONSERVADO** |
+| `censo:isort@9.0.2#.` | fiber-ast-lint | 0.4.5 | `21 = pierde 0 + guardadas 2 + acumulacion 2 + posicional 3 + sin_len 14  (residuo 0)` | 0 | `conserva=true rc=1` | **CONSERVADO** |
+| `censo:jsonschema@4.26.0#.` | fiber-ast-lint | 0.4.5 | `2 = pierde 0 + guardadas 2 + acumulacion 0 + posicional 0 + sin_len 0  (residuo 0)` | 0 | `conserva=true rc=0` | **CONSERVADO** |
+| `censo:mypy@2.4.1` | fiber-ast-lint | 0.4.5 | `173 = pierde 4 + guardadas 25 + acumulacion 7 + posicional 12 + sin_len 125  (residuo 0)` | 0 | `conserva=true rc=1` | **CONSERVADO** |
+| `censo:mypy@2.4.1#.` | fiber-ast-lint | 0.4.5 | `226 = pierde 4 + guardadas 34 + acumulacion 9 + posicional 16 + sin_len 163  (residuo 0)` | 0 | `conserva=true rc=1` | **CONSERVADO** |
+| `censo:platformdirs@4.14.8#.` | fiber-ast-lint | 0.4.5 | `0 = pierde 0 + guardadas 0 + acumulacion 0 + posicional 0 + sin_len 0  (residuo 0)` | 0 | `conserva=false rc=2` | **VACIO** |
+| `censo:pydantic@2.14.4#.` | fiber-ast-lint | 0.4.5 | `143 = pierde 0 + guardadas 17 + acumulacion 6 + posicional 2 + sin_len 118  (residuo 0)` | 0 | `conserva=true rc=1` | **CONSERVADO** |
+| `censo:pyflakes@4.1.0#.` | fiber-ast-lint | 0.4.5 | `0 = pierde 0 + guardadas 0 + acumulacion 0 + posicional 0 + sin_len 0  (residuo 0)` | 0 | `conserva=false rc=2` | **VACIO** |
+| `censo:pylint@4.1.4#.` | fiber-ast-lint | 0.4.5 | `55 = pierde 1 + guardadas 14 + acumulacion 4 + posicional 4 + sin_len 32  (residuo 0)` | 0 | `conserva=true rc=1` | **CONSERVADO** |
+| `censo:tomlkit@0.15.3#.` | fiber-ast-lint | 0.4.5 | `6 = pierde 0 + guardadas 2 + acumulacion 1 + posicional 0 + sin_len 3  (residuo 0)` | 0 | `conserva=true rc=1` | **CONSERVADO** |
 | `fiber:fixtures` | fiber-ast-lint | 0.4.4 | `9 = pierde 0 + guardadas 2 + acumulacion 1 + posicional 1 + sin_len 5  (residuo 0)` | 0 | `conserva=true rc=1` | **CONSERVADO** |
 <!-- ledger-table:end -->
 
@@ -92,12 +97,14 @@ failure of arithmetic — the merged units are accounted for in a named bucket, 
 no unit vanished. It is a warning that a projection dropped information, and the
 instrument said so itself.
 
-**Two rows are `DISCREPANCIA` and they are the point.** `platformdirs` and
-`pyflakes` close `0 = 0 + 0 + 0 + 0 + 0` and declare `conserva=true rc=0`. The
+**Two rows are `VACIO` and they are the point.** `platformdirs` and
+`pyflakes` close `0 = 0 + 0 + 0 + 0 + 0` and declare `conserva=false rc=2`. The
 equation holds and proves nothing — no store was measured, so no store can be
-shown accounted for. A receipt may say that (`rc=2`, `NO_MEDIDO`, factors
-published) and then it grades `VACIO`; it may not say `conserva=true`, because
-`0 = 0` is not a conservation, it is an absence.
+shown accounted for. `VACIO` is what an honest receipt looks like when it has no
+population: factors published, verdict withheld. A version of this ledger would
+have graded the same two rows `DISCREPANCIA` had they kept declaring
+`conserva=true`, and the fixtures under `tests/fixtures/dominio-vacio` hold that
+case from both binaries so the distinction cannot erode into "zero closes".
 
 ### What this table looked like before the census published its terms
 
@@ -447,7 +454,7 @@ place the numbers live.
 ```yaml
 repos:
   - repo: https://github.com/alexisromtz-lab/conservation-ledger
-    rev: v0.2.7
+    rev: v0.2.8
     hooks: [{id: conservation-ledger-verify}]
 ```
 

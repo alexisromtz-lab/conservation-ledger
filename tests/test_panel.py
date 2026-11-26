@@ -36,7 +36,7 @@ def test_el_html_escapa_el_nombre_del_area():
 
 
 def test_el_html_lleva_el_rc_del_acto():
-    assert "RC del acto <strong>4</strong>" in html(veredictos())
+    assert "RC del acto <strong>1</strong>" in html(veredictos())
     assert "16 áreas" in html(veredictos())
 
 
