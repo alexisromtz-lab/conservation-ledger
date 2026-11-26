@@ -65,6 +65,7 @@ class Veredicto:
     motivos: tuple[str, ...] = field(default=())
     declarado_rc: int | None = None
     declarado_conserva: bool | None = None
+    declarado_rc_escaneo: int | None = None
 
     @property
     def conserva(self) -> bool:
@@ -90,6 +91,7 @@ class Veredicto:
             "motivos": list(self.motivos),
             "declarado_rc": self.declarado_rc,
             "declarado_conserva": self.declarado_conserva,
+            "declarado_rc_escaneo": self.declarado_rc_escaneo,
         }
 
 
@@ -98,7 +100,8 @@ def _veredicto(r: Recibo, *, residuo: int, rc: int, clase: str,
     return Veredicto(area=r.area, instrumento=r.instrumento, dominio=r.dominio,
                      cubetas=dict(r.cubetas), residuo=residuo, rc=rc, clase=clase,
                      unidad=r.unidad, version=r.version, motivos=motivos, declarado_rc=r.declarado_rc,
-                     declarado_conserva=r.declarado_conserva)
+                     declarado_conserva=r.declarado_conserva,
+                     declarado_rc_escaneo=r.declarado_rc_escaneo)
 
 
 def fusiones(cubetas: dict[str, int]) -> int:

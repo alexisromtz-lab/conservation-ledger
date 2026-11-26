@@ -73,7 +73,9 @@ def _cmd_verify(args: argparse.Namespace) -> int:
     for r, v in pares:
         marca = "ok " if v.conserva else "!! "
         declara = "" if v.declarado_rc is None else f" (declara rc={v.declarado_rc})"
-        print(f"{marca}{v.area:<34} {v.instrumento:<26} rc={v.rc} {v.clase}{declara}")
+        escaneo = ("" if v.declarado_rc_escaneo is None
+                   else f" · escaneo rc={v.declarado_rc_escaneo}")
+        print(f"{marca}{v.area:<34} {v.instrumento:<26} rc={v.rc} {v.clase}{declara}{escaneo}")
         if v.motivos:
             for m in v.motivos:
                 print(f"     - {m}")

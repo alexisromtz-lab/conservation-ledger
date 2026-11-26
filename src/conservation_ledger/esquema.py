@@ -50,6 +50,10 @@ class Recibo:
     digest_artefacto: str | None = None
     declarado_conserva: bool | None = None
     declarado_rc: int | None = None
+    #: El codigo del *escaneo* del productor, si lo publica. Viaja para que un
+    #: lector lo vea, nunca para votar: `1` significa "hay candidatos" en un
+    #: linter y "declaro una colision" en este contrato.
+    declarado_rc_escaneo: int | None = None
 
 
 def _entero(valor: Any, campo: str) -> int:

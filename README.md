@@ -74,19 +74,19 @@ fires on the receipts the 0.4.4 binary wrote, kept as fixtures.
 |---|---|---|---|---:|---|---|
 | `acta:migracion.csv` | ingest-conservation-guard | 0.4.2 | `6 = colisiones_por_proyeccion 2 + colisiones_por_repetido 1 + imagen 3 + rechazos 0 + sin_clave 0  (residuo 0)` | 0 | `conserva=true rc=1` | **COLISION** |
 | `acta:pacientes` | ingest-conservation-guard | 0.4.2 | `8 = colisiones 2 + imagen 4 + rechazos 2 + sin_clave 0  (residuo 0)` | 0 | `conserva=true rc=1` | **COLISION** |
-| `censo:astroid@4.3.4#.` | fiber-ast-lint | 0.4.5 | `37 = pierde 0 + guardadas 10 + acumulacion 0 + posicional 1 + sin_len 26  (residuo 0)` | 0 | `conserva=true rc=1` | **CONSERVADO** |
-| `censo:black@26.10.1#.` | fiber-ast-lint | 0.4.5 | `23 = pierde 2 + guardadas 1 + acumulacion 0 + posicional 1 + sin_len 19  (residuo 0)` | 0 | `conserva=true rc=1` | **CONSERVADO** |
-| `censo:dill@0.4.1#.` | fiber-ast-lint | 0.4.5 | `16 = pierde 4 + guardadas 1 + acumulacion 1 + posicional 1 + sin_len 9  (residuo 0)` | 0 | `conserva=true rc=0` | **CONSERVADO** |
-| `censo:flake8@7.5.0#.` | fiber-ast-lint | 0.4.5 | `3 = pierde 0 + guardadas 0 + acumulacion 0 + posicional 0 + sin_len 3  (residuo 0)` | 0 | `conserva=true rc=1` | **CONSERVADO** |
-| `censo:isort@9.0.2#.` | fiber-ast-lint | 0.4.5 | `21 = pierde 0 + guardadas 2 + acumulacion 2 + posicional 3 + sin_len 14  (residuo 0)` | 0 | `conserva=true rc=1` | **CONSERVADO** |
-| `censo:jsonschema@4.26.0#.` | fiber-ast-lint | 0.4.5 | `2 = pierde 0 + guardadas 2 + acumulacion 0 + posicional 0 + sin_len 0  (residuo 0)` | 0 | `conserva=true rc=0` | **CONSERVADO** |
-| `censo:mypy@2.4.1` | fiber-ast-lint | 0.4.5 | `173 = pierde 4 + guardadas 25 + acumulacion 7 + posicional 12 + sin_len 125  (residuo 0)` | 0 | `conserva=true rc=1` | **CONSERVADO** |
-| `censo:mypy@2.4.1#.` | fiber-ast-lint | 0.4.5 | `226 = pierde 4 + guardadas 34 + acumulacion 9 + posicional 16 + sin_len 163  (residuo 0)` | 0 | `conserva=true rc=1` | **CONSERVADO** |
-| `censo:platformdirs@4.14.8#.` | fiber-ast-lint | 0.4.5 | `0 = pierde 0 + guardadas 0 + acumulacion 0 + posicional 0 + sin_len 0  (residuo 0)` | 0 | `conserva=false rc=2` | **VACIO** |
-| `censo:pydantic@2.14.4#.` | fiber-ast-lint | 0.4.5 | `143 = pierde 0 + guardadas 17 + acumulacion 6 + posicional 2 + sin_len 118  (residuo 0)` | 0 | `conserva=true rc=1` | **CONSERVADO** |
-| `censo:pyflakes@4.1.0#.` | fiber-ast-lint | 0.4.5 | `0 = pierde 0 + guardadas 0 + acumulacion 0 + posicional 0 + sin_len 0  (residuo 0)` | 0 | `conserva=false rc=2` | **VACIO** |
-| `censo:pylint@4.1.4#.` | fiber-ast-lint | 0.4.5 | `55 = pierde 1 + guardadas 14 + acumulacion 4 + posicional 4 + sin_len 32  (residuo 0)` | 0 | `conserva=true rc=1` | **CONSERVADO** |
-| `censo:tomlkit@0.15.3#.` | fiber-ast-lint | 0.4.5 | `6 = pierde 0 + guardadas 2 + acumulacion 1 + posicional 0 + sin_len 3  (residuo 0)` | 0 | `conserva=true rc=1` | **CONSERVADO** |
+| `censo:astroid@4.3.4#.` | fiber-ast-lint | 0.4.6 | `37 = pierde 0 + guardadas 10 + acumulacion 0 + posicional 1 + sin_len 26  (residuo 0)` | 0 | `conserva=true` | **CONSERVADO** |
+| `censo:black@26.10.1#.` | fiber-ast-lint | 0.4.6 | `23 = pierde 2 + guardadas 1 + acumulacion 0 + posicional 1 + sin_len 19  (residuo 0)` | 0 | `conserva=true` | **CONSERVADO** |
+| `censo:dill@0.4.1#.` | fiber-ast-lint | 0.4.6 | `16 = pierde 4 + guardadas 1 + acumulacion 1 + posicional 1 + sin_len 9  (residuo 0)` | 0 | `conserva=true` | **CONSERVADO** |
+| `censo:flake8@7.5.0#.` | fiber-ast-lint | 0.4.6 | `3 = pierde 0 + guardadas 0 + acumulacion 0 + posicional 0 + sin_len 3  (residuo 0)` | 0 | `conserva=true` | **CONSERVADO** |
+| `censo:isort@9.0.2#.` | fiber-ast-lint | 0.4.6 | `21 = pierde 0 + guardadas 2 + acumulacion 2 + posicional 3 + sin_len 14  (residuo 0)` | 0 | `conserva=true` | **CONSERVADO** |
+| `censo:jsonschema@4.26.0#.` | fiber-ast-lint | 0.4.6 | `2 = pierde 0 + guardadas 2 + acumulacion 0 + posicional 0 + sin_len 0  (residuo 0)` | 0 | `conserva=true` | **CONSERVADO** |
+| `censo:mypy@2.4.1` | fiber-ast-lint | 0.4.6 | `173 = pierde 4 + guardadas 25 + acumulacion 7 + posicional 12 + sin_len 125  (residuo 0)` | 0 | `conserva=true` | **CONSERVADO** |
+| `censo:mypy@2.4.1#.` | fiber-ast-lint | 0.4.6 | `226 = pierde 4 + guardadas 34 + acumulacion 9 + posicional 16 + sin_len 163  (residuo 0)` | 0 | `conserva=true` | **CONSERVADO** |
+| `censo:platformdirs@4.14.8#.` | fiber-ast-lint | 0.4.6 | `0 = pierde 0 + guardadas 0 + acumulacion 0 + posicional 0 + sin_len 0  (residuo 0)` | 0 | `conserva=false` | **VACIO** |
+| `censo:pydantic@2.14.4#.` | fiber-ast-lint | 0.4.6 | `143 = pierde 0 + guardadas 17 + acumulacion 6 + posicional 2 + sin_len 118  (residuo 0)` | 0 | `conserva=true` | **CONSERVADO** |
+| `censo:pyflakes@4.1.0#.` | fiber-ast-lint | 0.4.6 | `0 = pierde 0 + guardadas 0 + acumulacion 0 + posicional 0 + sin_len 0  (residuo 0)` | 0 | `conserva=false` | **VACIO** |
+| `censo:pylint@4.1.4#.` | fiber-ast-lint | 0.4.6 | `55 = pierde 1 + guardadas 14 + acumulacion 4 + posicional 4 + sin_len 32  (residuo 0)` | 0 | `conserva=true` | **CONSERVADO** |
+| `censo:tomlkit@0.15.3#.` | fiber-ast-lint | 0.4.6 | `6 = pierde 0 + guardadas 2 + acumulacion 1 + posicional 0 + sin_len 3  (residuo 0)` | 0 | `conserva=true` | **CONSERVADO** |
 | `fiber:fixtures` | fiber-ast-lint | 0.4.4 | `9 = pierde 0 + guardadas 2 + acumulacion 1 + posicional 1 + sin_len 5  (residuo 0)` | 0 | `conserva=true rc=1` | **CONSERVADO** |
 <!-- ledger-table:end -->
 
@@ -412,18 +412,45 @@ row has stopped meaning anything.
 
 ## Adapters: the only instrument-aware code
 
-`verificador.py` (176 lines) knows nothing about any instrument. Everything
-specific to a dialect lives in `adaptadores.py` (173 lines):
+`verificador.py` (179 lines) knows nothing about any instrument. Everything
+specific to a dialect lives in `adaptadores.py` (181 lines):
 
 | adapter | reads | note |
 |---|---|---|
 | `acta` | `ingest-conservation-guard --receipt` | passes buckets through |
 | `fiber` | `fiber-ast-lint --json` | keeps only the basename of the root |
-| `censo` | `fiber-ast-lint/censo.json` | buckets only when the row publishes them |
+| `censo` | `fiber-ast-lint/censo.json` | buckets when published; `certifica` votes, `rc` only travels |
 | `raw` | a single `conservation/1` document | for `collect` |
 
 `desde_censo` deliberately refuses to reconstruct terms from `pierde`: doing so
 would be manufacturing the evidence that was withheld.
+
+### `rc` travels, it does not vote
+
+Until v0.2.9 the census adapter read two things from one key: `reconciles` into
+`declarado_conserva` and `rc` into `declarado_rc`. The producer had the same
+collapse on its side. `rc` is the *scan* code — `0` nothing found, `1`
+candidates found, `2` nothing to scan — while this contract's `rc` is the *act*
+code, where `1` means "I declared a collision". The two ladders share `0`, `1`
+and `2` and disagree in the middle, and that partial agreement is exactly what
+licenses a consumer to translate one into the other: on eleven census rows the
+ledger printed *"declaraba una colision que los terminos no muestran"* about a
+producer that had declared nothing.
+
+`fiber-ast-lint` v0.4.6 publishes four names instead of one — `rc`, `rc_certificado`,
+`reconciles`, `certifica` — so the adapter maps the **boolean** (`certifica`,
+falling back to `reconciles` for rows stamped before 0.4.6) and carries the
+integer as evidence under its own name. `declarado_rc` stays `None` for census
+rows, so no sentence about a declared collision can be produced from a scan
+code. Measured on the eleven rows: the motive is gone, the panel reads
+`CONSERVADO 11 · VACIO 2 · RC=2`, and the two zero-store rows still declare
+`conserva=false` — which is why they are `VACIO` and not `DISCREPANCIA`.
+
+Two mutants keep that honest, both run against this repository: restoring
+`declarado_rc=fila["rc"]` turns `test_los_recibos_publicados_son_la_derivacion_de_la_fuente`
+red, and preferring `reconciles` over `certifica` turns the seam red as well,
+because on a zero-store row `reconciles` is `true` while `certifica` is `false`
+and the row would be accused of claiming a preservation it never claimed.
 
 ## Collect
 
@@ -451,8 +478,8 @@ place the numbers live.
 
 That closes the README against the receipts. The step before it — the receipts
 against their source — is closed the same way, offline:
-`tests/fixtures/fuente/fiber-censo-0.4.5.json` is the census blob `47c6bc4` of
-`fiber-ast-lint@ebb5d3a`, pinned by SHA-256, and `tests/test_costura_censo.py`
+`tests/fixtures/fuente/fiber-censo-0.4.6.json` is the census blob `0f4412d` of
+`fiber-ast-lint@8d9a756`, pinned by SHA-256, and `tests/test_costura_censo.py`
 re-derives all thirteen receipts from it through `adaptar` + `a_documento` and
 demands an exact match. So the published figures cannot age because a *function*
 changed either: mutant F (one bucket dropped from `CUBETAS_CENSO`) leaves the
@@ -463,7 +490,7 @@ source untouched and still turns the seam red.
 ```yaml
 repos:
   - repo: https://github.com/alexisromtz-lab/conservation-ledger
-    rev: v0.2.9
+    rev: v0.2.10
     hooks: [{id: conservation-ledger-verify}]
 ```
 

@@ -130,8 +130,16 @@ def desde_censo(doc: dict[str, Any]) -> list[Recibo]:
                      if all(k in fila for k in CUBETAS_CENSO) else {}),
             unidad="almacenes",
             digest_entrada=fila.get("sha256"),
-            declarado_conserva=fila.get("reconciles"),
-            declarado_rc=fila.get("rc"),
+            # Dos superficies con dos nombres. `certifica` es la firma y desde
+            # 0.4.6 viaja como booleano propio; las filas anteriores lo plegaban
+            # en `reconciles`. El entero es el problema: `rc` significa "encontre
+            # candidatos" para el linter y "declare una colision" para este
+            # contrato, asi que no vota -- se publica como evidencia bajo su
+            # nombre (`rc`) y el codigo del acta no se lee de aqui.
+            declarado_conserva=(fila["certifica"] if "certifica" in fila
+                                else fila.get("reconciles")),
+            declarado_rc=None,
+            declarado_rc_escaneo=fila.get("rc"),
         ))
     return recibos
 

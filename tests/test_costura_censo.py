@@ -12,9 +12,9 @@ from conftest import RAIZ
 from conservation_ledger.adaptadores import adaptar
 from conservation_ledger.esquema import a_documento
 
-# blob 47c6bc46dc2b085b6fde363ae4991b63481a5eb3 de fiber-ast-lint @ ebb5d3a (v0.4.5)
-FUENTE = RAIZ / "tests" / "fixtures" / "fuente" / "fiber-censo-0.4.5.json"
-SHA256_FUENTE = "50efa55118414433b20f66b8ec8c816ccafaf316905df82893b25d67e23b3f7e"
+# blob 0f4412df3297d24db24241e04fc1ab379e3df968 de fiber-ast-lint @ 8d9a756 (v0.4.6)
+FUENTE = RAIZ / "tests" / "fixtures" / "fuente" / "fiber-censo-0.4.6.json"
+SHA256_FUENTE = "c55a820e22ac659ccc9fa3130900387c5fef9053049779db073d39dd8f449cc8"
 RECIBOS = RAIZ / "receipts" / "censo.json"
 
 
@@ -40,6 +40,5 @@ def test_una_fila_que_cambia_en_la_fuente_mueve_el_recibo():
     """El test de arriba pasaria con una fuente copiada del recibo; este no."""
     doc = _fuente()
     fila = next(f for f in doc["rows"] if f["stores"] == 0)
-    fila["rc"] = 0
-    fila["reconciles"] = True
+    fila["certifica"] = True
     assert _derivar(doc) != json.loads(RECIBOS.read_text(encoding="utf-8"))
