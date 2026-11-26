@@ -438,7 +438,7 @@ place the numbers live.
 ```yaml
 repos:
   - repo: https://github.com/alexisromtz-lab/conservation-ledger
-    rev: v0.2.5
+    rev: v0.2.6
     hooks: [{id: conservation-ledger-verify}]
 ```
 

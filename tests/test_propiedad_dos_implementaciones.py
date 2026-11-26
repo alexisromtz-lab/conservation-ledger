@@ -59,15 +59,21 @@ def _documento(*, caso: str, dominio: int, cubetas: dict[str, int],
 
 def _un_caso(rng: random.Random, base: Path) -> tuple[list[Path], list[dict]]:
     n = rng.choice([2, 2, 3, 4])
+    # Half the chains carry no defect at all. Without that half the sample only ever
+    # proves that both implementations refuse: with the injections below applied per
+    # act, 21 of 40 chains came out self-contradicting and 2 clean (measured
+    # 2026-11-25, SEED=SEMILLA), so "both sign" was the rare branch, not the base.
+    intacto = rng.random() < 0.5
     base.mkdir(parents=True, exist_ok=True)
     docs: list[dict] = []
     rutas: list[Path] = []
+    escritos: list[Path] = []
     prev_img = 0
     prev_sha: str | None = None
 
     for i in range(n):
         if i:
-            if rng.random() < 0.85:
+            if intacto or rng.random() < 0.85:
                 dominio = prev_img
             else:
                 dominio = max(0, prev_img + rng.choice([-1, 1]))
@@ -78,22 +84,26 @@ def _un_caso(rng: random.Random, base: Path) -> tuple[list[Path], list[dict]]:
         resto = dominio - imagen
         corte = rng.randint(0, resto)
         cubetas = {"imagen": imagen, "sin_clave": corte, "rechazos": resto - corte}
-        if resto and rng.random() < 0.2:
+        if resto and not intacto and rng.random() < 0.2:
             cubetas["colisiones"] = 1
             cubetas["sin_clave"] -= 1
-        if rng.random() < 0.15:
+        if not intacto and rng.random() < 0.15:
             cubetas["sin_clave"] += 1  # la suma ya no cierra
 
         suma_cierra = sum(cubetas.values()) == dominio
         conserva = suma_cierra
         rc = 1 if cubetas.get("colisiones") else 0
-        if suma_cierra and rng.random() < 0.15:
+        if suma_cierra and not intacto and rng.random() < 0.15:
             conserva = False  # el recibo se contradice a si mismo
-        if suma_cierra and rng.random() < 0.15:
+        if suma_cierra and not intacto and rng.random() < 0.15:
             rc = 2  # declara ceguera sobre una ecuacion que cierra
 
         claves = rng.randint(0, 5)
-        modo = rng.choice(MODOS)
+        # Without this knob the sample is one-sided: a level-2 act needs digest *and*
+        # rows right, which ``MODOS`` grants in 3 of 8 draws, so 38 of 40 chains came
+        # out uncovered (measured 2026-11-25, SEED=SEMILLA) and the signing half of the
+        # equivalence was exercised by a single case. Half the chains now cover fully.
+        modo = "ok" if rng.random() < 0.5 else rng.choice(MODOS)
         nombre = f"acto{i + 1}.csv"
         filas = [f"K{i}-{j}" for j in range(claves)]
         contenido = ("clave\n" + "".join(f"{f}\n" for f in filas)).encode()
@@ -111,6 +121,7 @@ def _un_caso(rng: random.Random, base: Path) -> tuple[list[Path], list[dict]]:
 
         if modo not in ("sin_archivo", "ausente"):
             (base / nombre).write_bytes(contenido)
+            escritos.append(base / nombre)
 
         doc = _documento(
             caso=nombre,
@@ -118,7 +129,7 @@ def _un_caso(rng: random.Random, base: Path) -> tuple[list[Path], list[dict]]:
             cubetas=cubetas,
             entrada_sha=(
                 "0" * 64 if i == 0
-                else (prev_sha if prev_sha and rng.random() < 0.85 else "f" * 64)
+                else (prev_sha if prev_sha and (intacto or rng.random() < 0.85) else "f" * 64)
             ),
             salida=salida,
             conserva=conserva,
@@ -131,6 +142,11 @@ def _un_caso(rng: random.Random, base: Path) -> tuple[list[Path], list[dict]]:
         prev_img = imagen
         prev_sha = salida.get("sha256_archivo")  # type: ignore[assignment]
 
+    # The sample is only a sample of what reaches the instruments: a case whose
+    # artifact vanished measures level 1 and quietly moves the counts. That is an
+    # environment fault and has to be named as one, not absorbed as a smaller sample.
+    for ruta_escrita in escritos:
+        assert ruta_escrita.exists(), f"el artefacto {ruta_escrita.name} desaparecio antes de medirse"
     return rutas, docs
 
 
@@ -213,6 +229,7 @@ def test_un_agujero_conocido_no_vuelve_a_firmarse(agujero, tmp_path):
 def test_verify_sh_sale_cero_si_y_solo_si_el_compositor_y_la_cobertura(tmp_path):
     rng = random.Random(SEMILLA)
     vistos = {"limpio": 0, "sin_cobertura": 0, "roto": 0, "contradicho": 0}
+    completas = 0
 
     for i in range(CASOS):
         base = tmp_path / f"caso{i:02d}"
@@ -223,6 +240,12 @@ def test_verify_sh_sale_cero_si_y_solo_si_el_compositor_y_la_cobertura(tmp_path)
             pytest.fail(
                 f"caso {i} (semilla {SEMILLA}): verify.sh={rc_v} chain={rc_c} "
                 f"cobertura={nivel2}/{n}\n{salida}"
+            )
+        if nivel2 == n:
+            completas += 1
+            assert (rc_v == 0) == (rc_c == 0), (
+                f"caso {i} (semilla {SEMILLA}): con cobertura completa nadie firma "
+                f"en falso: verify.sh={rc_v} chain={rc_c}\n{salida}"
             )
 
         if rc_c == 0 and nivel2 == n:
@@ -237,7 +260,12 @@ def test_verify_sh_sale_cero_si_y_solo_si_el_compositor_y_la_cobertura(tmp_path)
         else:
             vistos["roto"] += 1
 
-    assert vistos["limpio"], f"la muestra no ejercito ninguna cadena limpia: {vistos}"
+    # Floors, not truths: the seed fixes the sample, so a value that drifts means the
+    # generator changed, and a generator that drifts back to one-sided would leave the
+    # equivalence true and empty. Measured with SEED=SEMILLA on 2026-11-25:
+    # limpio 8 · sin_cobertura 5 · roto 20 · contradicho 7 · cobertura completa 15/40.
+    assert vistos["limpio"] >= 5, f"la muestra apenas ejercito cadenas limpias: {vistos}"
     assert vistos["sin_cobertura"], f"la muestra no ejercito la ceguera por cobertura: {vistos}"
-    assert vistos["roto"], f"la muestra no ejercito ninguna cadena rota: {vistos}"
-    assert vistos["contradicho"], f"la muestra no ejercito ningun recibo contradictorio: {vistos}"
+    assert vistos["roto"] >= 5, f"la muestra apenas ejercito cadenas rotas: {vistos}"
+    assert vistos["contradicho"] >= 5, f"la muestra apenas ejercito recibos contradictorios: {vistos}"
+    assert completas >= 10, f"la muestra no ejercito el nivel 2: {completas}/{CASOS} cadenas completas"
