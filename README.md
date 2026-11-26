@@ -288,16 +288,17 @@ verdict that is not a document cannot be handed over, anchored or re-read.
 
 ```
 $ conservation-ledger aggregate receipts/censo.json -o aggregates/censo.json
-AGREGADO 13 areas · CONSERVADO 11 · VACIO 2 · digest b90fd7fdd75c · RC=2
+AGREGADO 13 areas · CONSERVADO 11 · VACIO 2 · digest b90fd7fdd75c · fuentes 1 · RC=2
 ```
 
-`conservation/agregado/1` carries the rows and **two measures that do not depend
-on order**: the count of areas and the SHA-256 of a canonical projection of each
-row. A set that only counted areas could be padded with a repeated one; a set
-that only kept a digest could not say how many it covers; together they move
-when an area is dropped, smuggled in or changes class, and they do not move when
-the same areas arrive in another order — which is the invariant that makes it a
-set and not a list.
+`conservation/agregado/1` carries the rows and **three measures that do not
+depend on order**: the count of areas, the SHA-256 of a canonical projection of
+each row, and — separately — the SHA-256 of where those rows came from. A set
+that only counted areas could be padded with a repeated one; a set that only
+kept a digest could not say how many it covers; together they move when an area
+is dropped, smuggled in or changes class, and they do not move when the same
+areas arrive in another order — which is the invariant that makes it a set and
+not a list.
 
 It publishes the **vector of classes**, not a single boolean. Collapsing
 `CONSERVADO 11 · VACIO 2` into one `conserva` would equate "nothing to measure"
@@ -317,21 +318,67 @@ jq -r '.areas[] | [.area,.instrumento,(.version // ""),(.clase // ""),
 ```
 
 which prints `b90fd7fdd75c…` — the published `digest_conjunto`, from a pipeline
-that knows nothing about this package. `tests/test_agregado.py` runs both routes
-and the three manipulations: a tampered class and a deleted row each turn four of
-its six tests red, while a reversed row order turns none.
+that knows nothing about this package. `tests/test_agregado.py` runs both digest
+routes and every manipulation it publishes: a tampered class and a deleted row
+each turn tests red, while a reversed row order turns none.
+
+### Naming where it came from
+
+A digest over the rows says *what* was measured and nothing about *where it came
+from*, so a certificate can be internally perfect and still describe a set nobody
+produced. The document therefore publishes `procedencia`: one row per input
+document with its file name, the SHA-256 of its **bytes** and how many receipts
+it contributed. Its closing identity is the third measure —
+
+```
+n_areas == Σ n_recibos
+```
+
+— and it is published with its own digest, `digest_procedencia`, over a second
+canonical projection. Both are recomputable without our code:
+
+```
+jq -r '.procedencia[] | [.documento,.sha256,(.n_recibos|tostring)] | @tsv' \
+    aggregates/censo.json | LC_ALL=C sort | shasum -a 256
+shasum -a 256 receipts/censo.json   # must equal .procedencia[0].sha256
+```
+
+The hash is over the bytes, not over the meaning: reformatting a source produces
+a different artifact and requires re-aggregating. That is deliberate — it is the
+one of the three measures an auditor confirms with `shasum` without reading any
+JSON.
+
+`aggregate --check` is honest about having **two levels**, the same two the chain
+uses — declared, and re-read:
+
+| level | command | what it can prove |
+| --- | --- | --- |
+| 1 — self | `aggregate --check doc.json` | the document agrees with itself: count, digest, class vector, closing identity |
+| 2 — sources | `aggregate --check doc.json --base receipts` | the document is a function of documents that still exist with those exact bytes |
+
+The second level is not redundant. A certificate built by our own constructor
+that drops an area *and* declares one contribution fewer passes the first level
+completely — count, digest, class vector and the closing identity all agree,
+because the lie is about the source, not about the arithmetic. Rebuilding from
+the source is what turns it red: `las areas declaradas no son la funcion de sus
+fuentes`. The client who receives only the JSON gets the weaker level, and gets
+to see the source named so it can be demanded. `tests/test_agregado.py` builds
+exactly that forgery and asserts it passes the first level and fails the second —
+a hole that is published as a limit beats a hole that is papered over.
 
 And when a reader would rather not clone anything, one file and one command:
 
 ```
 curl -sSfLO https://raw.githubusercontent.com/alexisromtz-lab/conservation-ledger/main/aggregates/censo.json
-uvx --from git+https://github.com/alexisromtz-lab/conservation-ledger@v0.3.0 \
+uvx --from git+https://github.com/alexisromtz-lab/conservation-ledger@v0.3.1 \
     conservation-ledger aggregate --check censo.json
 ```
 
 Measured from an empty directory on 26-Nov-2026: 6.0 s wall, `RC=0`, the same
-digest — and the `jq` pipeline above agrees with it on the downloaded file before
-our code is even installed.
+digest — and the `jq` pipelines above agree with it on the downloaded file before
+our code is even installed. That run is the *self* level: the file carries the
+name and digest of its source, but the source itself is what `--base` reads, and
+it is not in the download.
 
 ## Verifying without our code
 
@@ -466,7 +513,7 @@ row has stopped meaning anything.
 ## Adapters: the only instrument-aware code
 
 `verificador.py` (179 lines) knows nothing about any instrument. Everything
-specific to a dialect lives in `adaptadores.py` (181 lines):
+specific to a dialect lives in `adaptadores.py` (198 lines):
 
 | adapter | reads | note |
 |---|---|---|
@@ -543,7 +590,7 @@ source untouched and still turns the seam red.
 ```yaml
 repos:
   - repo: https://github.com/alexisromtz-lab/conservation-ledger
-    rev: v0.3.0
+    rev: v0.3.1
     hooks: [{id: conservation-ledger-verify}]
 ```
 

@@ -12,7 +12,7 @@ from __future__ import annotations
 from pathlib import Path
 from typing import Any, Callable
 
-from .esquema import Recibo, desde_documento
+from .esquema import ESQUEMA, Recibo, desde_documento
 
 
 def _nombre(valor: Any, defecto: str) -> str:
@@ -179,3 +179,20 @@ def adaptar(nombre: str, doc: Any) -> list[Recibo]:
         raise ValueError(f"adaptador desconocido: {nombre!r} "
                          f"(validos: {', '.join(sorted(ADAPTADORES))})") from None
     return fn(doc)
+
+
+def detectar(doc: Any) -> str:
+    """Which adapter can read this document, judged by its shape alone."""
+    if isinstance(doc, list):
+        return "raw"
+    if not isinstance(doc, dict):
+        raise ValueError("el recibo debe ser un objeto o una lista JSON")
+    if doc.get("schema") == ESQUEMA:
+        return "raw"
+    if doc.get("acta"):
+        return "acta"
+    if "almacenes" in doc:
+        return "fiber"
+    if doc.get("rows") and doc.get("instrument"):
+        return "censo"
+    raise ValueError("no se reconoce la forma del documento: declara --adapter")

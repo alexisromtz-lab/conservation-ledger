@@ -19,38 +19,23 @@ import json
 import subprocess
 import sys
 from pathlib import Path
-from typing import Any, Iterable
+from typing import Iterable
 
 from . import __version__
 from .adaptadores import adaptar
-from .agregado import agregar, comprobar, leer as leer_agregado
+from .adaptadores import adaptar, detectar
+from .agregado import agregar, comprobar, leer as leer_agregado, leer_fuentes
 from .cadena import cadena
-from .esquema import ESQUEMA, Recibo, a_documento, desde_documento
+from .esquema import ESQUEMA, Recibo, a_documento
 from .panel import html
 from .verificador import Veredicto, rc_del_acto, verificar
-
-
-def _detectar(doc: Any) -> str:
-    if isinstance(doc, list):
-        return "raw"
-    if not isinstance(doc, dict):
-        raise ValueError("el recibo debe ser un objeto o una lista JSON")
-    if doc.get("schema") == ESQUEMA:
-        return "raw"
-    if doc.get("acta"):
-        return "acta"
-    if "almacenes" in doc:
-        return "fiber"
-    if doc.get("rows") and doc.get("instrument"):
-        return "censo"
-    raise ValueError("no se reconoce la forma del documento: declara --adapter")
 
 
 def _leer(rutas: Iterable[Path], adaptador: str | None) -> list[Recibo]:
     recibos: list[Recibo] = []
     for ruta in rutas:
         doc = json.loads(Path(ruta).read_text(encoding="utf-8"))
-        recibos.extend(adaptar(adaptador or _detectar(doc), doc))
+        recibos.extend(adaptar(adaptador or detectar(doc), doc))
     return recibos
 
 
@@ -128,17 +113,20 @@ def _cmd_panel(args: argparse.Namespace) -> int:
 def _cmd_agregado(args: argparse.Namespace) -> int:
     if args.check:
         doc = leer_agregado(args.check)
-        rc, motivos = comprobar(doc)
+        rc, motivos = comprobar(doc, args.base)
         for motivo in motivos:
             print(f"     - {motivo}")
         print(f"AGREGADO {args.check} · {doc.get('n_areas')} areas · "
-              f"digest {doc.get('digest_conjunto', '')[:12]} · RC={rc}")
+              f"digest {doc.get('digest_conjunto', '')[:12]} · "
+              f"fuentes {len(doc.get('procedencia') or [])} "
+              f"{(doc.get('digest_procedencia') or '')[:12]} · RC={rc}")
         return rc
 
     if not args.recibos:
         print("AGREGADO: hace falta al menos un recibo, o --check", file=sys.stderr)
         return 2
-    doc = agregar(_pares(_leer(args.recibos, args.adapter)))
+    recibos, fuentes = leer_fuentes(args.recibos, args.adapter)
+    doc = agregar(_pares(recibos), fuentes)
     if args.json or not args.out:
         print(json.dumps(doc, indent=2, ensure_ascii=False))
     if args.out:
@@ -146,7 +134,8 @@ def _cmd_agregado(args: argparse.Namespace) -> int:
                                   encoding="utf-8")
     resumen = " · ".join(f"{k} {n}" for k, n in (doc["cuenta"] or {}).items()) or "sin areas"
     print(f"AGREGADO {doc['n_areas']} areas · {resumen} · digest "
-          f"{doc['digest_conjunto'][:12]} · RC={doc['rc']}", file=sys.stderr)
+          f"{doc['digest_conjunto'][:12]} · fuentes {len(fuentes)} · RC={doc['rc']}",
+          file=sys.stderr)
     return doc["rc"]
 
 
@@ -167,7 +156,7 @@ def _cmd_collect(args: argparse.Namespace) -> int:
             raise SystemExit(f"area {nombre!r}: el instrumento fallo "
                              f"(rc={proceso.returncode}): {proceso.stderr.strip()[:300]}")
         doc = json.loads(proceso.stdout)
-        recibos = adaptar(area.get("adapter") or _detectar(doc), doc)
+        recibos = adaptar(area.get("adapter") or detectar(doc), doc)
         for recibo in recibos:
             doc_recibo = a_documento(recibo)
             doc_recibo["area"] = nombre or recibo.area
@@ -219,6 +208,8 @@ def main(argv: list[str] | None = None) -> int:
                    help="forzar el adaptador en vez de detectarlo")
     g.add_argument("--check", type=Path,
                    help="re-derivar el conjunto desde sus propias filas")
+    g.add_argument("--base", type=Path,
+                   help="con --check: re-correr el acto desde estos documentos de origen")
     g.add_argument("-o", "--out", type=Path, help="escribir el agregado aqui")
     g.add_argument("--json", action="store_true")
     g.set_defaults(fn=_cmd_agregado)

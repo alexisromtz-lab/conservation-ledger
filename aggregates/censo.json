@@ -12,6 +12,14 @@
   "instrumentos": [
     "fiber-ast-lint 0.4.6"
   ],
+  "procedencia": [
+    {
+      "documento": "censo.json",
+      "sha256": "6e27a5bc6a158dc521f8c4b38d73bdf42a0b6e7b9dd9027463c870c3342f9aba",
+      "n_recibos": 13
+    }
+  ],
+  "digest_procedencia": "ffc223b574f32c78b43cc3fa401e44cf16dbf520ac5a8a5838c800e78201f343",
   "areas": [
     {
       "area": "censo:astroid@4.3.4#.",
