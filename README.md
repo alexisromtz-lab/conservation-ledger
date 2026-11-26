@@ -385,7 +385,7 @@ row has stopped meaning anything.
 ## Adapters: the only instrument-aware code
 
 `verificador.py` (162 lines) knows nothing about any instrument. Everything
-specific to a dialect lives in `adaptadores.py` — 173 lines:
+specific to a dialect lives in `adaptadores.py` (173 lines):
 
 | adapter | reads | note |
 |---|---|---|
@@ -426,7 +426,7 @@ place the numbers live.
 ```yaml
 repos:
   - repo: https://github.com/alexisromtz-lab/conservation-ledger
-    rev: v0.2.3
+    rev: v0.2.4
     hooks: [{id: conservation-ledger-verify}]
 ```
 
