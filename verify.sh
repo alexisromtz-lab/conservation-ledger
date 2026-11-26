@@ -8,10 +8,12 @@
 # una por costura y una por el compuesto. Sirve para que un auditor de cliente
 # confirme un certificado sin instalar la suite.
 #
-# Verifica tres cosas por acto y dos por costura:
+# Verifica cuatro cosas por acto y dos por costura:
 #
 #   acto     dominio == suma(cubetas)              la ecuacion cierra
-#   acto     rc declarado                          lo que el productor afirma
+#   acto     el acto no se contradice              dominio vacio, conserva=false o
+#                                                  rc 2/4 sobre una ecuacion cerrada,
+#                                                  o unidades fusionadas sin declarar
 #   artefacto sha256(fichero) == sha256_archivo    el fichero es el certificado
 #   artefacto lineas - 1 == claves                 el fichero es la imagen entera
 #   costura  imagen(i) == dominio(i+1)             cuenta
@@ -94,11 +96,32 @@ for r in "$@"; do
     fi
     echo "ACTO $n $nombre $dom = $suma $estado declarado=${declarado:-?}"
 
-    case "${declarado:-0}" in
-        4) roto=1 ;;
-        1) colision=1 ;;
-        2) ciego=1 ;;
-    esac
+    # -- lo que el acto declara de si mismo ------------------------------------
+    # Las mismas cuatro reglas que el verificador de la biblioteca, para que las
+    # dos implementaciones puedan contradecirse y se mida. Un productor que se
+    # contradice es peor que uno que admite la ruptura: firmarlo seria peor.
+    conserva=$(jq -r '((.declarado // {}).conserva // .conserva) as $c
+                      | if $c == null then "" else ($c | tostring) end' "$r")
+    fusiones=$(jq -r '[.cubetas // {} | to_entries[] | select(.key | startswith("colisiones")) | .value]
+                      | add // 0' "$r")
+
+    if [ "$dom" != "$suma" ]; then
+        roto=1
+    elif [ "$dom" -eq 0 ]; then
+        echo "DECLARACION $nombre vacio (dominio 0: no se midio nada)"
+        ciego=1
+    elif [ "$conserva" = "false" ]; then
+        echo "DECLARACION $nombre se contradice (declara conserva=false sobre una ecuacion que cierra)"
+        roto=1
+    elif [ "${declarado:-0}" = "2" ] || [ "${declarado:-0}" = "4" ]; then
+        echo "DECLARACION $nombre se contradice (declara rc=$declarado sobre una ecuacion que cierra)"
+        roto=1
+    elif [ "$fusiones" -gt 0 ]; then
+        echo "DECLARACION $nombre $fusiones unidades fusionadas en su cubeta"
+        colision=1
+    elif [ "${declarado:-0}" = "1" ]; then
+        colision=1
+    fi
 
     # -- el artefacto: el fichero que viaja y el digest que lo certifica -------
     # Nivel 1 cuando solo se leyo la declaracion; nivel 2 cuando se abrio el
