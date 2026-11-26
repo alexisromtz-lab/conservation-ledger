@@ -280,6 +280,47 @@ not preservation, and the ledger grades only the first.
 **Finding.** A chain of conserving acts is not a conserved pipeline. Verifying each act's own
 equation cannot see the seam, because the seam lives in neither act.
 
+## The whole audit as one receipt
+
+`verify` judges one area and `chain` judges one seam. The estate — thirteen
+areas, or a client's forty — was only ever the last line of a terminal, and a
+verdict that is not a document cannot be handed over, anchored or re-read.
+
+```
+$ conservation-ledger aggregate receipts/censo.json -o aggregates/censo.json
+AGREGADO 13 areas · CONSERVADO 11 · VACIO 2 · digest b90fd7fdd75c · RC=2
+```
+
+`conservation/agregado/1` carries the rows and **two measures that do not depend
+on order**: the count of areas and the SHA-256 of a canonical projection of each
+row. A set that only counted areas could be padded with a repeated one; a set
+that only kept a digest could not say how many it covers; together they move
+when an area is dropped, smuggled in or changes class, and they do not move when
+the same areas arrive in another order — which is the invariant that makes it a
+set and not a list.
+
+It publishes the **vector of classes**, not a single boolean. Collapsing
+`CONSERVADO 11 · VACIO 2` into one `conserva` would equate "nothing to measure"
+with "broke", which is the distinction the whole contract exists to keep. What
+is collapsed is the RC, by the same precedence the rest of the tool uses:
+`DISCREPANCIA 4 > COLISION 1 > VACIO 2 > LIMPIO 0`, so one broken area is not
+diluted by eleven healthy ones.
+
+`aggregate --check` re-derives the document from its own rows, and a stranger can
+reach the same digest with nothing but `jq` and `shasum`:
+
+```
+jq -r '.areas[] | [.area,.instrumento,(.version // ""),(.clase // ""),
+       (.rc|tostring),(.dominio|tostring),(.residuo|tostring),
+       (.digest_entrada // "")] | @tsv' aggregates/censo.json \
+  | LC_ALL=C sort | shasum -a 256
+```
+
+which prints `b90fd7fdd75c…` — the published `digest_conjunto`, from a pipeline
+that knows nothing about this package. `tests/test_agregado.py` runs both routes
+and the three manipulations: a tampered class and a deleted row each turn four of
+its six tests red, while a reversed row order turns none.
+
 ## Verifying without our code
 
 A certificate is worth what an auditor can confirm **without trusting the issuer**. `verify.sh` at
@@ -490,7 +531,7 @@ source untouched and still turns the seam red.
 ```yaml
 repos:
   - repo: https://github.com/alexisromtz-lab/conservation-ledger
-    rev: v0.2.10
+    rev: v0.3.0
     hooks: [{id: conservation-ledger-verify}]
 ```
 

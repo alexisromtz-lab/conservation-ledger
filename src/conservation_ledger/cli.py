@@ -1,4 +1,4 @@
-"""Four verbs: ``verify``, ``chain``, ``panel``, ``collect``.
+"""Five verbs: ``verify``, ``chain``, ``panel``, ``collect``, ``aggregate``.
 
 ``verify``  re-derives each receipt's verdict and prints where it disagrees.
 ``chain``   composes an ordered pipeline and judges it on its seams: two acts
@@ -6,6 +6,8 @@
 ``panel``   renders every area into one static page.
 ``collect`` runs a manifest of instruments and files their receipts, so the
             whole estate is refreshed by one command instead of by memory.
+``aggregate`` publishes the set of areas as one receipt: a count and a digest
+            over a canonical projection, neither of which depends on order.
 
 Exit codes are the supremum of the receipts' codes (``4 > 1 > 2 > 0``), so a
 run that could not look is never reported as a run that found nothing.
@@ -21,6 +23,7 @@ from typing import Any, Iterable
 
 from . import __version__
 from .adaptadores import adaptar
+from .agregado import agregar, comprobar, leer as leer_agregado
 from .cadena import cadena
 from .esquema import ESQUEMA, Recibo, a_documento, desde_documento
 from .panel import html
@@ -122,6 +125,31 @@ def _cmd_panel(args: argparse.Namespace) -> int:
     return _rc(pares)
 
 
+def _cmd_agregado(args: argparse.Namespace) -> int:
+    if args.check:
+        doc = leer_agregado(args.check)
+        rc, motivos = comprobar(doc)
+        for motivo in motivos:
+            print(f"     - {motivo}")
+        print(f"AGREGADO {args.check} · {doc.get('n_areas')} areas · "
+              f"digest {doc.get('digest_conjunto', '')[:12]} · RC={rc}")
+        return rc
+
+    if not args.recibos:
+        print("AGREGADO: hace falta al menos un recibo, o --check", file=sys.stderr)
+        return 2
+    doc = agregar(_pares(_leer(args.recibos, args.adapter)))
+    if args.json or not args.out:
+        print(json.dumps(doc, indent=2, ensure_ascii=False))
+    if args.out:
+        Path(args.out).write_text(json.dumps(doc, indent=2, ensure_ascii=False) + "\n",
+                                  encoding="utf-8")
+    resumen = " · ".join(f"{k} {n}" for k, n in (doc["cuenta"] or {}).items()) or "sin areas"
+    print(f"AGREGADO {doc['n_areas']} areas · {resumen} · digest "
+          f"{doc['digest_conjunto'][:12]} · RC={doc['rc']}", file=sys.stderr)
+    return doc["rc"]
+
+
 def _cmd_collect(args: argparse.Namespace) -> int:
     manifiesto = json.loads(Path(args.manifiesto).read_text(encoding="utf-8"))
     areas = manifiesto.get("areas") or []
@@ -184,6 +212,16 @@ def main(argv: list[str] | None = None) -> int:
     c.add_argument("manifiesto", type=Path)
     c.add_argument("-o", "--out", default="receipts")
     c.set_defaults(fn=_cmd_collect)
+
+    g = sub.add_parser("aggregate", help="el conjunto de areas como un solo recibo")
+    g.add_argument("recibos", nargs="*", type=Path)
+    g.add_argument("--adapter", choices=["acta", "fiber", "censo", "raw"],
+                   help="forzar el adaptador en vez de detectarlo")
+    g.add_argument("--check", type=Path,
+                   help="re-derivar el conjunto desde sus propias filas")
+    g.add_argument("-o", "--out", type=Path, help="escribir el agregado aqui")
+    g.add_argument("--json", action="store_true")
+    g.set_defaults(fn=_cmd_agregado)
 
     args = ap.parse_args(argv)
     return args.fn(args)
