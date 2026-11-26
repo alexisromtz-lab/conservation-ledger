@@ -55,9 +55,14 @@ Exit code is the **recomputed** severity of the act, never the declared one.
 
 ## Receipts measured today
 
-Sixteen receipts, sixteen recomputed equations: `CONSERVADO 12 · COLISION 2 · VACIO 2`, and **no
-row refused for lack of terms** — which was thirteen rows out of sixteen before the census in the
-sibling repo learned to publish them.
+Sixteen receipts, sixteen recomputed equations: `CONSERVADO 12 · COLISION 2 · DISCREPANCIA 2`, and
+**no row refused for lack of terms** — which was thirteen rows out of sixteen before the census in
+the sibling repo learned to publish them.
+
+Those last two rows used to read `VACIO`. They do not any more: both close over a domain of zero
+**and declare `conserva=true rc=0`**, and a receipt that certifies a conservation over an empty
+population is not unmeasured, it is wrong. `v0.4.5` of the producer stopped emitting that claim;
+until its census re-runs, this ledger is red on purpose.
 
 <!-- ledger-table:begin -->
 | Área | Instrumento | Firma | Ecuación | Residuo | Declara | Recomputa |
@@ -72,9 +77,9 @@ sibling repo learned to publish them.
 | `censo:jsonschema@4.26.0#.` | fiber-ast-lint | 0.4.4 | `2 = pierde 0 + guardadas 2 + acumulacion 0 + posicional 0 + sin_len 0  (residuo 0)` | 0 | `conserva=true rc=0` | **CONSERVADO** |
 | `censo:mypy@2.4.1` | fiber-ast-lint | 0.4.4 | `173 = pierde 4 + guardadas 25 + acumulacion 7 + posicional 12 + sin_len 125  (residuo 0)` | 0 | `conserva=true rc=1` | **CONSERVADO** |
 | `censo:mypy@2.4.1#.` | fiber-ast-lint | 0.4.4 | `226 = pierde 4 + guardadas 34 + acumulacion 9 + posicional 16 + sin_len 163  (residuo 0)` | 0 | `conserva=true rc=1` | **CONSERVADO** |
-| `censo:platformdirs@4.14.8#.` | fiber-ast-lint | 0.4.4 | `0 = pierde 0 + guardadas 0 + acumulacion 0 + posicional 0 + sin_len 0  (residuo 0)` | 0 | `conserva=true rc=0` | **VACIO** |
+| `censo:platformdirs@4.14.8#.` | fiber-ast-lint | 0.4.4 | `0 = pierde 0 + guardadas 0 + acumulacion 0 + posicional 0 + sin_len 0  (residuo 0)` | 0 | `conserva=true rc=0` | **DISCREPANCIA** |
 | `censo:pydantic@2.14.4#.` | fiber-ast-lint | 0.4.4 | `143 = pierde 0 + guardadas 17 + acumulacion 6 + posicional 2 + sin_len 118  (residuo 0)` | 0 | `conserva=true rc=1` | **CONSERVADO** |
-| `censo:pyflakes@4.1.0#.` | fiber-ast-lint | 0.4.4 | `0 = pierde 0 + guardadas 0 + acumulacion 0 + posicional 0 + sin_len 0  (residuo 0)` | 0 | `conserva=true rc=0` | **VACIO** |
+| `censo:pyflakes@4.1.0#.` | fiber-ast-lint | 0.4.4 | `0 = pierde 0 + guardadas 0 + acumulacion 0 + posicional 0 + sin_len 0  (residuo 0)` | 0 | `conserva=true rc=0` | **DISCREPANCIA** |
 | `censo:pylint@4.1.4#.` | fiber-ast-lint | 0.4.4 | `55 = pierde 1 + guardadas 14 + acumulacion 4 + posicional 4 + sin_len 32  (residuo 0)` | 0 | `conserva=true rc=1` | **CONSERVADO** |
 | `censo:tomlkit@0.15.3#.` | fiber-ast-lint | 0.4.4 | `6 = pierde 0 + guardadas 2 + acumulacion 1 + posicional 0 + sin_len 3  (residuo 0)` | 0 | `conserva=true rc=1` | **CONSERVADO** |
 | `fiber:fixtures` | fiber-ast-lint | 0.4.4 | `9 = pierde 0 + guardadas 2 + acumulacion 1 + posicional 1 + sin_len 5  (residuo 0)` | 0 | `conserva=true rc=1` | **CONSERVADO** |
@@ -87,9 +92,12 @@ failure of arithmetic — the merged units are accounted for in a named bucket, 
 no unit vanished. It is a warning that a projection dropped information, and the
 instrument said so itself.
 
-**`VACIO` is the interesting column.** Two rows — `platformdirs` and
-`pyflakes` — close over a domain of zero. The equation holds and proves
-nothing: no store was measured, so no store can be shown accounted for.
+**Two rows are `DISCREPANCIA` and they are the point.** `platformdirs` and
+`pyflakes` close `0 = 0 + 0 + 0 + 0 + 0` and declare `conserva=true rc=0`. The
+equation holds and proves nothing — no store was measured, so no store can be
+shown accounted for. A receipt may say that (`rc=2`, `NO_MEDIDO`, factors
+published) and then it grades `VACIO`; it may not say `conserva=true`, because
+`0 = 0` is not a conservation, it is an absence.
 
 ### What this table looked like before the census published its terms
 
@@ -127,7 +135,8 @@ ledger exists to name.
    one of them silently reads a domain of 0 and reports `RUPTURA` on a receipt
    that closes — measured, then fixed in `_dominio_acta`.
 3. **`censo:platformdirs@4.14.8#.` and `censo:pyflakes@4.1.0#.` measure zero.**
-   A zero domain is `VACIO`, not `CONSERVADO`: an equation over an empty
+   A zero domain is `VACIO` only if the receipt admits it; if it also declares
+   `conserva=true`, that is a `DISCREPANCIA` — an equation over an empty
    population closes trivially and proves nothing about the instrument.
 4. **A closed equation can still declare a loss.** Eleven census rows declare
    `rc=1` — the producer's code for "stores whose consumer was not found" — while
@@ -189,10 +198,10 @@ inventing terms nobody published.
 |---|---|---:|
 | `CONSERVADO` | residual 0, domain > 0, no merge bucket | 0 |
 | `COLISION` | residual 0, but a `colisiones*` bucket > 0 | 1 |
-| `VACIO` | domain 0 — closes trivially, proves nothing | 2 |
+| `VACIO` | domain 0 and the receipt admits it (`NO_MEDIDO`) — proves nothing | 2 |
 | `NO_VERIFICABLE` | no buckets published | 2 |
 | `RUPTURA` | residual != 0 | 4 |
-| `DISCREPANCIA` | declared verdict contradicts the closed equation | 4 |
+| `DISCREPANCIA` | declared verdict contradicts the closed equation, including `conserva=true` over a zero domain | 4 |
 
 Precedence follows the corpus, not `max()`: an act with a collision and an
 unmeasured area reports **1**, because `max(1, 2)` would let "not measured"
@@ -396,7 +405,7 @@ row has stopped meaning anything.
 
 ## Adapters: the only instrument-aware code
 
-`verificador.py` (162 lines) knows nothing about any instrument. Everything
+`verificador.py` (176 lines) knows nothing about any instrument. Everything
 specific to a dialect lives in `adaptadores.py` (173 lines):
 
 | adapter | reads | note |
@@ -438,7 +447,7 @@ place the numbers live.
 ```yaml
 repos:
   - repo: https://github.com/alexisromtz-lab/conservation-ledger
-    rev: v0.2.6
+    rev: v0.2.7
     hooks: [{id: conservation-ledger-verify}]
 ```
 

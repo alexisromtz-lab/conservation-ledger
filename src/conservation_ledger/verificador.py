@@ -15,6 +15,11 @@ Rule set (the whole contract):
   per-instrument convention, so the verifier still needs no registry.
 * A receipt with no buckets is ``NO_VERIFICABLE`` (``RC 2``), never ``0``: not
   having published the terms is not the same as having conserved.
+* A receipt over an empty domain may not certify. There ``0 = 0`` closes
+  because there was nothing to hold, so a declared ``conserva=true`` or a
+  declared ``RC 0/1`` claims a conservation the population cannot support: that
+  is ``DISCREPANCIA`` (``RC 4``), not ``VACIO``. Silence about the emptiness is
+  still ``VACIO`` (``RC 2``), because an act that measured nothing is not a lie.
 * A declared ``conserva``/``rc`` that contradicts the identity is
   ``DISCREPANCIA`` (``RC 4``). A producer that misreports its own equation is
   worse than one that admits a rupture.
@@ -116,6 +121,15 @@ def verificar(r: Recibo) -> Veredicto:
                           motivos=tuple(motivos))
 
     if r.dominio == 0:
+        certifica = r.declarado_conserva is True or r.declarado_rc in (CONSERVADO, COLISION)
+        if certifica:
+            motivos = ["dominio vacio: 0 = 0 cierra porque no habia nada que conservar"]
+            if r.declarado_conserva is True:
+                motivos.append("el recibo declaraba conserva=true")
+            if r.declarado_rc in (CONSERVADO, COLISION):
+                motivos.append(f"el recibo declaraba rc={r.declarado_rc}")
+            return _veredicto(r, residuo=0, rc=RUPTURA, clase=DISCREPANCIA,
+                              motivos=tuple(motivos))
         return _veredicto(r, residuo=0, rc=VACIO, clase=VACIO_CLASE,
                           motivos=("dominio vacio: no se midio nada",))
 

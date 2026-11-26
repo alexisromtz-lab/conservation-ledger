@@ -89,3 +89,14 @@ def test_el_acto_solo_suma_codigos_recomputados():
     assert rc_del_acto(veredictos) == VACIO
     assert rc_del_acto([verificar(recibo())]) == CONSERVADO
     assert rc_del_acto([]) == CONSERVADO
+
+
+def test_certificar_sobre_un_dominio_vacio_es_discrepancia():
+    """0 = 0 cierra porque no habia nada que conservar: no es una firma."""
+    v = verificar(recibo(dominio=0, cubetas={"uno": 0},
+                         declarado_conserva=True, declarado_rc=CONSERVADO))
+    assert (v.clase, v.rc, v.residuo) == ("DISCREPANCIA", RUPTURA, 0)
+    sin_conserva = verificar(recibo(dominio=0, cubetas={"uno": 0}, declarado_rc=COLISION))
+    assert (sin_conserva.clase, sin_conserva.rc) == ("DISCREPANCIA", RUPTURA)
+    callado = verificar(recibo(dominio=0, cubetas={"uno": 0}))
+    assert (callado.clase, callado.rc) == ("VACIO", VACIO)

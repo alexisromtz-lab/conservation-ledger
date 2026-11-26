@@ -13,7 +13,9 @@
 #   acto     dominio == suma(cubetas)              la ecuacion cierra
 #   acto     el acto no se contradice              dominio vacio, conserva=false o
 #                                                  rc 2/4 sobre una ecuacion cerrada,
-#                                                  o unidades fusionadas sin declarar
+#                                                  certificar conserva/rc 0-1 sobre un
+#                                                  dominio vacio, o unidades fusionadas
+#                                                  sin declarar
 #   artefacto sha256(fichero) == sha256_archivo    el fichero es el certificado
 #   artefacto lineas - 1 == claves                 el fichero es la imagen entera
 #   costura  imagen(i) == dominio(i+1)             cuenta
@@ -108,8 +110,13 @@ for r in "$@"; do
     if [ "$dom" != "$suma" ]; then
         roto=1
     elif [ "$dom" -eq 0 ]; then
-        echo "DECLARACION $nombre vacio (dominio 0: no se midio nada)"
-        ciego=1
+        if [ "$conserva" = "true" ] || [ "${declarado:-2}" = "0" ] || [ "${declarado:-2}" = "1" ]; then
+            echo "DECLARACION $nombre se contradice (certifica una conservacion sobre un dominio vacio: 0 = 0 cierra porque no habia nada que conservar)"
+            roto=1
+        else
+            echo "DECLARACION $nombre vacio (dominio 0: no se midio nada)"
+            ciego=1
+        fi
     elif [ "$conserva" = "false" ]; then
         echo "DECLARACION $nombre se contradice (declara conserva=false sobre una ecuacion que cierra)"
         roto=1

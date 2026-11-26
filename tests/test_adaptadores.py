@@ -42,7 +42,7 @@ def test_el_censo_de_trece_filas_cierra_su_ecuacion_y_no_necesita_creerla():
     assert len(recibos) == 13
     assert len({r.area for r in recibos}) == 13
     assert all(verificar(r).residuo == 0 for r in recibos)
-    assert {verificar(r).clase for r in recibos} == {"CONSERVADO", "VACIO"}
+    assert {verificar(r).clase for r in recibos} == {"CONSERVADO", "DISCREPANCIA"}
 
 
 def test_una_fila_de_censo_sin_cubetas_sigue_siendo_no_verificable():
