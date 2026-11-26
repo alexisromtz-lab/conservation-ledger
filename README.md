@@ -449,12 +449,21 @@ archived as a success.
 exists. The block between `ledger-table:begin` and `ledger-table:end` is the only
 place the numbers live.
 
+That closes the README against the receipts. The step before it — the receipts
+against their source — is closed the same way, offline:
+`tests/fixtures/fuente/fiber-censo-0.4.5.json` is the census blob `47c6bc4` of
+`fiber-ast-lint@ebb5d3a`, pinned by SHA-256, and `tests/test_costura_censo.py`
+re-derives all thirteen receipts from it through `adaptar` + `a_documento` and
+demands an exact match. So the published figures cannot age because a *function*
+changed either: mutant F (one bucket dropped from `CUBETAS_CENSO`) leaves the
+source untouched and still turns the seam red.
+
 ## As a pre-commit hook
 
 ```yaml
 repos:
   - repo: https://github.com/alexisromtz-lab/conservation-ledger
-    rev: v0.2.8
+    rev: v0.2.9
     hooks: [{id: conservation-ledger-verify}]
 ```
 
