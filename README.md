@@ -264,6 +264,69 @@ not preservation, and the ledger grades only the first.
 **Finding.** A chain of conserving acts is not a conserved pipeline. Verifying each act's own
 equation cannot see the seam, because the seam lives in neither act.
 
+## Verifying without our code
+
+A certificate is worth what an auditor can confirm **without trusting the issuer**. `verify.sh` at
+the repository root recomputes the whole chain with `sh`, `jq` and `shasum`: it imports nothing from
+this package and never runs our Python. What it cannot do, it says so and exits 2 — it does not
+report `ok` for a check it skipped.
+
+```console
+$ ./verify.sh -d tests/fixtures/cadena/artefactos tests/fixtures/cadena/paso1.json tests/fixtures/cadena/paso2.json
+ACTO 1 paso1.json 6 = 6 ok declarado=1
+ARTEFACTO paso1.csv sha256 ok filas 4 ok (3 + cabecera)
+ACTO 2 paso2.json 3 = 3 ok declarado=0
+COSTURA 1->2 paso1.json -> paso2.json filas 3 -> 3 ok bytes ok
+COMPUESTO 6 = 3 + 3 residuo 0 ok telescopia si
+```
+
+Exit 1 — the equation closes, the seam seals and the first act declared a collision: the same
+verdict `chain` reaches, computed by a different implementation. Point it at the altered receipt and
+it catches the same rupture, with the same blindness to counting:
+
+```console
+$ ./verify.sh -d tests/fixtures/cadena/artefactos tests/fixtures/cadena/paso1.json tests/fixtures/cadena/paso2-alterado.json
+ACTO 1 paso1.json 6 = 6 ok declarado=1
+ARTEFACTO paso1.csv sha256 ok filas 4 ok (3 + cabecera)
+ACTO 2 paso2-alterado.json 3 = 3 ok declarado=0
+COSTURA 1->2 paso1.json -> paso2-alterado.json filas 3 -> 3 ok bytes !
+COMPUESTO 6 = 3 + 3 residuo 0 ok telescopia si
+```
+
+Exit 4. `filas 3 -> 3 ok` is the point: the two implementations disagree with the count and agree
+with each other, because both measure the digest. And on the 34 195-row chain, where the artifacts
+are not in the repository, the script still composes from the declared digests and names the two
+files it could not open:
+
+```console
+$ ./verify.sh tests/fixtures/cadena/paso1-censo.json tests/fixtures/cadena/paso2-censo.json tests/fixtures/cadena/paso3-censo.json
+ACTO 1 paso1-censo.json 34195 = 34195 ok declarado=1
+ARTEFACTO s1.csv NO_MEDIDO (no esta bajo .; solo se verifican los digests declarados)
+ACTO 2 paso2-censo.json 32171 = 32171 ok declarado=1
+ARTEFACTO s2.csv NO_MEDIDO (no esta bajo .; solo se verifican los digests declarados)
+COSTURA 1->2 paso1-censo.json -> paso2-censo.json filas 32171 -> 32171 ok bytes ok
+ACTO 3 paso3-censo.json 30 = 30 ok declarado=0
+COSTURA 2->3 paso2-censo.json -> paso3-censo.json filas 30 -> 30 ok bytes ok
+COMPUESTO 34195 = 30 + 34165 residuo 0 ok telescopia si
+```
+
+`34195 = 30 + 34165 · residuo 0 · telescopia si · RC=1`: the same four numbers `ledger chain`
+printed above, from a program that shares no line with it. Two implementations that disagree on one
+number would mean the law is an artifact of the implementation; none does.
+
+The script only wraps three commands, and an auditor who prefers to type them does not need it:
+
+| what | command | measured |
+|---|---|---|
+| the file is the certified one | `shasum -a 256 tests/fixtures/cadena/artefactos/paso1.csv` | `ede784ce0813c547…` = `salida.sha256_archivo` |
+| the file is the whole image | `wc -l < tests/fixtures/cadena/artefactos/paso1.csv` | `4` = 3 claves + cabecera |
+| the act closes | `jq .ecuacion tests/fixtures/cadena/paso1.json` | `6 = 3 + 2 + 1 + 0 + 0` |
+
+`tests/test_verificar_sin_codigo.py` runs all three blocks and the three raw commands, compares them
+line by line with this section, and checks that the shell composite equals the `chain` composite term
+by term. It also corrupts a copy of the artifact and asserts the file-level row turns `!` while the
+digest-only route still says `bytes ok` — which is why the artifact exists in the repository at all.
+
 ## Adapters: the only instrument-aware code
 
 `verificador.py` (162 lines) knows nothing about any instrument. Everything
@@ -308,7 +371,7 @@ place the numbers live.
 ```yaml
 repos:
   - repo: https://github.com/alexisromtz-lab/conservation-ledger
-    rev: v0.2.1
+    rev: v0.2.2
     hooks: [{id: conservation-ledger-verify}]
 ```
 
